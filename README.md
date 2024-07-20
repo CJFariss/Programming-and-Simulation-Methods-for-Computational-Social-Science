@@ -46,6 +46,9 @@ Students should have some familiarity with concepts from research design and sta
 4. The remaining portion of class (approximately 1.5-2 hours) will be devoted to hands on learning with R, simulated data, and the large scale datasets provided by the instructor. 
 5. The course schedule section, which is below, provides even more details about the topic of the lecture for each class day, citations for the discussion readings, and chapter entries from the text books for the programming and data analysis tools covered in the class.
 
+## Required Readings
+There are no *required* books in this course. Rather, I will make reference to material listed below in rough proportion to the suggested books > additional suggested books. There are also a set of applied articles that I will make reference to as well. Think of these as useful references and places to find examples. The primary course content will be the R programing lessons.
+
 ## Suggested Books
 1. Jones, Owen, Robert Maillardet, and Andrew Robinson. 2014. *Introduction to Scientific Programming and Simulation Using R.* Second Edition. CRC Press. https://nyu-cdsc.github.io/learningr/assets/simulation.pdf
 2. Matloff, Norman. 2011. *Art of R Programming: A Tour of Statistical Software Design.* no starch press.
