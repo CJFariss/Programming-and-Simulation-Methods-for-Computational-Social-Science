@@ -47,7 +47,7 @@ Students should have some familiarity with concepts from research design and sta
 5. The course schedule section, which is below, provides even more details about the topic of the lecture for each class day, citations for the discussion readings, and chapter entries from the text books for the programming and data analysis tools covered in the class.
 
 ## Books
-1. Jones, Owen, Robert Maillardet, and Andrew Robinson. 2014. *Introduction to Scientific Programming and Simulation Using R.* Second Edition. CRC Press.
+1. Jones, Owen, Robert Maillardet, and Andrew Robinson. 2014. *Introduction to Scientific Programming and Simulation Using R.* Second Edition. CRC Press. https://nyu-cdsc.github.io/learningr/assets/simulation.pdf
 2. Matloff, Norman. 2011. Art of R Programming: A Tour of Statistical Software Design. no starch press.
 
 
