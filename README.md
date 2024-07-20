@@ -7,9 +7,10 @@ Course Date: Monday 22 July – Friday 3 August 2024
 
 Key Course Objective: **Learn to program. Program to learn.**
 
-Essex Course Website: https://essexsummerschool.com/summer-school-facts/courses/ess-2022-course-list/3b-advanced-methods-for-social-media-textual-data/
+Essex Course Website: https://essexsummerschool.com/summer-school-facts/courses/ess-2024-course-list/2w/
 
 ### Past Course Syllabi 
+- [Current Syllabus](https://github.com/CJFariss/Advanced-Computational-Methods-for-Social-Media-and-Text-Data)
 - [2022/2023 Syllabus](https://github.com/CJFariss/Advanced-Computational-Methods-for-Social-Media-and-Text-Data)
 - [2021/2020 Syllabus](http://cfariss.com/documents/Essex_Advanced_Computaitonal_Methods_2020_Syllabus.pdf)
 - [2019/2018 Syllabus](http://cfariss.com/documents/Essex_2F_2019_Syllabus.pdf)
