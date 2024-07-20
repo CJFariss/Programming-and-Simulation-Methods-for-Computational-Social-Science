@@ -56,5 +56,5 @@ Students should have some familiarity with concepts from research design and sta
 2. Davies, Tilman M. 2016. *The Book of R: A First Course in Programming and Statistics.* no starch press.
 3. Efron, Bradley and Trevor Hastie. 2016. *Computer Age Statistical Inference* Cambridge University Press. https://web.stanford.edu/~hastie/CASI/
 4. Gelman,Andrew and Jennifer Hill. 2007. Data Analysis Using Regression and Multilevel/Hierarchical Models. Cambridge: Cambridge University Press.
-5 Stan Development Team. 2024. *Stan Modeling Language: User's Guide and Reference Manual. Version 2.35.* https://mc-stan.org/docs/stan-users-guide/index.html
+5. Stan Development Team. 2024. *Stan Modeling Language: User's Guide and Reference Manual. Version 2.35.* https://mc-stan.org/docs/stan-users-guide/index.html
 
