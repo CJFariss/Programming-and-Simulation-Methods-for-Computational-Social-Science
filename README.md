@@ -46,3 +46,15 @@ Students should have some familiarity with concepts from research design and sta
 4. The remaining portion of class (approximately 1.5-2 hours) will be devoted to hands on learning with R, simulated data, and the large scale datasets provided by the instructor. 
 5. The course schedule section, which is below, provides even more details about the topic of the lecture for each class day, citations for the discussion readings, and chapter entries from the text books for the programming and data analysis tools covered in the class.
 
+## Books
+1. Jones, Owen, Robert Maillardet, and Andrew Robinson. 2014. *Introduction to Scientific Programming and Simulation Using R.* Second Edition. CRC Press.
+2. Matloff, Norman. 2011. Art of R Programming: A Tour of Statistical Software Design. no starch press.
+
+
+## Suggested Books
+1. Bolker, Ben. 2007. *Ecological Models and Data in R* Princeton NJ: Princeton University Press.
+2. Davies, Tilman M. 2016. *The Book of R: A First Course in Programming and Statistics.* no starch press.
+3. Efron, Bradley and Trevor Hastie. 2016. *Computer Age Statistical Inference* Cambridge University Press. https://web.stanford.edu/~hastie/CASI/
+4. Gelman,Andrew and Jennifer Hill. 2007. Data Analysis Using Regression and Multilevel/Hierarchical Models. Cambridge: Cambridge University Press.
+5 Stan Development Team. 2024. *Stan Modeling Language: User's Guide and Reference Manual. Version 2.35.* https://mc-stan.org/docs/stan-users-guide/index.html
+
