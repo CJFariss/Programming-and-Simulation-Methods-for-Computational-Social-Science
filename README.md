@@ -65,9 +65,9 @@ There are no *required* books in this course. Rather, I will make reference to m
 1. Stan Development Team. 2024. *Stan Modeling Language: User's Guide and Reference Manual. Version 2.35.* https://mc-stan.org/docs/stan-users-guide/index.html
 
 
-## Class Schedule 
+# Class Schedule and Content links
 
-# Day 1: 
+## Day 1: 
 
-# Day 2: Data Management and Analysis for Large Scale Data Structures
+## Day 2: Data Management and Analysis for Large Scale Data Structures
 Introduction to the R programming environment. We will review the various data and programming structures that are available for use in R. We will pay particular attention to vectorization and parallelization. Though we will begin with very small programs for learning, we also need to remember that the massive scale datasets that are increasingly available need optimized programs designed to manage and analyze these massive scale data structures.
