@@ -61,15 +61,15 @@ There are no *required* books in this course. Rather, I will make reference to m
 
 ## Suggested Books
 1. Jones, Owen, Robert Maillardet, and Andrew Robinson. 2014. *Introduction to Scientific Programming and Simulation Using R.* Second Edition. CRC Press. https://nyu-cdsc.github.io/learningr/assets/simulation.pdf
-2. Matloff, Norman. 2011. *Art of R Programming: A Tour of Statistical Software Design.* no starch press. \url{https://nostarch.com/artofr.htm}
+2. Matloff, Norman. 2011. *Art of R Programming: A Tour of Statistical Software Design.* no starch press. https://nostarch.com/artofr.htm
 
 
 ## Additional Suggested Books
-1. Bolker, Ben. 2007. *Ecological Models and Data in R* Princeton NJ: Princeton University Press. \url{https://press.princeton.edu/books/hardcover/9780691125220/ecological-models-and-data-in-r}
-2. Davies, Tilman M. 2016. *The Book of R: A First Course in Programming and Statistics.* no starch press. \url{https://nostarch.com/bookofr}
+1. Bolker, Ben. 2007. *Ecological Models and Data in R* Princeton NJ: Princeton University Press. https://press.princeton.edu/books/hardcover/9780691125220/ecological-models-and-data-in-r
+2. Davies, Tilman M. 2016. *The Book of R: A First Course in Programming and Statistics.* no starch press. https://nostarch.com/bookofr
 3. Efron, Bradley and Trevor Hastie. 2016. *Computer Age Statistical Inference* Cambridge University Press. https://web.stanford.edu/~hastie/CASI/
-4. Gelman,Andrew and Jennifer Hill. 2007. Data Analysis Using Regression and Multilevel/Hierarchical Models. Cambridge: Cambridge University Press. \url{http://www.stat.columbia.edu/~gelman/arm/}
-5. Matloff, Norman. 2024. *The Art of Machine Learning: A Hands-On Guide to Machine Learning with R* no starch press. \url{https://nostarch.com/art-machine-learning}
+4. Gelman,Andrew and Jennifer Hill. 2007. Data Analysis Using Regression and Multilevel/Hierarchical Models. Cambridge: Cambridge University Press. http://www.stat.columbia.edu/~gelman/arm/
+5. Matloff, Norman. 2024. *The Art of Machine Learning: A Hands-On Guide to Machine Learning with R* no starch press. https://nostarch.com/art-machine-learning
 
 ## Suggested User Guides and Reference Manuals.
 1. Stan Development Team. 2024. *Stan Modeling Language: User's Guide and Reference Manual. Version 2.35.* https://mc-stan.org/docs/stan-users-guide/index.html
