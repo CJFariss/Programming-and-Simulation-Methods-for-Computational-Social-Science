@@ -48,9 +48,9 @@ Students should have some familiarity with concepts from research design and sta
 5. The course schedule section, which is below, provides even more details about the topic of the lecture for each class day, citations for the discussion readings, and chapter entries from the text books for the programming and data analysis tools covered in the class.
 
 ## Folder Descriptions
-- [R-Program-Lessons](./R-Program-Lessons): contains 10 folders with R programming lessons designed for each day of the course.
-    - [Day01_Intro_programs](./R-Program-Lessons/Day01_Intro_programs): Introductory program lesson and program challenge.
-    - [Day02_Data_Analysis_Managment](./R-Program-Lessons/Day02_Data_Analysis_Managment): More introductory programs.
+- [R-Program-Lessons](./R-Program-Lessons): contains 10 folders with R programming lessons designed for each day of the course. More details about each lesson are contained in the schedule of classes descriptions below.
+    - [Day01_Intro_programs](./R-Program-Lessons/Day01_Intro_programs)
+    - [Day02_Data_Analysis_Managment](./R-Program-Lessons/Day02_Data_Analysis_Managment)
     - [Day03_Simulation_Learning](./R-Program-Lessons/Day03_Simulation_Learning)
     - [Day04_Simulation_Inference](./R-Program-Lessons/Day04_Simulation_Inference)
     - [Day05_Measurement_Intro](./R-Program-Lessons/Day05_Measurement_Intro)
