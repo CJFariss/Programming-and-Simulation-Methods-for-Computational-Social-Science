@@ -81,19 +81,16 @@ There are no *required* books in this course. Rather, I will make reference to m
 Introduction to the simulation and research design tools used to explore and understand various kinds of simulated and observed data (e.g., survey data, human rights data, social media data, text data, etc). We will also begin working with the program challenges, many of which are available here: https://github.com/CJFariss/R-Program-Challenges
 
 - [R-Program-Lessons/Day01_Intro_programs](./R-Program-Lessons/Day01_Intro_programs): Introductory program lesson and program challenge.
-<br/>
 
-### Day 2 Suggested Readings:
+### Day 1 Suggested Readings:
 1. Matlofff 2011 (Ch.2: *Getting Started*).
 
-<br/>
 <br/>
 
 ## Day 2: Data Management and Analysis for Large Scale Data Structures
 Introduction to the R programming environment. We will review the various data and programming structures that are available for use in R. We will pay particular attention to vectorization and parallelization. Though we will begin with very small programs for learning, we also need to remember that the massive scale datasets that are increasingly available need optimized programs designed to manage and analyze these massive scale data structures.
 
 - [R-Program-Lessons/Day02_Data_Analysis_Managment](./R-Program-Lessons/Day02_Data_Analysis_Managment): More introductory programs.
-<br/>
 
 ### Day 2 Suggested Readings:
 1. Matlofff 2011 (Ch.2: *Vectors*).
@@ -105,17 +102,22 @@ Introduction to the R programming environment. We will review the various data a
 7. Matlofff 2011 (Ch.14: *Performance Enhancement: Speed and Memory*).
 8. Matlofff 2011 (Ch.16: *Parallel R*).
 <br/>
-<br/>
 
 ## Day 3: Simulation Based Programming and Inference
 We will develop and implement simulations in R to accomplish two learning goals. For the first learning goal, we will develop simulations in R to help us practice all of the programming and data structures that are available in R. For the second learning goal,
 
 - [Day03_Simulation_Learning](./R-Program-Lessons/Day03_Simulation_Learning)
 
+<br/>
+
+
 ## Day 4: Simulation Based Programming for Model Comparison and Selection
 In this section, we will program and learn several simulation based validation tools for assessing a model of observational data in comparison to an appropriate baseline model.
 
 - [R-Program-Lessons/Day04_Simulation_Inference](./R-Program-Lessons/Day04_Simulation_Inference)
+
+<br/>
+
 
 ## Day 5: Applied Simulation to Measure and Validate Latent Variable Models
 Measurement, as a scientific process, should accomplish two related tasks. First, link a theoretical concept to a data generating procedure. Second, link the data generating procedure to observed information. In this section we continue our focus on text as data, which is almost always found and not generated explicitly by a researcher. This means that we need to consider both the concept and the data generating process as part of our research program. What does this mean?
@@ -127,6 +129,7 @@ This sections provide an introduction to measurement models generally with speci
 - [R-Program-Lessons/Day05_Measurement_Intro](./R-Program-Lessons/Day05_Measurement_Intro)
 - [R-Program-Lessons/Day05_Measurement_RSTAN](./R-Program-Lessons/Day05_Measurement_RSTAN)
 
+<br/>
 
 
 ## Day 6 - Day 10
