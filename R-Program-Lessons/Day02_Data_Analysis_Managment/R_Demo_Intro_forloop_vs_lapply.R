@@ -2,7 +2,7 @@
 ##########################################################################
 ## INSTRUCTOR: Christopher Fariss
 ## COURSE NAME: Programming and Simulation Methods for Computational Social Science (2W)
-## University of Essex Summer School 2023
+## University of Essex Summer School 2024
 ##
 ## Date: 2024-07-22
 ##
