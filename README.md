@@ -130,16 +130,25 @@ We will develop and implement simulations in R to accomplish two learning goals.
 
 #### Day 3 Additional Suggested Readings:
 2. Efron and Hastie (Ch.1 *Algorithms and Inference*, Ch.3 *Bayesian Inference*, Ch.4, *Fisherian Inference and Maximum Likelihood Estimation*).
-3. Gelman and Hill (Ch.7, *Simulation of probability models and statistical inferences*).
+3. Gelman and Hill (Ch.2 *Concepts and methods from basic probability and statistics*, Ch.7 *Simulation of probability models and statistical inferences*).
 4. Shadish, William R. 2010. “Campbell and Rubin: A Primer and Comparison of Their Approaches to Causal Inference in Field Settings.” *Psychological Methods* 15(1):3-17. https://doi.org/10.1037/a0015916
 5. Shmueli, Galit. 2010. “To Explain or to Predict?” *Statistical Science* 25(3):289-310. http://dx.doi.org/10.1214/10-STS330
 <br/>
-
+Gelman and Hill (Ch.2, “Concepts and methods from basic probability and statistics”).
 
 ## Day 4: Simulation Based Programming for Model Comparison and Selection
 In this section, we will program and learn several simulation based validation tools for assessing a model of observational data in comparison to an appropriate baseline model.
 
 - [R-Program-Lessons/Day04_Simulation_Inference](./R-Program-Lessons/Day04_Simulation_Inference)
+
+#### Day 4 Suggested Readings:
+1. Matlofff 2011 (Ch.8: *Doing Math and Simulations in R*)
+
+#### Day 4 Additional Suggested Readings:
+2. Bolker (Ch.5, *Stochastic simulation and power analysis*)
+3. Efron and Hastie (Ch.7 *James-Stein Estimation and Ridge Regression*, Ch.10, *The Jackknife and Bootstrap*, Ch.11, *Bootstrap Confidence Intervals*, Ch.12, *Cross-Validation and Cp Estimate of Prediction Error*)
+4. Gelman and Hill (Ch.8 *Simulation for checking statistical procedures and model fits*).
+
 
 <br/>
 
