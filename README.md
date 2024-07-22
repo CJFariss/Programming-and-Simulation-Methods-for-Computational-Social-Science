@@ -49,8 +49,8 @@ Students should have some familiarity with concepts from research design and sta
 
 ## Folder Descriptions
 - [R-Program-Lessons](./R-Program-Lessons): contains 10 folders with R programming lessons designed for each day of the course.
--- [R-Program-Lessons/Day01_Intro_programs](./R-Program-Lessons/Day01_Intro_programs): Introductory program lesson and program challenge.
--- [R-Program-Lessons/Day02_Data_Analysis_Managment](./R-Program-Lessons/Day02_Data_Analysis_Managment): More introductory programs.
+    - [R-Program-Lessons/Day01_Intro_programs](./R-Program-Lessons/Day01_Intro_programs): Introductory program lesson and program challenge.
+    - [R-Program-Lessons/Day02_Data_Analysis_Managment](./R-Program-Lessons/Day02_Data_Analysis_Managment): More introductory programs.
 
 ## Required Readings
 There are no *required* books in this course. Rather, I will make reference to material listed below in rough proportion to the suggested books > additional suggested books. There are also a set of applied articles that I will make reference to as well. Think of these as useful references and places to find examples. The primary course content will be the R programing lessons.
