@@ -98,6 +98,7 @@ Introduction to the simulation and research design tools used to explore and und
 - [R-Program-Lessons/Day01_Intro_programs](./R-Program-Lessons/Day01_Intro_programs): Introductory program lesson and program challenge.
 
 #### Day 1 Program Challenges
+1. [R_Demo_Intro_Program_Challenge_two_sum.R](https://github.com/CJFariss/Programming-and-Simulation-Methods-for-Computational-Social-Science/blob/main/R-Program-Lessons/Day01_Intro_programs/R_Demo_Intro_Program_Challenge_two_sum.R)
 
 #### Day 1 Suggested Readings:
 1. Jones, Maillardet, and Robinson 2014. (Ch.1 *Setting up*, Ch2. *R as a calculating environment*). 
@@ -113,6 +114,7 @@ Introduction to the R programming environment. We will review the various data a
 
 #### Day 2 Program Challenges
 1. [R_Challenge_vector_1max_2max_3max_nmax.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_vector_1max_2max_3max_nmax.R)
+2. [R_Challenge_vector_matrix_array_coordinate_distances.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_vector_matrix_array_coordinate_distances.R)
 
 #### Day 2 Suggested Readings:
 1. Jones, Maillardet, and Robinson 2014. (Ch.3: *Basic programming*, Ch.4: *I/O Input and output*, Ch.5: *Programming with functions*, Ch.6: *Sophisticated data structures*, Ch.7: *Better graphics*, Ch.8 *Points to further programming techniques*). 
