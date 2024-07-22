@@ -62,7 +62,7 @@ Students should have some familiarity with concepts from research design and sta
     - Day10
     
 ## Required Readings
-There are no *required* books in this course. Rather, I will make reference to material listed below in rough proportion to the suggested books > additional suggested books. There are also a set of applied articles that I will make reference to as well. Think of these as useful references and places to find examples. The primary course content will be the R programing lessons.
+There are no *required* books in this course. Rather, I will make reference to material listed below in rough proportion to the *suggested books* > *additional suggested books* > *other related readings*. There are also a set of applied articles that I will make reference to as well in the *other related readings* subsections. Think of these as useful references and places to find examples. The primary course content will be the R programing lessons.
 
 ## Suggested Books
 1. Jones, Owen, Robert Maillardet, and Andrew Robinson. 2014. *Introduction to Scientific Programming and Simulation Using R.* Second Edition. CRC Press. https://nyu-cdsc.github.io/learningr/assets/simulation.pdf
