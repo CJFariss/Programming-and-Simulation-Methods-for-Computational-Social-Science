@@ -81,22 +81,29 @@ There are no *required* books in this course. Rather, I will make reference to m
 Introduction to the simulation and research design tools used to explore and understand various kinds of simulated and observed data (e.g., survey data, human rights data, social media data, text data, etc). We will also begin working with the program challenges, many of which are available here: https://github.com/CJFariss/R-Program-Challenges
 
 - [R-Program-Lessons/Day01_Intro_programs](./R-Program-Lessons/Day01_Intro_programs): Introductory program lesson and program challenge.
+<br/>
 
+### Day 2 Suggested Readings:
+1. Matlofff 2011 (Ch.2: *Getting Started*).
+
+<br/>
+<br/>
 
 ## Day 2: Data Management and Analysis for Large Scale Data Structures
 Introduction to the R programming environment. We will review the various data and programming structures that are available for use in R. We will pay particular attention to vectorization and parallelization. Though we will begin with very small programs for learning, we also need to remember that the massive scale datasets that are increasingly available need optimized programs designed to manage and analyze these massive scale data structures.
 
 - [R-Program-Lessons/Day02_Data_Analysis_Managment](./R-Program-Lessons/Day02_Data_Analysis_Managment): More introductory programs.
+<br/>
 
 ### Day 2 Suggested Readings:
-1. Matlofff 2011 (Ch.2: “Vectors”).
-2. Matlofff 2011 (Ch.3: “Matrices and Arrays”).
-3. Matlofff 2011 (Ch.4: “Lists”).
-4. Matlofff 2011 (Ch.5: “Data Frames”).
-5. Matlofff 2011 (Ch.6: “Factors and Tables”).
-6. Matlofff 2011 (Ch.7: “R Programming Structures”).
-7. Matlofff 2011 (Ch.14: “Performance Enhancement: Speed and Memory”).
-8. Matlofff 2011 (Ch.16: “Parallel R”).
+1. Matlofff 2011 (Ch.2: *Vectors*).
+2. Matlofff 2011 (Ch.3: *Matrices and Arrays*).
+3. Matlofff 2011 (Ch.4: *Lists*).
+4. Matlofff 2011 (Ch.5: *Data Frames*).
+5. Matlofff 2011 (Ch.6: *Factors and Tables*).
+6. Matlofff 2011 (Ch.7: *R Programming Structures*).
+7. Matlofff 2011 (Ch.14: *Performance Enhancement: Speed and Memory*).
+8. Matlofff 2011 (Ch.16: *Parallel R*).
 <br/>
 <br/>
 
