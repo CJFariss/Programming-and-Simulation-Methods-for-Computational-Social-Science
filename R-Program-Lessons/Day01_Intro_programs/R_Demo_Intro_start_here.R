@@ -1,10 +1,10 @@
 ## R_Demo_Intro_start_here.R
 ##########################################################################
 ## INSTRUCTOR: Christopher Fariss
-## COURSE NAME: Advanced Computational Methods for Social Media and Textual Data (3B)
+## COURSE NAME: Programming and Simulation Methods for Computational Social Science (2W)
 ## University of Essex Summer School 2023
 ##
-## Date: 2023-08-07
+## Date: 2024-07-22
 ##
 ## Please e-mail me if you find any errors or have and suggestions (either email is fine)
 ## e-mail: cjf0006@gmail.com
@@ -87,7 +87,7 @@ setwd(wd)
 ## see the full path
 getwd()
 
-wd <- "Advanced-Computational-Methods-for-Social-Media-and-Text-Data"
+wd <- "Programming-and-Simulation-Methods-for-Computational-Social-Science"
 setwd(wd)
 ## see the full path
 getwd()
