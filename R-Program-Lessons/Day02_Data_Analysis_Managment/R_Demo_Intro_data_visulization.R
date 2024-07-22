@@ -1,10 +1,10 @@
 ## R_Demo_Introduction_data_visulization.R
 ##########################################################################
 ## INSTRUCTOR: Christopher Fariss
-## COURSE NAME: Advanced Computational Methods for Social Media and Textual Data (3B)
+## COURSE NAME: Programming and Simulation Methods for Computational Social Science (2W)
 ## University of Essex Summer School 2023
 ##
-## Date: 2023-08-08
+## Date: 2024-07-22
 ##
 ## Please e-mail me if you find any errors or have and suggestions
 ## e-mail: cjf0006@gmail.com
