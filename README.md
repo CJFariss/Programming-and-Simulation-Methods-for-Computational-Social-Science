@@ -118,7 +118,7 @@ Introduction to the R programming environment. We will review the various data a
 ## Day 3: Simulation Based Programming and Inference
 We will develop and implement simulations in R to accomplish two learning goals. For the first learning goal, we will develop simulations in R to help us practice all of the programming and data structures that are available in R. For the second learning goal,
 
-- [Day03_Simulation_Learning](./R-Program-Lessons/Day03_Simulation_Learning)
+- [R-Program-Lessons/Day03_Simulation_Learning](./R-Program-Lessons/Day03_Simulation_Learning)
 
 <br/>
 
