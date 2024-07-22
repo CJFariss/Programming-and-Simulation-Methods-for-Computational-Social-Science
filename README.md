@@ -49,9 +49,13 @@ Students should have some familiarity with concepts from research design and sta
 
 ## Folder Descriptions
 - [R-Program-Lessons](./R-Program-Lessons): contains 10 folders with R programming lessons designed for each day of the course.
-    - [R-Program-Lessons/Day01_Intro_programs](./R-Program-Lessons/Day01_Intro_programs): Introductory program lesson and program challenge.
-    - [R-Program-Lessons/Day02_Data_Analysis_Managment](./R-Program-Lessons/Day02_Data_Analysis_Managment): More introductory programs.
-
+    - [Day01_Intro_programs](./R-Program-Lessons/Day01_Intro_programs): Introductory program lesson and program challenge.
+    - [Day02_Data_Analysis_Managment](./R-Program-Lessons/Day02_Data_Analysis_Managment): More introductory programs.
+    - [Day03_Simulation_Learning](./R-Program-Lessons/Day03_Simulation_Learning)
+    - [Day04_Simulation_Inference](./R-Program-Lessons/Day04_Simulation_Inference)
+    - [Day05_Measurement_Intro](./R-Program-Lessons/Day05_Measurement_Intro)
+    - [Day05_Measurement_RSTAN](./R-Program-Lessons/Day05_Measurement_RSTAN)
+    
 ## Required Readings
 There are no *required* books in this course. Rather, I will make reference to material listed below in rough proportion to the suggested books > additional suggested books. There are also a set of applied articles that I will make reference to as well. Think of these as useful references and places to find examples. The primary course content will be the R programing lessons.
 
@@ -87,10 +91,12 @@ Introduction to the R programming environment. We will review the various data a
 ## Day 3: Simulation Based Programming and Inference
 We will develop and implement simulations in R to accomplish two learning goals. For the first learning goal, we will develop simulations in R to help us practice all of the programming and data structures that are available in R. For the second learning goal,
 
+- [Day03_Simulation_Learning](./R-Program-Lessons/Day03_Simulation_Learning)
 
 ## Day 4: Simulation Based Programming for Model Comparison and Selection
 In this section, we will program and learn several simulation based validation tools for assessing a model of observational data in comparison to an appropriate baseline model.
 
+- [Day04_Simulation_Inference](./R-Program-Lessons/Day04_Simulation_Inference)
 
 ## Day 5: Applied Simulation to Measure and Validate Latent Variable Models
 Measurement, as a scientific process, should accomplish two related tasks. First, link a theoretical concept to a data generating procedure. Second, link the data generating procedure to observed information. In this section we continue our focus on text as data, which is almost always found and not generated explicitly by a researcher. This means that we need to consider both the concept and the data generating process as part of our research program. What does this mean?
@@ -98,6 +104,10 @@ Measurement, as a scientific process, should accomplish two related tasks. First
 Social scientists are often interested in explaining concepts that are difficult or impossible to observe. Examples of unobservable concepts include political knowledge, political ideology, democracy, respect for human rights, or inequality. Even concepts that are based on directly observable information such as the number of individuals that reside in a state, the number of individuals killed during a conflict, or the level of economic output are often not easily observed. A key challenge for political scientists and social scientists generally, is creating models that can measure these concepts while also capturing the uncertainty associated with the processes by which they are measured. 
 
 This sections provide an introduction to measurement models generally with specific focus on Bayesian measurement models and measurement models that make use of text data. We will emphasize the use of construct validity to assess new and existing measures in applied research. We will motivate the development of these models with a discussion of the Bayesian perspective on the relationship between data and model parameters. This perspective is useful because it shifts the burden of validity from the primary source documentation and raw data to the model parameters that bind these diverse pieces of information together.
+
+- [Day05_Measurement_Intro](./R-Program-Lessons/Day05_Measurement_Intro)
+- [Day05_Measurement_RSTAN](./R-Program-Lessons/Day05_Measurement_RSTAN)
+
 
 
 ## Day 6 - Day 10
