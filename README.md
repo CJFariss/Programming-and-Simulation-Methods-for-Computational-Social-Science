@@ -68,7 +68,7 @@ There are no *required* books in this course. Rather, I will make reference to m
 # Class Schedule and Content links
 
 ## Day 1: Introduction to Learning and Inference making using Simulation and Programming
-Introduction to the simulation and research design tools used to explore and understand various kinds of simulated and observed data (e.g., social media and text data). 
+Introduction to the simulation and research design tools used to explore and understand various kinds of simulated and observed data (e.g., survey data, human rights data, social media data, text data, etc). We will also begin working with the program challenges, many of which are available here: https://github.com/CJFariss/R-Program-Challenges
 
 ## Day 2: Data Management and Analysis for Large Scale Data Structures
 Introduction to the R programming environment. We will review the various data and programming structures that are available for use in R. We will pay particular attention to vectorization and parallelization. Though we will begin with very small programs for learning, we also need to remember that the massive scale datasets that are increasingly available need optimized programs designed to manage and analyze these massive scale data structures.
