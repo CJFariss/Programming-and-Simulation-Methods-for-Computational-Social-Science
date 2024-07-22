@@ -82,7 +82,7 @@ Introduction to the simulation and research design tools used to explore and und
 
 - [R-Program-Lessons/Day01_Intro_programs](./R-Program-Lessons/Day01_Intro_programs): Introductory program lesson and program challenge.
 
-### Day 1 Suggested Readings:
+#### Day 1 Suggested Readings:
 1. Jones, Maillardet, and Robinson 2014. (Ch.1 *Setting up*, Ch2. *R as a calculating environment*). 
 2. Matlofff 2011. (Ch.2: *Getting Started*).
 
@@ -93,7 +93,7 @@ Introduction to the R programming environment. We will review the various data a
 
 - [R-Program-Lessons/Day02_Data_Analysis_Managment](./R-Program-Lessons/Day02_Data_Analysis_Managment): More introductory programs.
 
-### Day 2 Suggested Readings:
+#### Day 2 Suggested Readings:
 1. Jones, Maillardet, and Robinson 2014. (). 
 2. Matlofff 2011. (Ch.2: *Vectors*, Ch.3: *Matrices and Arrays*, Ch.4: *Lists*, Ch.5: *Data Frames*, Ch.6: *Factors and Tables*, Ch.7: *R Programming Structures*, Ch.14: *Performance Enhancement: Speed and Memory*, Ch.16: *Parallel R*).
 <br/>
