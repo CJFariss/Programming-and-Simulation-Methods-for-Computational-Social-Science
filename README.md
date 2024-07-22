@@ -97,6 +97,8 @@ Introduction to the simulation and research design tools used to explore and und
 
 - [R-Program-Lessons/Day01_Intro_programs](./R-Program-Lessons/Day01_Intro_programs): Introductory program lesson and program challenge.
 
+#### Day 1 Program Challenges
+
 #### Day 1 Suggested Readings:
 1. Jones, Maillardet, and Robinson 2014. (Ch.1 *Setting up*, Ch2. *R as a calculating environment*). 
 2. Matlofff 2011. (Ch.2: *Getting Started*).
@@ -107,6 +109,10 @@ Introduction to the simulation and research design tools used to explore and und
 Introduction to the R programming environment. We will review the various data and programming structures that are available for use in R. We will pay particular attention to vectorization and parallelization. Though we will begin with very small programs for learning, we also need to remember that the massive scale datasets that are increasingly available need optimized programs designed to manage and analyze these massive scale data structures.
 
 - [R-Program-Lessons/Day02_Data_Analysis_Managment](./R-Program-Lessons/Day02_Data_Analysis_Managment): More introductory programs.
+
+
+#### Day 2 Program Challenges
+1. [R_Challenge_vector_1max_2max_3max_nmax.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_vector_1max_2max_3max_nmax.R)
 
 #### Day 2 Suggested Readings:
 1. Jones, Maillardet, and Robinson 2014. (Ch.3: *Basic programming*, Ch.4: *I/O Input and output*, Ch.5: *Programming with functions*, Ch.6: *Sophisticated data structures*, Ch.7: *Better graphics*, Ch.8 *Points to further programming techniques*). 

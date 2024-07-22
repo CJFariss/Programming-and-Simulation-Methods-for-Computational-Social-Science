@@ -138,7 +138,7 @@ help.search("remove")
 ## R uses "." dot in a similar way to the underscore
 ## The underscore character was once the assignment character in S (R's predecessor)
 ## You can use the underscore character now but more often dot is used instead
-## I go back and forth between both but I try to avoide using "." most of the time now in my own code.
+## I go back and forth between both but I try to avoid using "." most of the time now in my own code.
 
 
 dice.roll <- 2
@@ -214,6 +214,7 @@ rm(obj1)
 
 ## unless you have previously installed this package, the following line should generate an error
 library(MASS)
+require(MASS)
 
 ## install the new package
 install.packages("MASS")
@@ -235,10 +236,18 @@ obj1 <- 3
 ## the save() function allows you to save individual objects that are currently loaded in memory
 save(obj1, file="Datasets/Myobject.Rdata")
 
+rm(obj1)
+
+load(file="Datasets/Myobject.Rdata")
+
 ## the save.image() function allows you to save all of the objects that are currently loaded in memory
 save.image(file="Datasets/Myworkspace.Rdata")
 
 
 ## we will use other functions to save datasets later in the course but we often do not need to save dataset files. Instead we will practice saving and updating the .R or R-script file (which is this lesson file is an example of).
 
+obj1 <- 3
+saveRDS(obj1, file="Datasets/Myobject.RDS")
+
+new_obj1 <- readRDS(file="Datasets/Myobject.RDS")
 
