@@ -78,6 +78,8 @@ There are no *required* books in this course. Rather, I will make reference to m
 
 ## Suggested User Guides and Reference Manuals.
 1. Stan Development Team. 2024. *Stan Modeling Language: User's Guide and Reference Manual. Version 2.35.* https://mc-stan.org/docs/stan-users-guide/index.html
+2. Wickham, Hadley. “The tidyverse style guide” https://style.tidyverse.org 
+3. R graph gallery. http://r-graph-gallery.com/
 
 
 # Class Schedule and Content links
@@ -101,6 +103,12 @@ Introduction to the R programming environment. We will review the various data a
 #### Day 2 Suggested Readings:
 1. Jones, Maillardet, and Robinson 2014. (Ch.3: *Basic programming*, Ch.4: *I/O Input and output*, Ch.5: *Programming with functions*, Ch.6: *Sophisticated data structures*, Ch.7: *Better graphics*, Ch.8 *Points to further programming techniques*). 
 2. Matlofff 2011. (Ch.2: *Vectors*, Ch.3: *Matrices and Arrays*, Ch.4: *Lists*, Ch.5: *Data Frames*, Ch.6: *Factors and Tables*, Ch.7: *R Programming Structures*, Ch.14: *Performance Enhancement: Speed and Memory*, Ch.16: *Parallel R*).
+
+#### Day 2 Additional Suggested Readings:
+3. Bolker (Ch.2, *Exploratory data analysis and graphics*)
+4. Matlofff 2011 (Ch.9: *Object-Oriented Programming*, Ch.13: *Debugging*).
+5. Wickham, Hadley. “The tidyverse style guide” https://style.tidyverse.org 
+6. R graph gallery. http://r-graph-gallery.com/
 <br/>
 
 ## Day 3: Simulation Based Programming and Inference
