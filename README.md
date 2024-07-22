@@ -88,6 +88,16 @@ Introduction to the R programming environment. We will review the various data a
 
 - [R-Program-Lessons/Day02_Data_Analysis_Managment](./R-Program-Lessons/Day02_Data_Analysis_Managment): More introductory programs.
 
+## Day 2 Suggested Readings:
+1. Matlofff 2011 (Ch.2: “Vectors”).
+2. Matlofff 2011 (Ch.3: “Matrices and Arrays”).
+3. Matlofff 2011 (Ch.4: “Lists”).
+4. Matlofff 2011 (Ch.5: “Data Frames”).
+5. Matlofff 2011 (Ch.6: “Factors and Tables”).
+6. Matlofff 2011 (Ch.7: “R Programming Structures”).
+7. Matlofff 2011 (Ch.14: “Performance Enhancement: Speed and Memory”).
+8. Matlofff 2011 (Ch.16: “Parallel R”).
+
 
 ## Day 3: Simulation Based Programming and Inference
 We will develop and implement simulations in R to accomplish two learning goals. For the first learning goal, we will develop simulations in R to help us practice all of the programming and data structures that are available in R. For the second learning goal,
@@ -97,7 +107,7 @@ We will develop and implement simulations in R to accomplish two learning goals.
 ## Day 4: Simulation Based Programming for Model Comparison and Selection
 In this section, we will program and learn several simulation based validation tools for assessing a model of observational data in comparison to an appropriate baseline model.
 
-- [Day04_Simulation_Inference](./R-Program-Lessons/Day04_Simulation_Inference)
+- [R-Program-Lessons/Day04_Simulation_Inference](./R-Program-Lessons/Day04_Simulation_Inference)
 
 ## Day 5: Applied Simulation to Measure and Validate Latent Variable Models
 Measurement, as a scientific process, should accomplish two related tasks. First, link a theoretical concept to a data generating procedure. Second, link the data generating procedure to observed information. In this section we continue our focus on text as data, which is almost always found and not generated explicitly by a researcher. This means that we need to consider both the concept and the data generating process as part of our research program. What does this mean?
@@ -106,8 +116,8 @@ Social scientists are often interested in explaining concepts that are difficult
 
 This sections provide an introduction to measurement models generally with specific focus on Bayesian measurement models and measurement models that make use of text data. We will emphasize the use of construct validity to assess new and existing measures in applied research. We will motivate the development of these models with a discussion of the Bayesian perspective on the relationship between data and model parameters. This perspective is useful because it shifts the burden of validity from the primary source documentation and raw data to the model parameters that bind these diverse pieces of information together.
 
-- [Day05_Measurement_Intro](./R-Program-Lessons/Day05_Measurement_Intro)
-- [Day05_Measurement_RSTAN](./R-Program-Lessons/Day05_Measurement_RSTAN)
+- [R-Program-Lessons/Day05_Measurement_Intro](./R-Program-Lessons/Day05_Measurement_Intro)
+- [R-Program-Lessons/Day05_Measurement_RSTAN](./R-Program-Lessons/Day05_Measurement_RSTAN)
 
 
 
