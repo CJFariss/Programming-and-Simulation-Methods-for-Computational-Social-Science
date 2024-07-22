@@ -88,7 +88,7 @@ Introduction to the R programming environment. We will review the various data a
 
 - [R-Program-Lessons/Day02_Data_Analysis_Managment](./R-Program-Lessons/Day02_Data_Analysis_Managment): More introductory programs.
 
-## Day 2 Suggested Readings:
+### Day 2 Suggested Readings:
 1. Matlofff 2011 (Ch.2: “Vectors”).
 2. Matlofff 2011 (Ch.3: “Matrices and Arrays”).
 3. Matlofff 2011 (Ch.4: “Lists”).
