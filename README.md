@@ -97,7 +97,8 @@ Introduction to the R programming environment. We will review the various data a
 6. Matlofff 2011 (Ch.7: “R Programming Structures”).
 7. Matlofff 2011 (Ch.14: “Performance Enhancement: Speed and Memory”).
 8. Matlofff 2011 (Ch.16: “Parallel R”).
-
+<br/>
+<br/>
 
 ## Day 3: Simulation Based Programming and Inference
 We will develop and implement simulations in R to accomplish two learning goals. For the first learning goal, we will develop simulations in R to help us practice all of the programming and data structures that are available in R. For the second learning goal,
