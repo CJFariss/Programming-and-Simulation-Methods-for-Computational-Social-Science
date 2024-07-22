@@ -94,7 +94,7 @@ Introduction to the R programming environment. We will review the various data a
 - [R-Program-Lessons/Day02_Data_Analysis_Managment](./R-Program-Lessons/Day02_Data_Analysis_Managment): More introductory programs.
 
 #### Day 2 Suggested Readings:
-1. Jones, Maillardet, and Robinson 2014. (). 
+1. Jones, Maillardet, and Robinson 2014. (Ch.3: *Basic programming*, Ch.4: *I/O Input and output*, Ch.5: *Programming with functions*, Ch.6: *Sophisticated data structures*, Ch.7: *Better graphics*, Ch.8 *Points to further programming techniques*). 
 2. Matlofff 2011. (Ch.2: *Vectors*, Ch.3: *Matrices and Arrays*, Ch.4: *Lists*, Ch.5: *Data Frames*, Ch.6: *Factors and Tables*, Ch.7: *R Programming Structures*, Ch.14: *Performance Enhancement: Speed and Memory*, Ch.16: *Parallel R*).
 <br/>
 
