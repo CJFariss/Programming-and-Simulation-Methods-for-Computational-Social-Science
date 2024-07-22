@@ -55,6 +55,11 @@ Students should have some familiarity with concepts from research design and sta
     - [Day04_Simulation_Inference](./R-Program-Lessons/Day04_Simulation_Inference)
     - [Day05_Measurement_Intro](./R-Program-Lessons/Day05_Measurement_Intro)
     - [Day05_Measurement_RSTAN](./R-Program-Lessons/Day05_Measurement_RSTAN)
+    - Day06
+    - Day07
+    - Day08
+    - Day09
+    - Day10
     
 ## Required Readings
 There are no *required* books in this course. Rather, I will make reference to material listed below in rough proportion to the suggested books > additional suggested books. There are also a set of applied articles that I will make reference to as well. Think of these as useful references and places to find examples. The primary course content will be the R programing lessons.
