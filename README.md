@@ -204,7 +204,11 @@ This sections provide an introduction to measurement models generally with speci
 
 
 ## Day 6: Bayesian Latent Variable Models 
-Under construction
+
+#### Program Lessons
+- [Day06_Latent_Variable_Programs](./R-Program-Lessons/Day06_Latent_Variable_Programs)
+
+#### Program Challenges
 
 <br/>
 
@@ -212,6 +216,7 @@ Under construction
 Introduction to Regular Expressions, Document-by-Term matrices, and Construct Validity. We will continue to use simple R programs to help us understand some of the common and important text and image processing steps. Much of the work involved in using text as data is in the processing of the character/string information. Regular expressions are the key functions that we will use. These key functions are embedded in many many R packages. We will start with the basics before move to more efficient libraries, again with the idea that we will learn the nuts and bolts of these critical tools.
 
 #### Program Lessons
+- [Day07_Text_as_data_programs](./R-Program-Lessons/Day07_Text_as_data_programs)
 
 #### Program Challenges
 - [R_Challenge_text_non_repeating_chatacter.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_text_non_repeating_chatacter.R)
@@ -227,6 +232,7 @@ Introduction to Regular Expressions, Document-by-Term matrices, and Construct Va
 Neural Networks are a powerful tool for automated classification and any other predictive task. The main hurdle to understanding how these models work is the terminology associated with their implementation and use. During this section, we will see that a neural network is simply a linear model at its core and a set of liner transformations in the more exotic varieties of these models. Once we understand the basic building blocks of these models, we will see that neural networks are straight forward to implement but computationally quite expensive when implementing them on massive scale datasets. As usual, we will start with very simple models to learn. We will then apply this learning to more complex implementations of these models. We will use all of the tools developed during prior class periods to evaluate the performance of these models relative to a substantively meaningful baseline model.
 
 #### Program Lessons
+- [Day08_Applied_Machine_Learning_AML_Intro](./R-Program-Lessons/Day08_Applied_Machine_Learning_AML_Intro)
 
 #### Program Challenges
 - [R_Challenge_matrix_MNIST_images.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_matrix_MNIST_images.R)
@@ -243,6 +249,11 @@ Neural Networks are a powerful tool for automated classification and any other p
 
 ## Day 9: False Discovery and Inference After the Design and Selection of a Model
 Techniques for selecting a substantively meaningful model.
+
+#### Program Lessons
+- [Day09_Model_Evaluation_Review](./R-Program-Lessons/Day09_Model_Evaluation_Review)
+
+#### Program Challenges
 
 #### Suggested Readings:
 1. Efron and Hastie (Ch.15, *Large-Scale Hypothesis Testing and FDRs*, Ch.20, *Inference After Model Selection*).
