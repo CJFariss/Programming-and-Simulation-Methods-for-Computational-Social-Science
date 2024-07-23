@@ -105,7 +105,7 @@ Introduction to the simulation and research design tools used to explore and und
 2. Matlofff 2011. (Ch.2: *Getting Started*).
 
 #### Day 1 Additional Suggested Readings:
-3. Borsboom, Denny, Gideon J. Mellenbergh, and Jaap van Heerden. 2004. “The Concept of Validity” *Psychological Review* 111(4):1061-71.
+3. Borsboom, Denny, Gideon J. Mellenbergh, and Jaap van Heerden. 2004. “The Concept of Validity” *Psychological Review* 111(4):1061-71. https://doi.org/10.1037/0033-295X.111.4.1061
 
 <br/>
 
@@ -135,6 +135,10 @@ We will develop and implement simulations in R to accomplish two learning goals.
 
 - [R-Program-Lessons/Day03_Simulation_Learning](./R-Program-Lessons/Day03_Simulation_Learning)
 
+#### Day 3 Program Challenges
+1. [R_Challenge_matrix_Sudoku_check.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_matrix_Sudoku_check.R)
+2. [R_Challenge_simulation_shuffle_index.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_simulation_shuffle_index.R)
+
 
 #### Day 3 Suggested Readings:
 1. Rubin, Donald B. 2008. “For Objective Causal Inference, Design Trumps Analysis.” *Annals of Applied Statistics* 2(3):808-840. https://doi.org/10.1214/08-AOAS187
@@ -151,6 +155,10 @@ We will develop and implement simulations in R to accomplish two learning goals.
 In this section, we will program and learn several simulation based validation tools for assessing a model of observational data in comparison to an appropriate baseline model. Specifically, we will learn to evaluate model performance using in-sample and out-of-sample data.
 
 - [R-Program-Lessons/Day04_Simulation_Inference](./R-Program-Lessons/Day04_Simulation_Inference)
+
+#### Day 4 Program Challenges
+1. [R_Challenge_simulation_weather_forecast.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_simulation_weather_forecast.R)
+2. [R_Challenge_probability_distributions.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_probability_distributions.R)
 
 #### Day 4 Suggested Readings:
 1. Matlofff 2011 (Ch.8: *Doing Math and Simulations in R*)
@@ -191,11 +199,11 @@ This sections provide an introduction to measurement models generally with speci
 Under construction
 
 
-## Day 7: Measurement Models for Reducing High Dimensional Data 
-Introduction to Regular Expressions, Document-by-Term matrices, and Construct Validity. We will continue to use simple R programs to help us understand some of the common and important text processing steps. Much of the work involved in using text as data is in the processing of the character/string information. Regular expressions are the key functions that we will use. These key functions are embedded in many many R packages. We will start with the basics before move to more efficient libraries, again with the idea that we will learn the nuts and bolts of these critical tools.
+## Day 7: Measurement Models for Reducing High Dimensional Data
+Introduction to Regular Expressions, Document-by-Term matrices, and Construct Validity. We will continue to use simple R programs to help us understand some of the common and important text and image processing steps. Much of the work involved in using text as data is in the processing of the character/string information. Regular expressions are the key functions that we will use. These key functions are embedded in many many R packages. We will start with the basics before move to more efficient libraries, again with the idea that we will learn the nuts and bolts of these critical tools.
 
 
-## Day 8: Automating Classification with Neural Networks
+## Day 8: Automating Classification with Neural Networks and Large Language Models (LLMs)
 Neural Networks are a powerful tool for automated classification and any other predictive task. The main hurdle to understanding how these models work is the terminology associated with their implementation and use. During this section, we will see that a neural network is simply a linear model at its core and a set of liner transformations in the more exotic varieties of these models. Once we understand the basic building blocks of these models, we will see that neural networks are straight forward to implement but computationally quite expensive when implementing them on massive scale datasets. As usual, we will start with very simple models to learn. We will then apply this learning to more complex implementations of these models. We will use all of the tools developed during prior class periods to evaluate the performance of these models relative to a substantively meaningful baseline model.
 
 
