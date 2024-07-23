@@ -97,14 +97,14 @@ Introduction to the simulation and research design tools used to explore and und
 
 - [R-Program-Lessons/Day01_Intro_programs](./R-Program-Lessons/Day01_Intro_programs): Introductory program lesson and program challenge.
 
-#### Day 1 Program Challenges
-1. [R_Demo_Intro_Program_Challenge_two_sum.R](https://github.com/CJFariss/Programming-and-Simulation-Methods-for-Computational-Social-Science/blob/main/R-Program-Lessons/Day01_Intro_programs/R_Demo_Intro_Program_Challenge_two_sum.R)
+#### Program Challenges
+- [R_Demo_Intro_Program_Challenge_two_sum.R](https://github.com/CJFariss/Programming-and-Simulation-Methods-for-Computational-Social-Science/blob/main/R-Program-Lessons/Day01_Intro_programs/R_Demo_Intro_Program_Challenge_two_sum.R)
 
-#### Day 1 Suggested Readings:
+#### Suggested Readings:
 1. Jones, Maillardet, and Robinson 2014. (Ch.1 *Setting up*, Ch2. *R as a calculating environment*). 
 2. Matlofff 2011. (Ch.2: *Getting Started*).
 
-#### Day 1 Additional Suggested Readings:
+#### Additional Suggested Readings:
 3. Borsboom, Denny, Gideon J. Mellenbergh, and Jaap van Heerden. 2004. “The Concept of Validity” *Psychological Review* 111(4):1061-71. https://doi.org/10.1037/0033-295X.111.4.1061
 
 <br/>
@@ -115,15 +115,15 @@ Introduction to the R programming environment. We will review the various data a
 - [R-Program-Lessons/Day02_Data_Analysis_Managment](./R-Program-Lessons/Day02_Data_Analysis_Managment): More introductory programs.
 
 
-#### Day 2 Program Challenges
-1. [R_Challenge_vector_1max_2max_3max_nmax.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_vector_1max_2max_3max_nmax.R)
-2. [R_Challenge_vector_matrix_array_coordinate_distances.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_vector_matrix_array_coordinate_distances.R)
+#### Program Challenges
+- [R_Challenge_vector_1max_2max_3max_nmax.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_vector_1max_2max_3max_nmax.R)
+- [R_Challenge_vector_matrix_array_coordinate_distances.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_vector_matrix_array_coordinate_distances.R)
 
-#### Day 2 Suggested Readings:
+#### Suggested Readings:
 1. Jones, Maillardet, and Robinson 2014. (Ch.3: *Basic programming*, Ch.4: *I/O Input and output*, Ch.5: *Programming with functions*, Ch.6: *Sophisticated data structures*, Ch.7: *Better graphics*, Ch.8 *Points to further programming techniques*). 
 2. Matlofff 2011. (Ch.2: *Vectors*, Ch.3: *Matrices and Arrays*, Ch.4: *Lists*, Ch.5: *Data Frames*, Ch.6: *Factors and Tables*, Ch.7: *R Programming Structures*, Ch.14: *Performance Enhancement: Speed and Memory*, Ch.16: *Parallel R*).
 
-#### Day 2 Additional Suggested Readings:
+#### Additional Suggested Readings:
 3. Bolker (Ch.2, *Exploratory data analysis and graphics*)
 4. Matlofff 2011 (Ch.9: *Object-Oriented Programming*, Ch.13: *Debugging*).
 5. Wickham, Hadley. “The tidyverse style guide” https://style.tidyverse.org 
@@ -135,15 +135,15 @@ We will develop and implement simulations in R to accomplish two learning goals.
 
 - [R-Program-Lessons/Day03_Simulation_Learning](./R-Program-Lessons/Day03_Simulation_Learning)
 
-#### Day 3 Program Challenges
+#### Program Challenges
 1. [R_Challenge_matrix_Sudoku_check.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_matrix_Sudoku_check.R)
 2. [R_Challenge_simulation_shuffle_index.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_simulation_shuffle_index.R)
 3. [R_Challenge_vector_sqrt_search.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_vector_sqrt_search.R)
 
-#### Day 3 Suggested Readings:
+#### Suggested Readings:
 1. Rubin, Donald B. 2008. “For Objective Causal Inference, Design Trumps Analysis.” *Annals of Applied Statistics* 2(3):808-840. https://doi.org/10.1214/08-AOAS187
 
-#### Day 3 Additional Suggested Readings:
+#### Additional Suggested Readings:
 2. Efron and Hastie (Ch.1 *Algorithms and Inference*, Ch.3 *Bayesian Inference*, Ch.4, *Fisherian Inference and Maximum Likelihood Estimation*).
 3. Gelman and Hill (Ch.2 *Concepts and methods from basic probability and statistics*, Ch.7 *Simulation of probability models and statistical inferences*).
 4. Jones, Maillardet, and Robinson 2014. (Ch.14: *Probability*, Ch.15: *Random variables*, Ch.16: *Discrete random variables*, Ch.17 *Continuous random variables*, Ch.18 *Parameter estimation*). 
@@ -160,10 +160,10 @@ In this section, we will program and learn several simulation based validation t
 1. [R_Challenge_simulation_weather_forecast.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_simulation_weather_forecast.R)
 2. [R_Challenge_probability_distributions.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_probability_distributions.R)
 
-#### Day 4 Suggested Readings:
+#### Suggested Readings:
 1. Matlofff 2011 (Ch.8: *Doing Math and Simulations in R*)
 
-#### Day 4 Additional Suggested Readings:
+#### Additional Suggested Readings:
 2. Bolker (Ch.5, *Stochastic simulation and power analysis*)
 3. Efron and Hastie (Ch.7 *James-Stein Estimation and Ridge Regression*, Ch.10, *The Jackknife and Bootstrap*, Ch.11, *Bootstrap Confidence Intervals*, Ch.12, *Cross-Validation and Cp Estimate of Prediction Error*)
 4. Gelman and Hill (Ch.8 *Simulation for checking statistical procedures and model fits*).
@@ -183,13 +183,13 @@ This sections provide an introduction to measurement models generally with speci
 - [R-Program-Lessons/Day05_Measurement_Intro](./R-Program-Lessons/Day05_Measurement_Intro)
 - [R-Program-Lessons/Day05_Measurement_RSTAN](./R-Program-Lessons/Day05_Measurement_RSTAN)
 
-#### Day 5 Program Challenges
+#### Program Challenges
 1. []()
 
-#### Day 5 Suggested Readings:
+#### Suggested Readings:
 1. Fariss, Christopher J., Michael R. Kenwick, and Kevin Reuning "Measurement Models", in *SAGE Handbook of Research Methods is Political Science & International Relations*, edited by Luigi Curini and Robert J. Franzese, Jr., SAGE Press (May 2020). http://cfariss.com/documents/FarissKenwickReuning2020_MesurementModels.pdf 
 
-#### Day 5 Additional Suggested Readings:
+#### Additional Suggested Readings:
 2. Adcock, Robert, and David Collier. 2001. “Measurement Validity: A Shared Standard for Qual- itative and Quantitative Research.” American Political Science Review 95(3):529-546. https: //doi.org/10.1017/S0003055401003100
 3. Jones, Maillardet, and Robinson 2014. (Ch.19: *Markov chains*). 
 4. Efron and Hastie (Ch.13, *Objective Bayes Inference and MCMC*).
@@ -201,23 +201,28 @@ This sections provide an introduction to measurement models generally with speci
 ## Day 6: Bayesian Latent Variable Models 
 Under construction
 
+<br/>
 
 ## Day 7: Measurement Models for Reducing High Dimensional Data
 Introduction to Regular Expressions, Document-by-Term matrices, and Construct Validity. We will continue to use simple R programs to help us understand some of the common and important text and image processing steps. Much of the work involved in using text as data is in the processing of the character/string information. Regular expressions are the key functions that we will use. These key functions are embedded in many many R packages. We will start with the basics before move to more efficient libraries, again with the idea that we will learn the nuts and bolts of these critical tools.
 
-#### Day 7 Program Challenges
+#### Program Challenges
 1. [R_Challenge_text_character_graph.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_text_character_graph.R)
 
 
+<br/>
 
 ## Day 8: Automating Classification with Neural Networks and Large Language Models (LLMs)
 Neural Networks are a powerful tool for automated classification and any other predictive task. The main hurdle to understanding how these models work is the terminology associated with their implementation and use. During this section, we will see that a neural network is simply a linear model at its core and a set of liner transformations in the more exotic varieties of these models. Once we understand the basic building blocks of these models, we will see that neural networks are straight forward to implement but computationally quite expensive when implementing them on massive scale datasets. As usual, we will start with very simple models to learn. We will then apply this learning to more complex implementations of these models. We will use all of the tools developed during prior class periods to evaluate the performance of these models relative to a substantively meaningful baseline model.
 
-#### Day 8 Program Challenges
+#### Program Challenges
 1. [R_Challenge_matrix_MNIST_images.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_matrix_MNIST_images.R)
+<br/>
 
 ## Day 9: False Discovery and Inference After the Design and Selection of a Model
 Techniques for selecting a substantively meaningful model.
+
+<br/>
 
 ## Day 10:
 Under construction
