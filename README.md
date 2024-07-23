@@ -204,11 +204,17 @@ This sections provide an introduction to measurement models generally with speci
 
 
 ## Day 6: Bayesian Latent Variable Models 
+More on latent variable models.
 
 #### Program Lessons
 - [Day06_Latent_Variable_Programs](./R-Program-Lessons/Day06_Latent_Variable_Programs)
 
 #### Program Challenges
+
+#### Suggested Readings:
+Fariss, Christopher J. and James Lo. 2020. “Innovations in Concepts and Measurement for the Study of Peace and Conflict” *Journal of Peace Research* 57(6):669-678. https://doi.org/10.1177/0022343320965670
+
+#### Additional Suggested Readings:
 
 <br/>
 
