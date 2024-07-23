@@ -124,6 +124,8 @@ seq(from=1, to=5, by=.5)
 ## we can create the same sequence as above using the : operator
 1:5
 
+5:1
+
 ## : only produces sequences so that the values are 1 unit distance from one another but the start and end values do not need to be integers
 1.5:5.5
 
@@ -228,6 +230,8 @@ c(TRUE, FALSE)
 which(c(TRUE, FALSE))
 
 which(c(FALSE, TRUE))
+
+which(c(FALSE, TRUE, FALSE, TRUE))
 
 ## use a vector of logical values to get multiple elements from a vector
 v <- c(6,7,8,9,10)
