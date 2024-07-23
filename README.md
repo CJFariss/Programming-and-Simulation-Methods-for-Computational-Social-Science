@@ -104,6 +104,9 @@ Introduction to the simulation and research design tools used to explore and und
 1. Jones, Maillardet, and Robinson 2014. (Ch.1 *Setting up*, Ch2. *R as a calculating environment*). 
 2. Matlofff 2011. (Ch.2: *Getting Started*).
 
+#### Day 1 Additional Suggested Readings:
+3. Borsboom, Denny, Gideon J. Mellenbergh, and Jaap van Heerden. 2004. “The Concept of Validity” *Psychological Review* 111(4):1061-71.
+
 <br/>
 
 ## Day 2: Data Management and Analysis for Large Scale Data Structures
