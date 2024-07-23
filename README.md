@@ -262,6 +262,7 @@ Techniques for selecting a substantively meaningful model.
 - [Day09_Model_Evaluation_Review](./R-Program-Lessons/Day09_Model_Evaluation_Review)
 
 #### Program Challenges
+- Select any program challenge: [R-Program-Challenges](https://github.com/CJFariss/R-Program-Challenges/tree/main/R-Program-Challenges)
 
 #### Suggested Readings:
 1. Efron and Hastie (Ch.15, *Large-Scale Hypothesis Testing and FDRs*, Ch.20, *Inference After Model Selection*).
