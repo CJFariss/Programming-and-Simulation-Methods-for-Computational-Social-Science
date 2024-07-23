@@ -93,6 +93,7 @@ There are no *required* books in this course. Rather, I will make reference to m
 # Class Schedule and Content links
 
 ## Day 1: Introduction to Learning and Inference making using Simulation and Programming
+#### Introduction to Research Design and Data Analysis using Programming and Simulation Based Meth- ods as Learning Tools:
 Introduction to the simulation and research design tools used to explore and understand various kinds of simulated and observed data (e.g., survey data, human rights data, social media data, text data, etc). We will also begin working with the program challenges, many of which are available here: https://github.com/CJFariss/R-Program-Challenges
 
 - [R-Program-Lessons/Day01_Intro_programs](./R-Program-Lessons/Day01_Intro_programs): Introductory program lesson and program challenge.
