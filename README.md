@@ -96,7 +96,6 @@ There are no *required* books in this course. Rather, I will make reference to m
 Introduction to the simulation and research design tools used to explore and understand various kinds of simulated and observed data (e.g., survey data, human rights data, social media data, text data, etc). We will also begin working with the program challenges, many of which are available here: https://github.com/CJFariss/R-Program-Challenges
 
 #### Program Lessons
-Introductory program lesson and program challenge:
 - [R-Program-Lessons/Day01_Intro_programs](./R-Program-Lessons/Day01_Intro_programs)
 
 #### Program Challenges
@@ -115,9 +114,7 @@ Introductory program lesson and program challenge:
 Introduction to the R programming environment. We will review the various data and programming structures that are available for use in R. We will pay particular attention to vectorization and parallelization. Though we will begin with very small programs for learning, we also need to remember that the massive scale datasets that are increasingly available need optimized programs designed to manage and analyze these massive scale data structures.
 
 #### Program Lessons
-More introductory programs:
 - [R-Program-Lessons/Day02_Data_Analysis_Managment](./R-Program-Lessons/Day02_Data_Analysis_Managment)
-
 
 #### Program Challenges
 - [R_Challenge_vector_1max_2max_3max_nmax.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_vector_1max_2max_3max_nmax.R)
@@ -137,12 +134,13 @@ More introductory programs:
 ## Day 3: Simulation Based Programming and Inference
 We will develop and implement simulations in R to accomplish two learning goals. For the first learning goal, we will develop simulations in R to help us practice all of the programming and data structures that are available in R. For the second learning goal, we will use our programming knowledge in R to create simple step-by-step programs that showcase how a specific statistical or algorthmic tool works. 
 
+#### Program Lessons
 - [R-Program-Lessons/Day03_Simulation_Learning](./R-Program-Lessons/Day03_Simulation_Learning)
 
 #### Program Challenges
-1. [R_Challenge_matrix_Sudoku_check.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_matrix_Sudoku_check.R)
-2. [R_Challenge_simulation_shuffle_index.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_simulation_shuffle_index.R)
-3. [R_Challenge_vector_sqrt_search.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_vector_sqrt_search.R)
+- [R_Challenge_matrix_Sudoku_check.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_matrix_Sudoku_check.R)
+- [R_Challenge_simulation_shuffle_index.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_simulation_shuffle_index.R)
+- [R_Challenge_vector_sqrt_search.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_vector_sqrt_search.R)
 
 #### Suggested Readings:
 1. Rubin, Donald B. 2008. “For Objective Causal Inference, Design Trumps Analysis.” *Annals of Applied Statistics* 2(3):808-840. https://doi.org/10.1214/08-AOAS187
@@ -158,11 +156,12 @@ We will develop and implement simulations in R to accomplish two learning goals.
 ## Day 4: Simulation Based Programming for Model Comparison and Selection
 In this section, we will program and learn several simulation based validation tools for assessing a model of observational data in comparison to an appropriate baseline model. Specifically, we will learn to evaluate model performance using in-sample and out-of-sample data.
 
+#### Program Lessons
 - [R-Program-Lessons/Day04_Simulation_Inference](./R-Program-Lessons/Day04_Simulation_Inference)
 
-#### Day 4 Program Challenges
-1. [R_Challenge_simulation_weather_forecast.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_simulation_weather_forecast.R)
-2. [R_Challenge_probability_distributions.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_probability_distributions.R)
+#### Program Challenges
+- [R_Challenge_simulation_weather_forecast.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_simulation_weather_forecast.R)
+- [R_Challenge_probability_distributions.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_probability_distributions.R)
 
 #### Suggested Readings:
 1. Matlofff 2011 (Ch.8: *Doing Math and Simulations in R*)
@@ -184,11 +183,12 @@ Social scientists are often interested in explaining concepts that are difficult
 
 This sections provide an introduction to measurement models generally with specific focus on Bayesian measurement models and measurement models that make use of text data. We will emphasize the use of construct validity to assess new and existing measures in applied research. We will motivate the development of these models with a discussion of the Bayesian perspective on the relationship between data and model parameters. This perspective is useful because it shifts the burden of validity from the primary source documentation and raw data to the model parameters that bind these diverse pieces of information together.
 
+#### Program Lessons
 - [R-Program-Lessons/Day05_Measurement_Intro](./R-Program-Lessons/Day05_Measurement_Intro)
 - [R-Program-Lessons/Day05_Measurement_RSTAN](./R-Program-Lessons/Day05_Measurement_RSTAN)
 
 #### Program Challenges
-1. []()
+- []()
 
 #### Suggested Readings:
 1. Fariss, Christopher J., Michael R. Kenwick, and Kevin Reuning "Measurement Models", in *SAGE Handbook of Research Methods is Political Science & International Relations*, edited by Luigi Curini and Robert J. Franzese, Jr., SAGE Press (May 2020). http://cfariss.com/documents/FarissKenwickReuning2020_MesurementModels.pdf 
@@ -210,6 +210,8 @@ Under construction
 ## Day 7: Measurement Models for Reducing High Dimensional Data
 Introduction to Regular Expressions, Document-by-Term matrices, and Construct Validity. We will continue to use simple R programs to help us understand some of the common and important text and image processing steps. Much of the work involved in using text as data is in the processing of the character/string information. Regular expressions are the key functions that we will use. These key functions are embedded in many many R packages. We will start with the basics before move to more efficient libraries, again with the idea that we will learn the nuts and bolts of these critical tools.
 
+#### Program Lessons
+
 #### Program Challenges
 1. [R_Challenge_text_character_graph.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_text_character_graph.R)
 
@@ -218,6 +220,8 @@ Introduction to Regular Expressions, Document-by-Term matrices, and Construct Va
 
 ## Day 8: Automating Classification with Neural Networks and Large Language Models (LLMs)
 Neural Networks are a powerful tool for automated classification and any other predictive task. The main hurdle to understanding how these models work is the terminology associated with their implementation and use. During this section, we will see that a neural network is simply a linear model at its core and a set of liner transformations in the more exotic varieties of these models. Once we understand the basic building blocks of these models, we will see that neural networks are straight forward to implement but computationally quite expensive when implementing them on massive scale datasets. As usual, we will start with very simple models to learn. We will then apply this learning to more complex implementations of these models. We will use all of the tools developed during prior class periods to evaluate the performance of these models relative to a substantively meaningful baseline model.
+
+#### Program Lessons
 
 #### Program Challenges
 1. [R_Challenge_matrix_MNIST_images.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_matrix_MNIST_images.R)
