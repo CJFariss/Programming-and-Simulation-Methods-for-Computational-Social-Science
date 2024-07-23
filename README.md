@@ -95,7 +95,9 @@ There are no *required* books in this course. Rather, I will make reference to m
 ## Day 1: Introduction to Learning and Inference making using Simulation and Programming
 Introduction to the simulation and research design tools used to explore and understand various kinds of simulated and observed data (e.g., survey data, human rights data, social media data, text data, etc). We will also begin working with the program challenges, many of which are available here: https://github.com/CJFariss/R-Program-Challenges
 
-- [R-Program-Lessons/Day01_Intro_programs](./R-Program-Lessons/Day01_Intro_programs): Introductory program lesson and program challenge.
+#### Program Lessons
+Introductory program lesson and program challenge:
+- [R-Program-Lessons/Day01_Intro_programs](./R-Program-Lessons/Day01_Intro_programs)
 
 #### Program Challenges
 - [R_Demo_Intro_Program_Challenge_two_sum.R](https://github.com/CJFariss/Programming-and-Simulation-Methods-for-Computational-Social-Science/blob/main/R-Program-Lessons/Day01_Intro_programs/R_Demo_Intro_Program_Challenge_two_sum.R)
@@ -112,7 +114,9 @@ Introduction to the simulation and research design tools used to explore and und
 ## Day 2: Data Management and Analysis for Large Scale Data Structures
 Introduction to the R programming environment. We will review the various data and programming structures that are available for use in R. We will pay particular attention to vectorization and parallelization. Though we will begin with very small programs for learning, we also need to remember that the massive scale datasets that are increasingly available need optimized programs designed to manage and analyze these massive scale data structures.
 
-- [R-Program-Lessons/Day02_Data_Analysis_Managment](./R-Program-Lessons/Day02_Data_Analysis_Managment): More introductory programs.
+#### Program Lessons
+More introductory programs:
+- [R-Program-Lessons/Day02_Data_Analysis_Managment](./R-Program-Lessons/Day02_Data_Analysis_Managment)
 
 
 #### Program Challenges
