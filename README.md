@@ -61,10 +61,10 @@ Students should have some familiarity with concepts from research design and sta
     - [Day04_Simulation_Inference](./R-Program-Lessons/Day04_Simulation_Inference)
     - [Day05_Measurement_Intro](./R-Program-Lessons/Day05_Measurement_Intro)
     - [Day05_Measurement_RSTAN](./R-Program-Lessons/Day05_Measurement_RSTAN)
-    - Day06
-    - Day07
-    - Day08
-    - Day09
+    - [Day06_Latent_Variable_Programs](./Day06_Latent_Variable_Programs)
+    - [Day07_Text_as_data_programs](./Day07_Text_as_data_programs)
+    - [Day08_Applied_Machine_Learning_AML_Intro](./Day08_Applied_Machine_Learning_AML_Intro)
+    - [Day09_Model_Evaluation_Review](./Day09_Model_Evaluation_Review)
     - Day10
  <br/>
    
