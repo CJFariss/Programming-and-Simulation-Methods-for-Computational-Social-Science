@@ -237,15 +237,18 @@ Neural Networks are a powerful tool for automated classification and any other p
 
 #### Additional Suggested Readings:
 2. Bolker (Ch.7, *Optimization and all that*)
-
+3. Efron and Hastie (Ch.21, *Empirical Bayes Estimation Strategies*).
+4. Jones, Maillardet, and Robinson 2014. (Ch.9 *Numerical accuracy and program efficiency*, Ch.10 *Root-finding*, Ch.11 *Numerical integration*, Ch.12 *Optimisation*, Ch.13 *Systems of ordinary differential equations*). 
 <br/>
 
 ## Day 9: False Discovery and Inference After the Design and Selection of a Model
 Techniques for selecting a substantively meaningful model.
 
 #### Suggested Readings:
+1. Efron and Hastie (Ch.15, *Large-Scale Hypothesis Testing and FDRs*, Ch.20, *Inference After Model Selection*).
 
-
+#### Additional Suggested Readings:
+2. Efron and Hastie (Ch.16, *Sparse Modeling and the Lasso*, Ch.17, *Random Forests and Boosting*, Ch.19, *Support-Vector Machines and Kernel Methods*).
 <br/>
 
 ## Day 10:
