@@ -11,9 +11,9 @@
 ## e-mail: cjfariss@umich.edu
 ##
 ##########################################################################
-## Introduction to tutorial:
-## Two websites that let you guess the correlation coefficient:
 ##
+## Two websites that let you guess the correlation coefficient:
+## 
 ## http://guessthecorrelation.com/
 ## http://istics.net/Correlations/
 ##
@@ -27,7 +27,7 @@
 ##
 ## Variance: a measure of the squared distance from the mean value of a variable to all other values of the variable (strictly positive).
 ##
-## Standard deviation: a measure of the distance from the mean value of a variable to all other values of the variable (strictly positive).
+## Standard deviation: a measure of the distance from the mean value of a variable to all other values of the variable (strictly positive). This is the square root of the variance measure. 
 ## 
 ## Covariance: a measure of the product of the distance from the mean values of two variables from each of the other values of the variable (strictly positive).
 ##
@@ -39,20 +39,23 @@
 
 ## Use the normal distribution to simulate two variables 
 sim_n <- 100
-x1 <- rnorm(sim_n, 0, 1)
+x1 <- rnorm(sim_n, 0, 2)
 
 summary(x1)
 #x1
 
 library(MASS)
+par(mar=c(4,3,2,.5))
 truehist(x1)
 
-x2 <- 0 + 1*x1 + rnorm(sim_n, 0, 1)
+error_or_distrurbance_term <- rnorm(sim_n, 0, 1)
+x2 <- 0 + 1*x1 + error_or_distrurbance_term
 
 ## check the simulation visually
 plot(x1, x2)
-abline(a=0,b=1,col=2)
+abline(a=0,b=-1,col=2)
 
+cor(x1,x2)
 
 ## calculate the variance and standard deviation of the first variable
 var(x1) ## variance 
@@ -119,6 +122,13 @@ standarize_function <- function(x){
   (x-mean(x))/sd(x)
 }
 
+mean(x1)
+sd(x1)
+
+mean(standarize_function(x1))
+sd(standarize_function(x1))
+
+
 summary(scale(x1))
 summary(standarize_function(x1))
 
@@ -153,6 +163,8 @@ summary(fit)[[8]]
 
 ## calculate the square root of the r-squared value from the bivariate regression which is the correlation coefficient
 sqrt(summary(fit)$r.squared)
+
+cor(x1,x2) 
 
 ## test if the r-squared value from the bivariate regression which is the correlation coefficient
 cor(x1,x2) == sqrt(summary(fit)$r.squared)
