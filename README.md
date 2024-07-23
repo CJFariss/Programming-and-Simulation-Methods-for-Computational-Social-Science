@@ -173,11 +173,13 @@ This sections provide an introduction to measurement models generally with speci
 - [R-Program-Lessons/Day05_Measurement_RSTAN](./R-Program-Lessons/Day05_Measurement_RSTAN)
 
 #### Day 5 Suggested Readings:
-1. Fariss, Christopher J., Michael R. Kenwick, and Kevin Reuning "Measurement Models", in *SAGE Handbook of Research Methods is Political Science & International Relations*, edited by Luigi Curini and Robert J. Franzese, Jr., SAGE Press (May 2020).
+1. Fariss, Christopher J., Michael R. Kenwick, and Kevin Reuning "Measurement Models", in *SAGE Handbook of Research Methods is Political Science & International Relations*, edited by Luigi Curini and Robert J. Franzese, Jr., SAGE Press (May 2020). http://cfariss.com/documents/FarissKenwickReuning2020_MesurementModels.pdf 
 
 #### Day 5 Additional Suggested Readings:
-2. Jones, Maillardet, and Robinson 2014. (Ch.19: *Markov chains*). 
-
+2. Adcock, Robert, and David Collier. 2001. “Measurement Validity: A Shared Standard for Qual- itative and Quantitative Research.” American Political Science Review 95(3):529-546. https: //doi.org/10.1017/S0003055401003100
+3. Jones, Maillardet, and Robinson 2014. (Ch.19: *Markov chains*). 
+4. Efron and Hastie (Ch.13, *Objective Bayes Inference and MCMC*).
+5. Gelman and Hill (Ch.13, *Multilevel linear models: varying slopes, non-nested models, and other complexities*, Ch.14, *Multilevel logistic regression*, Ch.16, *Multilevel modeling in Bugs and R: the basics*, Ch.25, *Missing-data imputation*).
 
 <br/>
 
