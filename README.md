@@ -160,6 +160,8 @@ In this section, we will program and learn several simulation based validation t
 
 #### Program Challenges
 - [R_Challenge_probability_distributions.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_probability_distributions.R)
+- [R_Challenge_simulation_high_card_draw.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_simulation_high_card_draw.R)
+- [R_Challenge_simulation_5card_hands.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_simulation_5card_hands.R)
 
 #### Suggested Readings:
 1. Matlofff 2011 (Ch.8: *Doing Math and Simulations in R*)
