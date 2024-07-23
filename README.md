@@ -167,10 +167,10 @@ In this section, we will program and learn several simulation based validation t
 2. Jones, Maillardet, and Robinson 2014. (Ch.20: *Simulation*). 
 
 #### Additional Suggested Readings:
-2. Bolker (Ch.5, *Stochastic simulation and power analysis*)
-3. Efron and Hastie (Ch.7 *James-Stein Estimation and Ridge Regression*, Ch.10, *The Jackknife and Bootstrap*, Ch.11, *Bootstrap Confidence Intervals*, Ch.12, *Cross-Validation and Cp Estimate of Prediction Error*)
-4. Gelman and Hill (Ch.8 *Simulation for checking statistical procedures and model fits*).
-5. Jones, Maillardet, and Robinson 2014. (Ch.21: *Monte Carlo Integration*, Ch.22: *Variance reduction*). 
+3. Bolker (Ch.5, *Stochastic simulation and power analysis*)
+4. Efron and Hastie (Ch.7 *James-Stein Estimation and Ridge Regression*, Ch.10, *The Jackknife and Bootstrap*, Ch.11, *Bootstrap Confidence Intervals*, Ch.12, *Cross-Validation and Cp Estimate of Prediction Error*)
+5. Gelman and Hill (Ch.8 *Simulation for checking statistical procedures and model fits*).
+6. Jones, Maillardet, and Robinson 2014. (Ch.21: *Monte Carlo Integration*, Ch.22: *Variance reduction*). 
 
 
 <br/>
