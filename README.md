@@ -156,6 +156,7 @@ In this section, we will program and learn several simulation based validation t
 2. Bolker (Ch.5, *Stochastic simulation and power analysis*)
 3. Efron and Hastie (Ch.7 *James-Stein Estimation and Ridge Regression*, Ch.10, *The Jackknife and Bootstrap*, Ch.11, *Bootstrap Confidence Intervals*, Ch.12, *Cross-Validation and Cp Estimate of Prediction Error*)
 4. Gelman and Hill (Ch.8 *Simulation for checking statistical procedures and model fits*).
+5. Jones, Maillardet, and Robinson 2014. (Ch.20: *Simulation*, Ch.21: *Monte Carlo Integration*, Ch.22: *Variance reduction*). 
 
 
 <br/>
@@ -170,6 +171,13 @@ This sections provide an introduction to measurement models generally with speci
 
 - [R-Program-Lessons/Day05_Measurement_Intro](./R-Program-Lessons/Day05_Measurement_Intro)
 - [R-Program-Lessons/Day05_Measurement_RSTAN](./R-Program-Lessons/Day05_Measurement_RSTAN)
+
+#### Day 5 Suggested Readings:
+1. Fariss, Christopher J., Michael R. Kenwick, and Kevin Reuning "Measurement Models", in *SAGE Handbook of Research Methods is Political Science & International Relations*, edited by Luigi Curini and Robert J. Franzese, Jr., SAGE Press (May 2020).
+
+#### Day 5 Additional Suggested Readings:
+2. Jones, Maillardet, and Robinson 2014. (Ch.19: *Markov chains*). 
+
 
 <br/>
 
