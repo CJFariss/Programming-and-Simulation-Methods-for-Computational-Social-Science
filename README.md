@@ -93,7 +93,6 @@ There are no *required* books in this course. Rather, I will make reference to m
 # Class Schedule and Content links
 
 ## Day 1: Introduction to Learning and Inference making using Simulation and Programming
-**Introduction to Research Design and Data Analysis using Programming and Simulation Based Methods as Learning Tools:**
 Introduction to the simulation and research design tools used to explore and understand various kinds of simulated and observed data (e.g., survey data, human rights data, social media data, text data, etc). We will also begin working with the program challenges, many of which are available here: https://github.com/CJFariss/R-Program-Challenges
 
 - [R-Program-Lessons/Day01_Intro_programs](./R-Program-Lessons/Day01_Intro_programs): Introductory program lesson and program challenge.
@@ -146,7 +145,7 @@ We will develop and implement simulations in R to accomplish two learning goals.
 <br/>
 
 ## Day 4: Simulation Based Programming for Model Comparison and Selection
-In this section, we will program and learn several simulation based validation tools for assessing a model of observational data in comparison to an appropriate baseline model.
+In this section, we will program and learn several simulation based validation tools for assessing a model of observational data in comparison to an appropriate baseline model. Specifically, we will learn to evaluate model performance using in-sample and out-of-sample data.
 
 - [R-Program-Lessons/Day04_Simulation_Inference](./R-Program-Lessons/Day04_Simulation_Inference)
 
@@ -185,5 +184,20 @@ This sections provide an introduction to measurement models generally with speci
 <br/>
 
 
-## Day 6 - Day 10
+## Day 6: Bayesian Latent Variable Models 
+Under construction
+
+
+## Day 7: Measurement Models for Reducing High Dimensional Data 
+Introduction to Regular Expressions, Document-by-Term matrices, and Construct Validity. We will continue to use simple R programs to help us understand some of the common and important text processing steps. Much of the work involved in using text as data is in the processing of the character/string information. Regular expressions are the key functions that we will use. These key functions are embedded in many many R packages. We will start with the basics before move to more efficient libraries, again with the idea that we will learn the nuts and bolts of these critical tools.
+
+
+## Day 8: Automating Classification with Neural Networks
+Neural Networks are a powerful tool for automated classification and any other predictive task. The main hurdle to understanding how these models work is the terminology associated with their implementation and use. During this section, we will see that a neural network is simply a linear model at its core and a set of liner transformations in the more exotic varieties of these models. Once we understand the basic building blocks of these models, we will see that neural networks are straight forward to implement but computationally quite expensive when implementing them on massive scale datasets. As usual, we will start with very simple models to learn. We will then apply this learning to more complex implementations of these models. We will use all of the tools developed during prior class periods to evaluate the performance of these models relative to a substantively meaningful baseline model.
+
+
+## Day 9: False Discovery and Inference After the Design and Selection of a Model
+Techniques for selecting a substantively meaningful model.
+
+## Day 10:
 Under construction
