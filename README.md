@@ -247,7 +247,7 @@ Neural Networks are a powerful tool for automated classification and any other p
 
 #### Additional Suggested Readings:
 2. Bolker (Ch.7, *Optimization and all that*)
-3. Cantu ́, Francisco. 2019. “The Fingerprints of Fraud: Evidence from Mexico’s 1988 Presidential Election” *American Political Science Review* 113(3):710-726. https://doi.org/10.1017/S0003055419000285. 
+3. Cantú, Francisco. 2019. “The Fingerprints of Fraud: Evidence from Mexico’s 1988 Presidential Election” *American Political Science Review* 113(3):710-726. https://doi.org/10.1017/S0003055419000285. 
 4. Efron and Hastie (Ch.21, *Empirical Bayes Estimation Strategies*).
 5. Halterman, Andrew and Katherine A. Keith. 2024. "Codebook LLMs: Adapting Political Science Codebooks for LLM Use and Adapting LLMs to Follow Codebooks" https://arxiv.org/abs/2407.10747
 6. Jones, Maillardet, and Robinson 2014. (Ch.9 *Numerical accuracy and program efficiency*, Ch.10 *Root-finding*, Ch.11 *Numerical integration*, Ch.12 *Optimisation*, Ch.13 *Systems of ordinary differential equations*). 
