@@ -219,6 +219,8 @@ Introduction to Regular Expressions, Document-by-Term matrices, and Construct Va
 - [R_Challenge_text_character_sort.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_text_character_sort.R)
 - [R_Challenge_text_letters_and_logic.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_text_letters_and_logic.R)
 
+#### Suggested Readings:
+1. Matlofff 2011 (Ch.10: *Input/Output*, Ch.11: *String Manipulation*).
 <br/>
 
 ## Day 8: Automating Classification with Neural Networks and Large Language Models (LLMs)
@@ -230,11 +232,19 @@ Neural Networks are a powerful tool for automated classification and any other p
 - [R_Challenge_matrix_MNIST_images.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_matrix_MNIST_images.R)
 - [R_Challenge_matrix_Sudoku_check.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_matrix_Sudoku_check.R)
 
+#### Suggested Readings:
+1. Efron and Hastie (Ch.18, *Neural Networks and Deep Learning*).
+
+#### Additional Suggested Readings:
+2. Bolker (Ch.7, *Optimization and all that*)
 
 <br/>
 
 ## Day 9: False Discovery and Inference After the Design and Selection of a Model
 Techniques for selecting a substantively meaningful model.
+
+#### Suggested Readings:
+
 
 <br/>
 
