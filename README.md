@@ -269,7 +269,7 @@ Techniques for selecting a substantively meaningful model.
 
 #### Additional Suggested Readings:
 2. Efron and Hastie (Ch.16, *Sparse Modeling and the Lasso*, Ch.17, *Random Forests and Boosting*, Ch.19, *Support-Vector Machines and Kernel Methods*).
-3. Fariss, Christopher J. and Zachary M. Jones. “Enhancing Validity in Observational Settings When Replication is Not Possible” Political Science Research and Methods 6(2):365-380. https://doi.org/10.1017/psrm.2017.5
+3. Fariss, Christopher J. and Zachary M. Jones. “Enhancing Validity in Observational Settings When Replication is Not Possible” *Political Science Research and Methods* 6(2):365-380. https://doi.org/10.1017/psrm.2017.5
 4. Shmueli, Galit. 2010. “To Explain or to Predict?” *Statistical Science* 25(3):289-310. http://dx.doi.org/10.1214/10-STS330
 
 <br/>
