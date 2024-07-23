@@ -276,3 +276,7 @@ Techniques for selecting a substantively meaningful model.
 
 ## Day 10:
 Under construction
+
+#### Additional Suggested Readings:
+1. Bond, Robert M., Christopher J. Fariss, Jason J. Jones, Jaime E. Settle. “Network Experiments through Academic-Industry Collaboration” In *Spreading Dynamics in Social Systems*, edited by Yong Yeol Ahn and Sune Lehmann, Springer (June 2018). https://link.springer.com/chapter/10.1007/978-3-319-77332-2_18. 
+2. Margetts, Helen. 2017. “Political Behaviour and the Acoustics of Social Media” Nature Human Behaviour 1 (0086). https://doi.org/10.1038/s41562-017-008
