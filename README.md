@@ -228,7 +228,7 @@ Introduction to Regular Expressions, Document-by-Term matrices, and Construct Va
 1. Matlofff 2011 (Ch.10: *Input/Output*, Ch.11: *String Manipulation*).
 
 #### Additional Suggested Readings:
-2. Grimmer, Justin and Brandon M. Stewart. 2013. “Text as Data: The Promise and Pitfalls of Auto- matic Content Analysis Methods for Political Texts.” Political Analysis 21(3):267-297. https://doi.org/10.1093/pan/mps028 
+2. Grimmer, Justin and Brandon M. Stewart. 2013. “Text as Data: The Promise and Pitfalls of Auto- matic Content Analysis Methods for Political Texts.” *Political Analysis* 21(3):267-297. https://doi.org/10.1093/pan/mps028 
 3. Roberts, Margaret E, Brandon Stewart, and Dustin Tingley. “Navigating the Local Modes of Big Data: The Case of Topic Models.” In *Data Analytics in Social Science, Government, and Industry*, New York: Cambridge University Press.
 
 <br/>
