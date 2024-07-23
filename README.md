@@ -274,8 +274,14 @@ Techniques for selecting a substantively meaningful model.
 
 <br/>
 
-## Day 10:
-Under construction
+## Day 10: Ethical Responsibilities for the Data Scientist
+
+
+#### Program Lessons
+We will discuss issues relating to transparency and research ethics. Whenever we are using social media data, no matter how aggregated, the privacy of the individual's personal data is an important consideration when designing a study.  
+
+#### Program Challenges
+- Select any program challenge: [R-Program-Challenges](https://github.com/CJFariss/R-Program-Challenges/tree/main/R-Program-Challenges)
 
 #### Additional Suggested Readings:
 1. Bond, Robert M., Christopher J. Fariss, Jason J. Jones, Jaime E. Settle. “Network Experiments through Academic-Industry Collaboration” In *Spreading Dynamics in Social Systems*, edited by Yong Yeol Ahn and Sune Lehmann, Springer (June 2018). https://link.springer.com/chapter/10.1007/978-3-319-77332-2_18. 
