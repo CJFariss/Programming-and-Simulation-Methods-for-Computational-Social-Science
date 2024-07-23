@@ -248,10 +248,9 @@ Neural Networks are a powerful tool for automated classification and any other p
 
 #### Additional Suggested Readings:
 2. Bolker (Ch.7, *Optimization and all that*)
-3. Cantú, Francisco. 2019. “The Fingerprints of Fraud: Evidence from Mexico’s 1988 Presidential Election” *American Political Science Review* 113(3):710-726. https://doi.org/10.1017/S0003055419000285. 
-4. Efron and Hastie (Ch.21, *Empirical Bayes Estimation Strategies*).
-5. Halterman, Andrew and Katherine A. Keith. 2024. "Codebook LLMs: Adapting Political Science Codebooks for LLM Use and Adapting LLMs to Follow Codebooks" https://arxiv.org/abs/2407.10747
-6. Jones, Maillardet, and Robinson 2014. (Ch.9 *Numerical accuracy and program efficiency*, Ch.10 *Root-finding*, Ch.11 *Numerical integration*, Ch.12 *Optimisation*, Ch.13 *Systems of ordinary differential equations*). 
+3. Efron and Hastie (Ch.21, *Empirical Bayes Estimation Strategies*).
+4. Halterman, Andrew and Katherine A. Keith. 2024. "Codebook LLMs: Adapting Political Science Codebooks for LLM Use and Adapting LLMs to Follow Codebooks" https://arxiv.org/abs/2407.10747
+5. Jones, Maillardet, and Robinson 2014. (Ch.9 *Numerical accuracy and program efficiency*, Ch.10 *Root-finding*, Ch.11 *Numerical integration*, Ch.12 *Optimisation*, Ch.13 *Systems of ordinary differential equations*). 
 
 
 <br/>
@@ -285,7 +284,10 @@ We will discuss issues relating to transparency and research ethics. Whenever we
 - Select any program challenge: [R-Program-Challenges](https://github.com/CJFariss/R-Program-Challenges/tree/main/R-Program-Challenges)
 
 #### Suggested Readings:
+1. Driscoll, Jesse. 2016. “Prison States & Games of Chicken” in S. Desposato, *Ethics and Experiments: Problems and Solutions for Social Scientists and Policy Professionals*, Taylor and Francis.
+2. Editorial Board. 2014. "Editorial Expression of Concern: Experimental evidence of massivescale emotional contagion through social networks" (July 3, 2014) *Proceedings of the National Academy of Sciences* 111(29):10779. https://doi.org/10.1073/pnas.1412469111
 
 #### Additional Suggested Readings:
-1. Bond, Robert M., Christopher J. Fariss, Jason J. Jones, Jaime E. Settle. “Network Experiments through Academic-Industry Collaboration” In *Spreading Dynamics in Social Systems*, edited by Yong Yeol Ahn and Sune Lehmann, Springer (June 2018). https://link.springer.com/chapter/10.1007/978-3-319-77332-2_18. 
-2. Margetts, Helen. 2017. “Political Behaviour and the Acoustics of Social Media” Nature Human Behaviour 1 (0086). https://doi.org/10.1038/s41562-017-008
+3. Bond, Robert M., Christopher J. Fariss, Jason J. Jones, Jaime E. Settle. “Network Experiments through Academic-Industry Collaboration” In *Spreading Dynamics in Social Systems*, edited by Yong Yeol Ahn and Sune Lehmann, Springer (June 2018). https://link.springer.com/chapter/10.1007/978-3-319-77332-2_18. 
+4. Kramer, Adam D. I., Jamie E. Guillory, Jeffrey T. Hancock. 2014. “Emotional contagion through social networks” Proceedings of the National Academy of Sciences 111(24):8788-8790. https: //doi.org/10.1073/pnas.1320040111
+5. Margetts, Helen. 2017. “Political Behaviour and the Acoustics of Social Media” Nature Human Behaviour 1 (0086). https://doi.org/10.1038/s41562-017-008
