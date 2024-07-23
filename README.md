@@ -138,7 +138,6 @@ We will develop and implement simulations in R to accomplish two learning goals.
 - [R-Program-Lessons/Day03_Simulation_Learning](./R-Program-Lessons/Day03_Simulation_Learning)
 
 #### Program Challenges
-- [R_Challenge_matrix_Sudoku_check.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_matrix_Sudoku_check.R)
 - [R_Challenge_simulation_shuffle_index.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_simulation_shuffle_index.R)
 - [R_Challenge_vector_sqrt_search.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_vector_sqrt_search.R)
 
@@ -160,7 +159,6 @@ In this section, we will program and learn several simulation based validation t
 - [R-Program-Lessons/Day04_Simulation_Inference](./R-Program-Lessons/Day04_Simulation_Inference)
 
 #### Program Challenges
-- [R_Challenge_simulation_weather_forecast.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_simulation_weather_forecast.R)
 - [R_Challenge_probability_distributions.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_probability_distributions.R)
 
 #### Suggested Readings:
@@ -188,13 +186,14 @@ This sections provide an introduction to measurement models generally with speci
 - [R-Program-Lessons/Day05_Measurement_RSTAN](./R-Program-Lessons/Day05_Measurement_RSTAN)
 
 #### Program Challenges
-- []()
+- [R_Challenge_simulation_weather_forecast.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_simulation_weather_forecast.R)
+- [R_Challenge_vector_sum_and_more_sums.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_vector_sum_and_more_sums.R)
 
 #### Suggested Readings:
 1. Fariss, Christopher J., Michael R. Kenwick, and Kevin Reuning "Measurement Models", in *SAGE Handbook of Research Methods is Political Science & International Relations*, edited by Luigi Curini and Robert J. Franzese, Jr., SAGE Press (May 2020). http://cfariss.com/documents/FarissKenwickReuning2020_MesurementModels.pdf 
 
 #### Additional Suggested Readings:
-2. Adcock, Robert, and David Collier. 2001. “Measurement Validity: A Shared Standard for Qual- itative and Quantitative Research.” American Political Science Review 95(3):529-546. https: //doi.org/10.1017/S0003055401003100
+2. Adcock, Robert, and David Collier. 2001. “Measurement Validity: A Shared Standard for Qual- itative and Quantitative Research.” American Political Science Review 95(3):529-546. https://doi.org/10.1017/S0003055401003100
 3. Jones, Maillardet, and Robinson 2014. (Ch.19: *Markov chains*). 
 4. Efron and Hastie (Ch.13, *Objective Bayes Inference and MCMC*).
 5. Gelman and Hill (Ch.13, *Multilevel linear models: varying slopes, non-nested models, and other complexities*, Ch.14, *Multilevel logistic regression*, Ch.16, *Multilevel modeling in Bugs and R: the basics*, Ch.25, *Missing-data imputation*).
@@ -213,8 +212,10 @@ Introduction to Regular Expressions, Document-by-Term matrices, and Construct Va
 #### Program Lessons
 
 #### Program Challenges
-1. [R_Challenge_text_character_graph.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_text_character_graph.R)
-
+- [R_Challenge_text_non_repeating_chatacter.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_text_non_repeating_chatacter.R)
+- [R_Challenge_text_character_graph.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_text_character_graph.R)
+- [R_Challenge_text_character_sort.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_text_character_sort.R)
+- [R_Challenge_text_letters_and_logic.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_text_letters_and_logic.R)
 
 <br/>
 
@@ -224,7 +225,10 @@ Neural Networks are a powerful tool for automated classification and any other p
 #### Program Lessons
 
 #### Program Challenges
-1. [R_Challenge_matrix_MNIST_images.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_matrix_MNIST_images.R)
+- [R_Challenge_matrix_MNIST_images.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_matrix_MNIST_images.R)
+- [R_Challenge_matrix_Sudoku_check.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_matrix_Sudoku_check.R)
+
+
 <br/>
 
 ## Day 9: False Discovery and Inference After the Design and Selection of a Model
