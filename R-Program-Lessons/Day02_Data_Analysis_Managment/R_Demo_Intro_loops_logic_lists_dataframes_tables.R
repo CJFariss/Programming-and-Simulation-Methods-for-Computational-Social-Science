@@ -9,9 +9,8 @@
 ## Please e-mail me if you find any errors or have and suggestions (either email is fine)
 ## e-mail: cjf0006@gmail.com
 ## e-mail: cjfariss@umich.edu
-##########################################################################
-## Introduction to tutorial:
 ##
+##########################################################################
 ## For this R tutorial, we will learn how:
 ## (1) learn to work with logical statements
 ## (2) learn to use for loops and while loops
@@ -37,6 +36,11 @@
 1 == 1
 
 pi == pi
+
+print(pi, digits=22)
+
+print(pi, digits=5) == print(pi, digits=22)
+
 
 1 == pi
 
@@ -91,7 +95,7 @@ FALSE & FALSE
 ## OR ##
 ########
 
-## the OR operator looks for at least one condition in a compond set of conditions to be true
+## the OR operator looks for at least one condition in a compound set of conditions to be true
 ## the following statement return TRUE because at least one of the component conditions is TRUE
 1 == pi | pi == pi
 
@@ -136,9 +140,13 @@ xor(1 == pi, pi == 1)
 
 ## inside an if statement we will use && and || instead of & and |
 
-if(TRUE){ print("print this character string") }
+if(TRUE){ 
+  print("print this character string") 
+}
 
-if(FALSE){ print("DON'T print this character string") }
+if(FALSE){ 
+  print("DON'T print this character string") 
+}
 
 if(TRUE & TRUE) print("print this character string")
 
@@ -151,7 +159,7 @@ if(1 == pi & pi == pi){
 }
 
 ## check the condition in the if statement, if that is TRUE print, else print the second statement
-## note that the else statement needs to be on the same line as the right squiggly bracket }
+## note that the else statement needs to be on the same line as the right sqiggly bracket }
 if(1 == pi & pi == pi){
   print("print this character string")
 } else{
@@ -168,6 +176,9 @@ if(FALSE){
 
 ifelse(TRUE, 1, 0)
 
+ifelse(FALSE, 1, 0)
+
+
 ifelse(FALSE, 1, 2)
 
 ifelse(pi==1, pi, 1)
@@ -175,6 +186,59 @@ ifelse(pi==1, pi, 1)
 ifelse(1 == pi & pi == pi, "print this character string", "is this really a helpful example??")
 
 
+## read data from the current working directory
+#survey_data <- read.csv("DSIS_data/survey_498_20200129.csv", header=TRUE)
+
+## this doesn't work quite right
+#survey_data <- read.csv("DSIS_data/funYesNoQuestions.csv", header=TRUE)
+survey_data <- read.csv("Datasets/373survey.csv")
+names(survey_data)
+dim(survey_data)
+nrow(survey_data)
+ncol(survey_data)
+head(survey_data)
+
+
+#survey_data <- read.csv("DSIS_data/funYesNoQuestions.csv", header=TRUE, sep=";")
+#names(survey_data)
+
+dim(survey_data)
+
+head(survey_data)
+
+## use ifelse statement to add an age value for the over_21 question
+#ifelse(survey_data$over_21==1, "old person", "not old person")
+
+## we can use the same statement above to add a new character variable to the dataframe
+#survey_data$old_person <- ifelse(survey_data$over_21==1, "old person", "non old person")
+
+survey_data
+
+table(survey_data[,3])
+
+table(survey_data$Do.you.think.you.could.win.in.a.fight.against.10.beavers.)
+
+table(survey_data$Do.you.like.football.saturdays.)
+
+#table(survey_data$Have.aliens.ever.seen.earth.)
+
+table(survey_data$Do.you.think.you.could.win.in.a.fight.against.10.beavers., survey_data$Do.you.like.football.saturdays.)
+
+summary(survey_data)
+
+head(survey_data)
+
+#test <- ifelse(survey_data$Are.dogs.better.than.cats.=="Yes", 1, 0)
+
+table(survey_data$Have.you.seen.Game.of.Thrones.)
+
+survey_data$Have.you.seen.Game.of.Thrones.=="Yes"
+
+test <- ifelse(survey_data$Have.you.seen.Game.of.Thrones.=="Yes", 1, 0)
+
+table(test)
+
+mean(test)
 
 ##########################################################################
 ## > greater than
@@ -217,15 +281,13 @@ social_media_data <- read.csv("Datasets/users-by-social-media-platform.csv", hea
 names(social_media_data)
 dim(social_media_data)
 
-head(social_media_data)
-
 subset(social_media_data, Entity=="Facebook")
 
 ## print only values for facebook using the subset function
 subset(social_media_data, Entity=="Facebook" & Year>=2016)
 
 ## print only values for entities that are NOT facebook using the subset function
-subset(social_media_data, Entity!="Facebook" & Year>=2018)
+subset(social_media_data, Entity!="Facebook" & Year>=2016)
 
 
 
@@ -252,8 +314,13 @@ for(i in 1:10){
   print(i)
 }
 
+for(i in 1:3){
+  
+}
+
 for(i in 1:nrow(social_media_data)){
-  print(i)
+  #print(i)
+  print(social_media_data$monthly_active_users[i])
 }
 
 
@@ -262,10 +329,6 @@ seq(2,10,2)
 length(seq(2,10,2))
 
 for(i in seq(2,10,2)){
-  print(i)
-}
-
-for(i in letters){
   print(i)
 }
 
@@ -293,7 +356,7 @@ for(i in letters){
   print(i)
 }
 
-## use un-ordered numbers
+## use unordered numbers
 for(i in c(1,4,800,5,3)){
   print(i)
 }
@@ -302,28 +365,17 @@ for(i in c(1,4,800,5,3)){
 
 
 ## declare the object in memory so we can access it later on
-rm(vec)
-vec
-vec[1] <- NA
-
-
 vec <- NA
 vec
 vec[1]
-
-vec[1] <- 3
-vec[1]
+length(vec)
 
 vec <- c()
 vec
 vec[1]
-
-vec[1] <- 3
-vec[1]
+length(vec)
 
 ## set i to the ith position of the vector each ith iteration the loop
-rm(vec)
-vec <- c()
 for(i in 1:10){
   vec[i] <- i
 }
@@ -351,9 +403,9 @@ i
 dice_rolls <- c()
 
 simulation_size <- 10
-
+dice_rolls <- list()
 for(i in 1:simulation_size){
-  dice_rolls[i] <- sample(1:6, size=1, replace=TRUE)
+  dice_rolls[[i]] <- sample(1:6, size=10, replace=TRUE)
 }
 dice_rolls
 
@@ -453,6 +505,15 @@ for(j in 1:ncol(mat)){
 }
 column_sums
 
+column_proportions <- NA
+for(j in 1:ncol(survey_data)){
+  column_proportions[j] <- mean(ifelse(survey_data[,j]=="Yes", 1, 0))
+}
+column_proportions
+
+data.frame(names(survey_data), column_proportions)
+
+survey_data
 
 ##########################################################################
 ## apply() a function to margins (the rows or columns) of an array or matrix
@@ -486,21 +547,22 @@ apply(mat,2,mean)
 ## apply() a function to margins (the rows or columns) of a dataframe
 ##########################################################################
 
-
-## generic dataset (or make one for fun)
-survey_data <- data.frame(names=c("name1", "name2", "name3", "name4", "name5"), v1=c(0,0,0,0,1), v2=c(0,0,0,1,1), v3=c(0,0,1,1,1), v4=c(0,1,1,1,1), v5=c(1,1,1,1,0))
+## read data from the current working directory
+survey_data <- read.csv("survey_498_20200129.csv", header=TRUE)
 survey_data
+
+## use the sum function on the rows (the first dimension of the matrix) but make sure to exclude the first column because it is the subject ids
+apply(survey_data[,-1], MARGIN=1, FUN=sum)
 
 
 ## we can add extra arguments to apply
 ## note that any additional arguments that we add in the apply() function are used for and in reference to the function we specify for the FUN argument in apply()
 ## since we are using the sum() function, we can use ?sum to find the additional arguments for addressing missing values
-apply(survey_data, MARGIN=1, FUN=sum, na.rm=T)
 apply(survey_data[,-1], MARGIN=1, FUN=sum, na.rm=T)
 
 sum(c(1,2,3))
 sum(c(1,2,3,NA))
-sum(c(1,2,3,NA), na.rm=TRUE)
+sum(c(1,2,3,NA), na.rm=T)
 
 ## use the above function to add a new column to our dataframe
 survey_data$subject_sums <- apply(survey_data[,-1], MARGIN=1, FUN=sum, na.rm=T)
@@ -515,7 +577,7 @@ table(survey_data$subject_sums)
 barplot(table(survey_data$subject_sums))
 
 ## use the new count data to examine specific cases with subset() function and logical statements
-subset(survey_data, subject_sums>=3)
+subset(survey_data, subject_sums>=7)
 
 
 ##########################################################################
@@ -530,11 +592,9 @@ tabs <- xtabs(monthly_active_users ~ Entity + Year, data= social_media_data)
 ## tabs is a table
 tabs
 
-xtabs( ~ Entity + Year, data= social_media_data)
-
 ## we can take the average across the rows of the table using tapply()
 
-## we need to first create an object of the same size as the table with values for which groups we want to apply our function to
+## we need to first create an object of the same size as the table with values for which groups we want to apply our funtion to
 coordinate_groups <- matrix(rep(1:19,times=18), nrow=19, ncol=18)
 coordinate_groups
 tapply(tabs, INDEX=coordinate_groups, FUN=mean)
@@ -584,7 +644,7 @@ sum((1:6 - mean(1:6))^2 * (1/6))
 n_sims <- 2000
 
 ## number of samples to roll each iteration
-n_samples <- 4
+n_samples <- 10
 
 ## create two objects to hold the calculated mean and variance from each simulated sample
 sim_mean_values <- c()

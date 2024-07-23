@@ -9,7 +9,6 @@
 ## Please e-mail me if you find any errors or have and suggestions (either email is fine)
 ## e-mail: cjf0006@gmail.com
 ## e-mail: cjfariss@umich.edu
-##########################################################################
 ## Introduction to tutorial:
 ##
 ## For this R tutorial, we will learn how:
@@ -33,7 +32,7 @@
 ##########################################################################
 ## dataframes
 ##########################################################################
-## dataframes are special types of lists that have the look and feel of a matrix. The elements in a dataframe are vectors of the same length and each vetor is arranged in the same way as a matrix. But importantly, each column in a dataframe can be a different variable type. A matrix can contain only contain one variable type: numbers, characters, or logical values. But the columns in a dataframe can contain a seperate variable type. We navigate the coordinate system of a dataframe just like the coordinate system of a matrix. [,] where the left-hand (left of the comma) side coordinate represents the row coordinate of the dataframe or matrix and the right-hand (right of the comma) side coordinate  represents the column coordinates of the datafrae or matrix.
+## dataframes are special types of lists that have the look and feel of a matrix. The elements in a dataframe are vectors of the same length and each vector is arranged in the same way as a matrix. But importantly, each column in a dataframe can be a different variable type. A matrix can contain only contain one variable type: numbers, characters, or logical values. But the columns in a dataframe can contain a seperate variable type. We navigate the coordinate system of a dataframe just like the coordinate system of a matrix. [,] where the left-hand (left of the comma) side coordinate represents the row coordinate of the dataframe or matrix and the right-hand (right of the comma) side coordinate  represents the column coordinates of the datafrae or matrix.
 
 
 ## note the difference: [1,2] vs. [c(1,2)]
@@ -52,10 +51,18 @@ vec[c(1,2)]
 ##########################################################################
 ## tables also have the look and feel of a matrix or array and we navigate the coordinate system in a similar way. But in this class we will primarily use tables to summarize information from vectors of dataframes. 
 
+s <- 2
+s
+
+is.list(s)
+is.vector(s)
 
 ##########################################################################
 ## create a list with a single, scalar value
 s <- list(2)
+
+is.list(s)
+is.vector(s)
 
 ## print the list object s to screen
 s
@@ -70,13 +77,14 @@ v[1]
 ## print the first element of the list (this a numeric scalar in a list)
 s[[1]]
 
+list(matrix(NA,4,4))
+
 ## repeat this process for 2 scalars in the list
 s <- list(2,4)
 s
 
 ## print the first element (this is a list): AVOID this 
 s[1]
-s[2]
 
 ## print the first element of the list (this a numeric scalar in a list)
 s[[1]]
@@ -104,11 +112,13 @@ length(s)
 length(s[[1]])
 
 ## create a list of length 5 that contains 5 vectors of length 1
-v_list <- list(1, 2, 3, 4, 5)
+v_list <- list(1,2,3,4,5)
 v_list
 
 length(v_list)
 length(v_list[[1]])
+length(v_list[[2]])
+
 unlist(v_list)
 
 v_vec <- unlist(v_list)
@@ -116,9 +126,9 @@ v_vec
 
 is.vector(v_vec)
 is.list(v_vec)
-is.numeric(v_vec)
-is.character(v_vec)
-is.logical(v_vec)
+
+v_list <- list(1:10, 2:10, 3:10, 4:10, 5:10)
+v_list
 
 ## create a list of length 1 that contains 1 vector of length 5
 v_list <- list(c(1, 2, 3, 4, 5))
@@ -137,6 +147,11 @@ unlist(c_list)
 mean(v_list)
 sum(v_list)/5
 sum(v_list)/length(v_list)
+
+## 
+mean(v_list[[1]])
+sum(v_list[[1]])/5
+sum(v_list[[1]])/length(v_list[[1]])
 
 ## these will once we unlist() the lists to make a numeric vector
 mean(unlist(v_list))
@@ -161,7 +176,7 @@ rbind(a,a)
 ## make a dataframe out of the two vectors (the object will look visually like the  output from cbind)
 data.frame(a,a)
 
-dat <- data.frame(var1=c("a", "b", "c"), var2=c(1,2, 500))
+dat <- data.frame(var1=c("a", "b", "c"), var2=c(1, 2, 500))
 
 dat
 
@@ -174,6 +189,9 @@ dat[,1] + 1
 
 dat[,2] + 1
 
+dat$var1 ## this is equivalent to dat[,1]
+
+dat$var2 ## this is equivalent to dat[,2]
 
 ## let's make two vectors of time and
 ## stop and frisk data is from New York City for 2003-2012
@@ -187,7 +205,8 @@ plot(year, stop_and_frisks)
 
 "navy"
 "orange"
-
+"chartreuse"
+"chartreuse4"
 
 ## make the same plot with several additional arguments to make the plot more interesting and informative
 plot(year, stop_and_frisks,
@@ -222,8 +241,6 @@ dat$year
 dat$stop_and_frisks
 
 dat$year
-
-dev.off()
 
 ## make the same plot with several additional arguments using the new dataframe we created
 plot(dat$year, dat$stop_and_frisks,
