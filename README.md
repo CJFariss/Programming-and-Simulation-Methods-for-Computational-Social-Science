@@ -149,7 +149,6 @@ We will develop and implement simulations in R to accomplish two learning goals.
 3. Gelman and Hill (Ch.2 *Concepts and methods from basic probability and statistics*, Ch.7 *Simulation of probability models and statistical inferences*).
 4. Jones, Maillardet, and Robinson 2014. (Ch.14: *Probability*, Ch.15: *Random variables*, Ch.16: *Discrete random variables*, Ch.17 *Continuous random variables*, Ch.18 *Parameter estimation*). 
 5. Shadish, William R. 2010. “Campbell and Rubin: A Primer and Comparison of Their Approaches to Causal Inference in Field Settings.” *Psychological Methods* 15(1):3-17. https://doi.org/10.1037/a0015916
-6. Shmueli, Galit. 2010. “To Explain or to Predict?” *Statistical Science* 25(3):289-310. http://dx.doi.org/10.1214/10-STS330
 <br/>
 
 ## Day 4: Simulation Based Programming for Model Comparison and Selection
@@ -226,6 +225,11 @@ Introduction to Regular Expressions, Document-by-Term matrices, and Construct Va
 
 #### Suggested Readings:
 1. Matlofff 2011 (Ch.10: *Input/Output*, Ch.11: *String Manipulation*).
+
+#### Additional Suggested Readings:
+2. Grimmer, Justin and Brandon M. Stewart. 2013. “Text as Data: The Promise and Pitfalls of Auto- matic Content Analysis Methods for Political Texts.” Political Analysis 21(3):267-297. https://doi.org/10.1093/pan/mps028 
+3. Roberts, Margaret E, Brandon Stewart, and Dustin Tingley. “Navigating the Local Modes of Big Data: The Case of Topic Models.” In *Data Analytics in Social Science, Government, and Industry*, New York: Cambridge University Press.
+
 <br/>
 
 ## Day 8: Automating Classification with Neural Networks and Large Language Models (LLMs)
@@ -243,8 +247,9 @@ Neural Networks are a powerful tool for automated classification and any other p
 
 #### Additional Suggested Readings:
 2. Bolker (Ch.7, *Optimization and all that*)
-3. Efron and Hastie (Ch.21, *Empirical Bayes Estimation Strategies*).
-4. Jones, Maillardet, and Robinson 2014. (Ch.9 *Numerical accuracy and program efficiency*, Ch.10 *Root-finding*, Ch.11 *Numerical integration*, Ch.12 *Optimisation*, Ch.13 *Systems of ordinary differential equations*). 
+3. Cantu ́, Francisco. 2019. “The Fingerprints of Fraud: Evidence from Mexico’s 1988 Presidential Election” *American Political Science Review* 113(3):710-726. https:doi.org/10.1017/S0003055419000285. 
+4. Efron and Hastie (Ch.21, *Empirical Bayes Estimation Strategies*).
+5. Jones, Maillardet, and Robinson 2014. (Ch.9 *Numerical accuracy and program efficiency*, Ch.10 *Root-finding*, Ch.11 *Numerical integration*, Ch.12 *Optimisation*, Ch.13 *Systems of ordinary differential equations*). 
 <br/>
 
 ## Day 9: False Discovery and Inference After the Design and Selection of a Model
@@ -260,6 +265,9 @@ Techniques for selecting a substantively meaningful model.
 
 #### Additional Suggested Readings:
 2. Efron and Hastie (Ch.16, *Sparse Modeling and the Lasso*, Ch.17, *Random Forests and Boosting*, Ch.19, *Support-Vector Machines and Kernel Methods*).
+3. Fariss, Christopher J. and Zachary M. Jones. “Enhancing Validity in Observational Settings When Replication is Not Possible” Political Science Research and Methods 6(2):365-380. https://doi.org/10.1017/psrm.2017.5
+4. Shmueli, Galit. 2010. “To Explain or to Predict?” *Statistical Science* 25(3):289-310. http://dx.doi.org/10.1214/10-STS330
+
 <br/>
 
 ## Day 10:
