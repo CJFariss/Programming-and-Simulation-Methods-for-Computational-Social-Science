@@ -53,7 +53,7 @@ x2 <- 0 + 1*x1 + error_or_distrurbance_term
 
 ## check the simulation visually
 plot(x1, x2)
-abline(a=0,b=-1,col=2)
+abline(a=0,b=1,col=2)
 
 cor(x1,x2)
 
