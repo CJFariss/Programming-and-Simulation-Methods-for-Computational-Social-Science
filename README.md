@@ -178,13 +178,13 @@ In this section, we will program and learn several simulation based validation t
 
 #### Program Lessons
 - [R-Program-Lessons/Day04_Simulation_Inference](./R-Program-Lessons/Day04_Simulation_Inference)
-    - [Day04_Simulation_Inference](./R-Program-Lessons/Day04_Simulation_Inference/R_Demo_Simulation_Inference_2_Sample_Hold_Out.R)
-    - [Day04_Simulation_Inference](./R-Program-Lessons/Day04_Simulation_Inference/R_Demo_Simulation_Inference_2_Sample_Cross_Validation.R)
-    - [Day04_Simulation_Inference](./R-Program-Lessons/Day04_Simulation_Inference/R_Demo_Simulation_Inference_10_Fold_Cross_Validation.R)
-    - [Day04_Simulation_Inference](./R-Program-Lessons/Day04_Simulation_Inference/R_Demo_Simulation_Inference_naive_Bayes.R)
-    - [Day04_Simulation_Inference](./R-Program-Lessons/Day04_Simulation_Inference/R_Demo_Simulation_Inference_naive_Bayes_10_Fold_Cross_Validation.R)
-    - [Day04_Simulation_Inference](./R-Program-Lessons/Day04_Simulation_Inference/R_Demo_Simulation_Inference_Bootstrap.R)
-    - [Day04_Simulation_Inference](./R-Program-Lessons/Day04_Simulation_Inference/R_Demo_Simulation_Inference_MCMC_Estimate_Mean.R)
+    - [R_Demo_Simulation_Inference_2_Sample_Hold_Out.R](./R-Program-Lessons/Day04_Simulation_Inference/R_Demo_Simulation_Inference_2_Sample_Hold_Out.R)
+    - [R_Demo_Simulation_Inference_2_Sample_Cross_Validation.R](./R-Program-Lessons/Day04_Simulation_Inference/R_Demo_Simulation_Inference_2_Sample_Cross_Validation.R)
+    - [R_Demo_Simulation_Inference_10_Fold_Cross_Validation.R](./R-Program-Lessons/Day04_Simulation_Inference/R_Demo_Simulation_Inference_10_Fold_Cross_Validation.R)
+    - [R_Demo_Simulation_Inference_naive_Bayes.R](./R-Program-Lessons/Day04_Simulation_Inference/R_Demo_Simulation_Inference_naive_Bayes.R)
+    - [R_Demo_Simulation_Inference_naive_Bayes_10_Fold_Cross_Validation.R](./R-Program-Lessons/Day04_Simulation_Inference/R_Demo_Simulation_Inference_naive_Bayes_10_Fold_Cross_Validation.R)
+    - [R_Demo_Simulation_Inference_Bootstrap.R](./R-Program-Lessons/Day04_Simulation_Inference/R_Demo_Simulation_Inference_Bootstrap.R)
+    - [R_Demo_Simulation_Inference_MCMC_Estimate_Mean.R](./R-Program-Lessons/Day04_Simulation_Inference/R_Demo_Simulation_Inference_MCMC_Estimate_Mean.R)
 
 #### Program Challenges
 - [R-Program-Challenges](https://github.com/CJFariss/R-Program-Challenges/tree/main/R-Program-Challenges)
