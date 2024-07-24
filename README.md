@@ -281,7 +281,8 @@ Techniques for selecting a substantively meaningful model.
 - [Day09_Model_Evaluation_Review](./R-Program-Lessons/Day09_Model_Evaluation_Review)
 
 #### Program Challenges
-- Select any program challenge: [R-Program-Challenges](https://github.com/CJFariss/R-Program-Challenges/tree/main/R-Program-Challenges)
+- [R-Program-Challenges](https://github.com/CJFariss/R-Program-Challenges/tree/main/R-Program-Challenges)
+    - Select any program challenge: [R-Program-Challenges](https://github.com/CJFariss/R-Program-Challenges/tree/main/R-Program-Challenges)
 
 #### Suggested Readings:
 1. Efron and Hastie (Ch.15 *Large-Scale Hypothesis Testing and FDRs*, Ch.20 *Inference After Model Selection*).
@@ -304,7 +305,8 @@ We will discuss issues relating to transparency and research ethics. Whenever we
 - No new lessons today. 
 
 #### Program Challenges
-- Select any program challenge: [R-Program-Challenges](https://github.com/CJFariss/R-Program-Challenges/tree/main/R-Program-Challenges)
+- [R-Program-Challenges](https://github.com/CJFariss/R-Program-Challenges/tree/main/R-Program-Challenges)
+    - Select any program challenge: [R-Program-Challenges](https://github.com/CJFariss/R-Program-Challenges/tree/main/R-Program-Challenges)
 
 #### Suggested Readings:
 1. Driscoll, Jesse. 2016. “Prison States & Games of Chicken” in S. Desposato, *Ethics and Experiments: Problems and Solutions for Social Scientists and Policy Professionals*, Taylor and Francis.
