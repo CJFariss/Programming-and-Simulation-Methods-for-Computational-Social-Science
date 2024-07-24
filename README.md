@@ -215,7 +215,12 @@ This sections provide an introduction to measurement models generally with speci
 
 #### Program Lessons
 - [R-Program-Lessons/Day05_Measurement_Intro](./R-Program-Lessons/Day05_Measurement_Intro)
+    - [R_Demo_logit_transformation_latent_variable.R](./R-Program-Lessons/Day05_Measurement_Intro/R_Demo_logit_transformation_latent_variable.R)
+    - [R_Demo_Measurement_factor_analysis.R](./R-Program-Lessons/R_Demo_Measurement_factor_analysis.R)
+    - [R_Demo_Measurement_SVD.R](./R-Program-Lessons/R_Demo_Measurement_SVD.R)
+
 - [R-Program-Lessons/Day05_Measurement_RSTAN](./R-Program-Lessons/Day05_Measurement_RSTAN)
+    - [Day05_Measurement_RSTAN](./R-Program-Lessons/Day05_Measurement_RSTAN)
 
 #### Program Challenges
 - [R-Program-Challenges](https://github.com/CJFariss/R-Program-Challenges/tree/main/R-Program-Challenges)
