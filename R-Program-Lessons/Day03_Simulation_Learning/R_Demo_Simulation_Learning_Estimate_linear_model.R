@@ -13,7 +13,6 @@
 ##
 ## Introduction to tutorial:
 ##
-## R_DSIS_week11_linear_model_estimation.R
 ##########################################################################
 ## Introduction to tutorial:
 ##
