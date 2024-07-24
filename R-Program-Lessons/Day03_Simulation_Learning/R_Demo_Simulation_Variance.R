@@ -1,4 +1,4 @@
-## R_Demo_Simulation_Learning_Estimate_Mean.R
+## R_Demo_Simulation_Variance.R
 ##########################################################################
 ## INSTRUCTOR: Christopher Fariss
 ## COURSE NAME: Programming and Simulation Methods for Computational Social Science (2W)

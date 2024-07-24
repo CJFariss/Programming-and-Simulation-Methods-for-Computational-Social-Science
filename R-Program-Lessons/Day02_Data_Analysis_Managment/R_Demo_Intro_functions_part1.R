@@ -32,6 +32,7 @@ function_name <- function(){
 ## print the function definition to the screen
 function_name
 
+function_name()
 
 ## the function called function makes a new function instead of an object
 ## this is the first time we have seen something other than an object created on the left hand side of the <- assignment operator
