@@ -315,9 +315,9 @@ Techniques for selecting a substantively meaningful model.
 
 #### Program Lessons
 - [Day09_Model_Evaluation_Review](./R-Program-Lessons/Day09_Model_Evaluation_Review)
-    - [.R](./R-Program-Lessons/Day09_Model_Evaluation_Review/R_Demo_Model_Evaluation_false_discovery_rate.R)
-    - [.R](./R-Program-Lessons/Day09_Model_Evaluation_Review/R_Demo_Model_Evaluation_precision_recall_accuracy.R)
-    - [.R](./R-Program-Lessons/Day09_Model_Evaluation_Review/R_Demo_Model_Evaluation_standard_errors_tstats_pvalues_CIs.R)
+    - [R_Demo_Model_Evaluation_false_discovery_rate.R](./R-Program-Lessons/Day09_Model_Evaluation_Review/R_Demo_Model_Evaluation_false_discovery_rate.R)
+    - [R_Demo_Model_Evaluation_precision_recall_accuracy.R](./R-Program-Lessons/Day09_Model_Evaluation_Review/R_Demo_Model_Evaluation_precision_recall_accuracy.R)
+    - [R_Demo_Model_Evaluation_standard_errors_tstats_pvalues_CIs.R](./R-Program-Lessons/Day09_Model_Evaluation_Review/R_Demo_Model_Evaluation_standard_errors_tstats_pvalues_CIs.R)
 
 #### Program Challenges
 - [R-Program-Challenges](https://github.com/CJFariss/R-Program-Challenges/tree/main/R-Program-Challenges)
