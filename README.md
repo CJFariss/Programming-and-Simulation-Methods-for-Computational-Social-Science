@@ -147,6 +147,14 @@ We will develop and implement simulations in R to accomplish two learning goals.
 
 #### Program Lessons
 - [R-Program-Lessons/Day03_Simulation_Learning](./R-Program-Lessons/Day03_Simulation_Learning)
+    - [R_Demo_Simulation_Learning_Dice_Rolls.R](./R-Program-Lessons/Day03_Simulation_Learning/R_Demo_Simulation_Learning_Dice_Rolls.R)
+    - [R_Demo_Simulation_Learning_Estimate_linear_model.R](./R-Program-Lessons/Day03_Simulation_Learning/R_Demo_Simulation_Learning_Estimate_linear_model.R)
+    - [R_Demo_Simulation_Learning_Estimate_Mean.R](./R-Program-Lessons/Day03_Simulation_Learning/R_Demo_Simulation_Learning_Estimate_Mean.R)
+    - [R_Demo_Simulation_Learning_Potential_Outcomes_Framework.R](./R-Program-Lessons/Day03_Simulation_Learning/R_Demo_Simulation_Learning_Potential_Outcomes_Framework.R)
+    - [R_Demo_Simulation_Learning_Probability_Continuous_Distributions.R](./R-Program-Lessons/Day03_Simulation_Learning/R_Demo_Simulation_Learning_Probability_Continuous_Distributions.R)
+    - [R_Demo_Simulation_Learning_Probability_Discrete_Distributions.R](./R-Program-Lessons/Day03_Simulation_Learning/R_Demo_Simulation_Learning_Probability_Discrete_Distributions.R)
+    - [R_Demo_Simulation_Learning_ProbCalc_BayesRule.R](./R-Program-Lessons/Day03_Simulation_Learning/R_Demo_Simulation_Learning_ProbCalc_BayesRule.R)
+    - [R_Demo_Simulation_Variance_SD_Covariance_Correlation.R](./R-Program-Lessons/Day03_Simulation_Learning/R_Demo_Simulation_Variance_SD_Covariance_Correlation.R)
 
 #### Program Challenges
 - [R-Program-Challenges](https://github.com/CJFariss/R-Program-Challenges/tree/main/R-Program-Challenges)
