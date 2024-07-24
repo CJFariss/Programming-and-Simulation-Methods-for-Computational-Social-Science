@@ -155,6 +155,7 @@ We will develop and implement simulations in R to accomplish two learning goals.
     - [R_Demo_Simulation_Learning_Estimate_Mean.R](./R-Program-Lessons/Day03_Simulation_Learning/R_Demo_Simulation_Learning_Estimate_Mean.R)
     - [R_Demo_Simulation_Learning_Estimate_linear_model.R](./R-Program-Lessons/Day03_Simulation_Learning/R_Demo_Simulation_Learning_Estimate_linear_model.R)
     - [R_Demo_Simulation_Learning_Potential_Outcomes_Framework.R](./R-Program-Lessons/Day03_Simulation_Learning/R_Demo_Simulation_Learning_Potential_Outcomes_Framework.R)
+    - [R_Demo_Simulation_Learning_Probability_Review.R](./R-Program-Lessons/Day03_Simulation_Learning/R_Demo_Simulation_Learning_Probability_Review.R)
     - [R_Demo_Simulation_Learning_ProbCalc_BayesRule.R](./R-Program-Lessons/Day03_Simulation_Learning/R_Demo_Simulation_Learning_ProbCalc_BayesRule.R)
 
 #### Program Challenges
