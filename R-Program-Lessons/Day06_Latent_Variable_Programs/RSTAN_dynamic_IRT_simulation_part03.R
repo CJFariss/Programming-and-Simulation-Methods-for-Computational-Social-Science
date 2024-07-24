@@ -1,3 +1,27 @@
+## RSTAN_dynamic_IRT_simulation_part03.R
+##########################################################################
+## INSTRUCTOR: Christopher Fariss
+## COURSE NAME: Programming and Simulation Methods for Computational Social Science (2W)
+## University of Essex Summer School 2024
+##
+## Date: 2024-07-22
+##
+## Please e-mail me if you find any errors or have and suggestions
+## e-mail: cjf0006@gmail.com
+## e-mail: cjfariss@umich.edu
+##
+##########################################################################
+##
+## Introduction to tutorial:
+##
+## In the IRT framework, there is a latent trait theta_i.
+## Where the subscript i = 1,... ,N indicates multiple units. y_itj is the observed value for item j for unit i, in t = 1, ... T, tim periods. For each item alpha_j and beta_j are also estimated. alpha_j continues to act as "difficulty" parameters, or threshold that benchmarks how likely an indicator is to be observed relative to the values of the latent trait.  In this formulation, this is analogous to an intercept in a traditional logistic regression model.  beta_j, often referred to as the "discrimination" parameters and is the analogue of a slope coefficient.
+##
+## The STAN model below adds a dependency into the relationship between the latent variable in time t+1 and time t. It is dynamic because of this dependency. See Schnakenberg and Fariss (2014) or Reuning, Kenwick, Fariss (2019) for more details (see the Papers folder).
+##
+##########################################################################
+
+##
 ##
 library(boot)
 library(rstan)

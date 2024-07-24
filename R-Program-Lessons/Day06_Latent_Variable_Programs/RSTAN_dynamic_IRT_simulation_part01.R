@@ -8,6 +8,7 @@
 ##
 ## Please e-mail me if you find any errors or have and suggestions
 ## e-mail: cjf0006@gmail.com
+## e-mail: cjfariss@umich.edu
 ##
 ##########################################################################
 ##

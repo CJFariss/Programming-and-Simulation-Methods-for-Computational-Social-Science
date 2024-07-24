@@ -1,15 +1,16 @@
 ## R_Demo_AML_neuralnet_interaction_example.R
-######################################################
+##########################################################################
 ## INSTRUCTOR: Christopher Fariss
-## COURSE NAME: Advanced Computational Methods for Social Media and Textual Data (3B)
-## University of Essex Summer School 2023
+## COURSE NAME: Programming and Simulation Methods for Computational Social Science (2W)
+## University of Essex Summer School 2024
 ##
-## Date: 2023-08-13
+## Date: 2024-07-22
 ##
-## Please e-mail me if you find any errors or have and suggestions (either email is fine)
+## Please e-mail me if you find any errors or have and suggestions
 ## e-mail: cjf0006@gmail.com
 ## e-mail: cjfariss@umich.edu
-######################################################
+##
+##########################################################################
 ## Introduction to tutorial:
 ##
 ## Overview of Gradient Decent for a linear model with three parameters for an interaction between variables (x, independent variable, features) in their relationship with an outcome variable (y, dependent variable, target variable).

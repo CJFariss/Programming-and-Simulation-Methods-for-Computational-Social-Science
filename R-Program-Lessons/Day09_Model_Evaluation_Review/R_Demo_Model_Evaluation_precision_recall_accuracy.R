@@ -1,14 +1,15 @@
 ## R_Demo_Model_Evaluation_precision_recall_accuracy.R
 ##########################################################################
 ## INSTRUCTOR: Christopher Fariss
-## COURSE NAME: Advanced Computational Methods for Social Media and Textual Data (3B or 2F)
-## University of Essex Summer School 2023
+## COURSE NAME: Programming and Simulation Methods for Computational Social Science (2W)
+## University of Essex Summer School 2024
 ##
-## Date: 2023-08-16
+## Date: 2024-07-22
 ##
 ## Please e-mail me if you find any errors or have and suggestions
 ## e-mail: cjf0006@gmail.com
 ## e-mail: cjfariss@umich.edu
+##
 ##########################################################################
 ## Introduction to tutorial:
 ##
