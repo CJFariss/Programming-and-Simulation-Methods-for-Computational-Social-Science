@@ -203,8 +203,8 @@ This sections provide an introduction to measurement models generally with speci
 <br/>
 
 
-## Day 6: Bayesian Latent Variable Models 
-More on latent variable models.
+## Day 6: Dynamic Latent Variable Models 
+More on latent variable models, specifically the introduction of a dynamic structure that links units over time.
 
 #### Program Lessons
 - [Day06_Latent_Variable_Programs](./R-Program-Lessons/Day06_Latent_Variable_Programs)
@@ -213,13 +213,12 @@ More on latent variable models.
 - [R_Challenge_simulation_zombies.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_simulation_zombies.R)
 
 #### Suggested Readings:
-1. Fariss, Christopher J. and James Lo. 2020. “Innovations in Concepts and Measurement for the Study of Peace and Conflict” *Journal of Peace Research* 57(6):669-678. https://doi.org/10.1177/0022343320965670
-2. Reuning, Kevin, Michael R. Kenwick, and Christopher J. Fariss. 2019. “Exploring the Dynamics of Latent Variable Models” Political Analysis 27(4):503-517. https://doi.org/10.1177/0022343320965670
+1. Reuning, Kevin, Michael R. Kenwick, and Christopher J. Fariss. 2019. “Exploring the Dynamics of Latent Variable Models” Political Analysis 27(4):503-517. https://doi.org/10.1177/0022343320965670
 
 #### Additional Suggested Readings:
-3. Gelman and Hill (Ch.20, *Sample size and power calculations*, Ch.21 *Understanding and summarizing the fitted models*, Ch.24 *Model checking and comparison*) Ch.25, *Missing-data imputation*).
-4. Jackman, Simon. 2000. "Estimation and Inference Are Missing Data Problems: Unifying Social Science Statistics via Bayesian Simulation" *Political Analysis* 8(4):307-332. https://doi:10.1093/oxfordjournals.pan.a029818
-5. Schnakenberg, Keith E. and Christopher J. Fariss. 2014. “Dynamic Patterns of Human Rights Practices” *Political Science Research and Methods* 2(1):1-31. http://dx.doi.org/10.1017/psrm.2013.15 
+2. Gelman and Hill (Ch.20, *Sample size and power calculations*, Ch.21 *Understanding and summarizing the fitted models*, Ch.24 *Model checking and comparison*) Ch.25, *Missing-data imputation*).
+3. Jackman, Simon. 2000. "Estimation and Inference Are Missing Data Problems: Unifying Social Science Statistics via Bayesian Simulation" *Political Analysis* 8(4):307-332. https://doi:10.1093/oxfordjournals.pan.a029818
+4. Schnakenberg, Keith E. and Christopher J. Fariss. 2014. “Dynamic Patterns of Human Rights Practices” *Political Science Research and Methods* 2(1):1-31. http://dx.doi.org/10.1017/psrm.2013.15 
 
 <br/>
 
@@ -236,11 +235,12 @@ Introduction to Regular Expressions, Document-by-Term matrices, and Construct Va
 - [R_Challenge_text_letters_and_logic.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_text_letters_and_logic.R)
 
 #### Suggested Readings:
-1. Matlofff 2011 (Ch.10: *Input/Output*, Ch.11: *String Manipulation*).
+1. Fariss, Christopher J. and James Lo. 2020. “Innovations in Concepts and Measurement for the Study of Peace and Conflict” *Journal of Peace Research* 57(6):669-678. https://doi.org/10.1177/0022343320965670
+2. Matlofff 2011 (Ch.10: *Input/Output*, Ch.11: *String Manipulation*).
 
 #### Additional Suggested Readings:
-2. Grimmer, Justin and Brandon M. Stewart. 2013. “Text as Data: The Promise and Pitfalls of Auto- matic Content Analysis Methods for Political Texts.” *Political Analysis* 21(3):267-297. https://doi.org/10.1093/pan/mps028 
-3. Roberts, Margaret E, Brandon Stewart, and Dustin Tingley. “Navigating the Local Modes of Big Data: The Case of Topic Models.” In *Data Analytics in Social Science, Government, and Industry*, New York: Cambridge University Press.
+3. Grimmer, Justin and Brandon M. Stewart. 2013. “Text as Data: The Promise and Pitfalls of Auto- matic Content Analysis Methods for Political Texts.” *Political Analysis* 21(3):267-297. https://doi.org/10.1093/pan/mps028 
+4. Roberts, Margaret E, Brandon Stewart, and Dustin Tingley. “Navigating the Local Modes of Big Data: The Case of Topic Models.” In *Data Analytics in Social Science, Government, and Industry*, New York: Cambridge University Press.
 
 <br/>
 
