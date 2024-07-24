@@ -146,7 +146,7 @@ We will develop and implement simulations in R to accomplish two learning goals.
 2. Jones, Maillardet, and Robinson 2014. (Ch.14: *Probability*, Ch.15: *Random variables*, Ch.16: *Discrete random variables*, Ch.17 *Continuous random variables*, Ch.18 *Parameter estimation*). 
 
 #### Additional Suggested Readings:
-3. Efron and Hastie (Ch.1 *Algorithms and Inference*, Ch.3 *Bayesian Inference*, Ch.4, *Fisherian Inference and Maximum Likelihood Estimation*).
+3. Efron and Hastie (Ch.1 *Algorithms and Inference*, Ch.3 *Bayesian Inference*, Ch.4 *Fisherian Inference and Maximum Likelihood Estimation*).
 4. Gelman and Hill (Ch.2 *Concepts and methods from basic probability and statistics*, Ch.3 *Linear regression: the basics*, Ch.7 *Simulation of probability models and statistical inferences*).
 5. Shadish, William R. 2010. “Campbell and Rubin: A Primer and Comparison of Their Approaches to Causal Inference in Field Settings.” *Psychological Methods* 15(1):3-17. https://doi.org/10.1037/a0015916
 <br/>
@@ -168,7 +168,7 @@ In this section, we will program and learn several simulation based validation t
 
 #### Additional Suggested Readings:
 3. Bolker (Ch.5, *Stochastic simulation and power analysis*)
-4. Efron and Hastie (Ch.7 *James-Stein Estimation and Ridge Regression*, Ch.10, *The Jackknife and Bootstrap*, Ch.11, *Bootstrap Confidence Intervals*, Ch.12, *Cross-Validation and Cp Estimate of Prediction Error*)
+4. Efron and Hastie (Ch.7 *James-Stein Estimation and Ridge Regression*, Ch.10 *The Jackknife and Bootstrap*, Ch.11, *Bootstrap Confidence Intervals*, Ch.12, *Cross-Validation and Cp Estimate of Prediction Error*)
 5. Gelman and Hill (Ch.8 *Simulation for checking statistical procedures and model fits*).
 6. Jones, Maillardet, and Robinson 2014. (Ch.21: *Monte Carlo Integration*, Ch.22: *Variance reduction*). 
 
@@ -197,7 +197,7 @@ This sections provide an introduction to measurement models generally with speci
 #### Additional Suggested Readings:
 2. Adcock, Robert, and David Collier. 2001. “Measurement Validity: A Shared Standard for Qual- itative and Quantitative Research.” American Political Science Review 95(3):529-546. https://doi.org/10.1017/S0003055401003100
 3. Jones, Maillardet, and Robinson 2014. (Ch.19: *Markov chains*). 
-4. Efron and Hastie (Ch.13, *Objective Bayes Inference and MCMC*).
+4. Efron and Hastie (Ch.13 *Objective Bayes Inference and MCMC*).
 5. Gelman and Hill (Ch.13, *Multilevel linear models: varying slopes, non-nested models, and other complexities*, Ch.14, *Multilevel logistic regression*, Ch.16, *Multilevel modeling in Bugs and R: the basics*, Ch.25, *Missing-data imputation*).
 
 <br/>
@@ -259,7 +259,7 @@ Neural Networks are a powerful tool for automated classification and any other p
 
 #### Additional Suggested Readings:
 2. Bolker (Ch.7, *Optimization and all that*)
-3. Efron and Hastie (Ch.21, *Empirical Bayes Estimation Strategies*).
+3. Efron and Hastie (Ch.21 *Empirical Bayes Estimation Strategies*).
 4. Halterman, Andrew and Katherine A. Keith. 2024. "Codebook LLMs: Adapting Political Science Codebooks for LLM Use and Adapting LLMs to Follow Codebooks" https://arxiv.org/abs/2407.10747
 5. Jones, Maillardet, and Robinson 2014. (Ch.9 *Numerical accuracy and program efficiency*, Ch.10 *Root-finding*, Ch.11 *Numerical integration*, Ch.12 *Optimisation*, Ch.13 *Systems of ordinary differential equations*). 
 
@@ -276,10 +276,10 @@ Techniques for selecting a substantively meaningful model.
 - Select any program challenge: [R-Program-Challenges](https://github.com/CJFariss/R-Program-Challenges/tree/main/R-Program-Challenges)
 
 #### Suggested Readings:
-1. Efron and Hastie (Ch.15, *Large-Scale Hypothesis Testing and FDRs*, Ch.20, *Inference After Model Selection*).
+1. Efron and Hastie (Ch.15 *Large-Scale Hypothesis Testing and FDRs*, Ch.20 *Inference After Model Selection*).
 
 #### Additional Suggested Readings:
-2. Efron and Hastie (Ch.16, *Sparse Modeling and the Lasso*, Ch.17, *Random Forests and Boosting*, Ch.19, *Support-Vector Machines and Kernel Methods*).
+2. Efron and Hastie (Ch.16 *Sparse Modeling and the Lasso*, Ch.17 *Random Forests and Boosting*, Ch.19 *Support-Vector Machines and Kernel Methods*).
 3. Fariss, Christopher J. and Zachary M. Jones. “Enhancing Validity in Observational Settings When Replication is Not Possible” *Political Science Research and Methods* 6(2):365-380. https://doi.org/10.1017/psrm.2017.5
 4. Gelman and Hill (Ch.20, *Sample size and power calculations*, Ch.21 *Understanding and summarizing the fitted models*, Ch.24 *Model checking and comparison*).
 5. Shmueli, Galit. 2010. “To Explain or to Predict?” *Statistical Science* 25(3):289-310. http://dx.doi.org/10.1214/10-STS330
