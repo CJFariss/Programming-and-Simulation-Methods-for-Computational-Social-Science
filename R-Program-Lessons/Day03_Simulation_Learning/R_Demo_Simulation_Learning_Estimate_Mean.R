@@ -61,6 +61,7 @@ x_density <- 1/(sigma*sqrt(2*pi)) * exp(-(x - mu)^2/2*sigma^2)
 x_density
 
 ## plot the two estimated densities to verify that they are the same
+par(mfrow=c(1,1))
 plot(x, x_density)
 
 ## calculate the density using the normal distribution function built into R
@@ -102,6 +103,7 @@ mu <- 1
 sum(log(1/(sigma*sqrt(2*pi)) * exp(-(x - mu)^2/2*sigma^2)))
 prod(1/(sigma*sqrt(2*pi)) * exp(-(x - mu)^2/2*sigma^2))
 
+## reminder
 prod(1:3)
 
 ## let's check to see if the best estimate for the mean is 2
@@ -137,7 +139,7 @@ sum_dens_ssqd <- NA
 min_sum_dens_ssqd <- NA
 
 ## candidate values for our estimate of mu, which is the mean value we are trying to estimate
-mu_hat <-seq(-10,10,.5)
+mu_hat <- seq(-10,10,.5)
 mu_hat
 
 ## loop through all the mu_hat values to determine which one is the best using the sum of the logged densities
@@ -265,6 +267,7 @@ for(i in 1:length(mu_hat)){
     loglik[i] <- -sum(log(normal_density(data=x, mu=mu_hat[i], sigma=1)))
 }
 
+par(mfrow=c(1,1))
 plot(mu_hat, loglik, type="l", lwd=2)
 
 ## which value is the minimum?
