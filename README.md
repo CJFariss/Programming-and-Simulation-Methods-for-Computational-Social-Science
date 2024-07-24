@@ -97,6 +97,7 @@ Introduction to the simulation and research design tools used to explore and und
 
 #### Program Lessons
 - [R-Program-Lessons/Day01_Intro_programs](./R-Program-Lessons/Day01_Intro_programs)
+    - [R_Demo_Intro_start_here.R](./R-Program-Lessons/Day01_Intro_programs/R_Demo_Intro_start_here.R)
 
 #### Program Challenges
 - [R-Program-Challenges](https://github.com/CJFariss/R-Program-Challenges/tree/main/R-Program-Challenges)
@@ -116,6 +117,14 @@ Introduction to the R programming environment. We will review the various data a
 
 #### Program Lessons
 - [R-Program-Lessons/Day02_Data_Analysis_Managment](./R-Program-Lessons/Day02_Data_Analysis_Managment)
+    - [R_Demo_Intro_vectors_matrices.R](./R-Program-Lessons/Day02_Data_Analysis_Managment/R_Demo_Intro_vectors_matrices.R)
+    - [R_Demo_Intro_lists_dataframes_tables.R](./R-Program-Lessons/Day02_Data_Analysis_Managment/R_Demo_Intro_lists_dataframes_tables.R)
+    - [R_Demo_Intro_loops_logic_lists_dataframes_tables.R](./R-Program-Lessons/Day02_Data_Analysis_Managment/R_Demo_Intro_loops_logic_lists_dataframes_tables.R)
+    - [R_Demo_Intro_functions_part1.R](./R-Program-Lessons/Day02_Data_Analysis_Managment/R_Demo_Intro_functions_part1.R)
+    - [R_Demo_Intro_functions_part2.R](./R-Program-Lessons/Day02_Data_Analysis_Managment/R_Demo_Intro_functions_part2.R)
+    - [R_Demo_Intro_forloop_vs_lapply.R](./R-Program-Lessons/Day02_Data_Analysis_Managment/R_Demo_Intro_forloop_vs_lapply.R)
+    - [R_Demo_Into_linear_model_predict.R](./R-Program-Lessons/Day02_Data_Analysis_Managment/R_Demo_Into_linear_model_predict.R)
+
 
 #### Program Challenges
 - [R-Program-Challenges](https://github.com/CJFariss/R-Program-Challenges/tree/main/R-Program-Challenges)
@@ -282,7 +291,7 @@ Techniques for selecting a substantively meaningful model.
 
 #### Program Challenges
 - [R-Program-Challenges](https://github.com/CJFariss/R-Program-Challenges/tree/main/R-Program-Challenges)
-    - Select any program challenge: [R-Program-Challenges](https://github.com/CJFariss/R-Program-Challenges/tree/main/R-Program-Challenges)
+    - Select any program challenges [R-Program-Challenges](https://github.com/CJFariss/R-Program-Challenges/tree/main/R-Program-Challenges)
 
 #### Suggested Readings:
 1. Efron and Hastie (Ch.15 *Large-Scale Hypothesis Testing and FDRs*, Ch.20 *Inference After Model Selection*).
@@ -306,7 +315,7 @@ We will discuss issues relating to transparency and research ethics. Whenever we
 
 #### Program Challenges
 - [R-Program-Challenges](https://github.com/CJFariss/R-Program-Challenges/tree/main/R-Program-Challenges)
-    - Select any program challenge: [R-Program-Challenges](https://github.com/CJFariss/R-Program-Challenges/tree/main/R-Program-Challenges)
+    - Select any program challenges [R-Program-Challenges](https://github.com/CJFariss/R-Program-Challenges/tree/main/R-Program-Challenges)
 
 #### Suggested Readings:
 1. Driscoll, Jesse. 2016. “Prison States & Games of Chicken” in S. Desposato, *Ethics and Experiments: Problems and Solutions for Social Scientists and Policy Professionals*, Taylor and Francis.
