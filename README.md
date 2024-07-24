@@ -147,7 +147,7 @@ We will develop and implement simulations in R to accomplish two learning goals.
 
 #### Additional Suggested Readings:
 3. Efron and Hastie (Ch.1 *Algorithms and Inference*, Ch.3 *Bayesian Inference*, Ch.4, *Fisherian Inference and Maximum Likelihood Estimation*).
-4. Gelman and Hill (Ch.2 *Concepts and methods from basic probability and statistics*, Ch.7 *Simulation of probability models and statistical inferences*).
+4. Gelman and Hill (Ch.2 *Concepts and methods from basic probability and statistics*, Ch.3 *Linear regression: the basics*, Ch.7 *Simulation of probability models and statistical inferences*).
 5. Shadish, William R. 2010. “Campbell and Rubin: A Primer and Comparison of Their Approaches to Causal Inference in Field Settings.” *Psychological Methods* 15(1):3-17. https://doi.org/10.1037/a0015916
 <br/>
 
