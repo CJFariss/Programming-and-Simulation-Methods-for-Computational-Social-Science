@@ -212,9 +212,12 @@ More on latent variable models.
 #### Program Challenges
 
 #### Suggested Readings:
-Fariss, Christopher J. and James Lo. 2020. “Innovations in Concepts and Measurement for the Study of Peace and Conflict” *Journal of Peace Research* 57(6):669-678. https://doi.org/10.1177/0022343320965670
+1. Fariss, Christopher J. and James Lo. 2020. “Innovations in Concepts and Measurement for the Study of Peace and Conflict” *Journal of Peace Research* 57(6):669-678. https://doi.org/10.1177/0022343320965670
 
 #### Additional Suggested Readings:
+2. Gelman and Hill (Ch.20, *Sample size and power calculations*, Ch.21 *Understanding and summarizing the fitted models*, Ch.24 *Model checking and comparison*) Ch.25, *Missing-data imputation*).
+3. Jackman, Simon. 2000. "Estimation and Inference Are Missing Data Problems: Unifying Social Science Statistics via Bayesian Simulation" *Political Analysis* 8(4):307-332. https://doi:10.1093/oxfordjournals.pan.a029818
+
 
 <br/>
 
@@ -276,7 +279,11 @@ Techniques for selecting a substantively meaningful model.
 #### Additional Suggested Readings:
 2. Efron and Hastie (Ch.16, *Sparse Modeling and the Lasso*, Ch.17, *Random Forests and Boosting*, Ch.19, *Support-Vector Machines and Kernel Methods*).
 3. Fariss, Christopher J. and Zachary M. Jones. “Enhancing Validity in Observational Settings When Replication is Not Possible” *Political Science Research and Methods* 6(2):365-380. https://doi.org/10.1017/psrm.2017.5
-4. Shmueli, Galit. 2010. “To Explain or to Predict?” *Statistical Science* 25(3):289-310. http://dx.doi.org/10.1214/10-STS330
+4. Gelman and Hill (Ch.20, *Sample size and power calculations*, Ch.21 *Understanding and summarizing the fitted models*, Ch.24 *Model checking and comparison*).
+5. Shmueli, Galit. 2010. “To Explain or to Predict?” *Statistical Science* 25(3):289-310. http://dx.doi.org/10.1214/10-STS330
+
+
+
 
 <br/>
 
