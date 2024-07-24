@@ -124,6 +124,7 @@ Introduction to the R programming environment. We will review the various data a
     - [R_Demo_Intro_functions_part2.R](./R-Program-Lessons/Day02_Data_Analysis_Managment/R_Demo_Intro_functions_part2.R)
     - [R_Demo_Intro_forloop_vs_lapply.R](./R-Program-Lessons/Day02_Data_Analysis_Managment/R_Demo_Intro_forloop_vs_lapply.R)
     - [R_Demo_Intro_linear_model_predict.R](./R-Program-Lessons/Day02_Data_Analysis_Managment/R_Demo_Intro_linear_model_predict.R)
+    - [R_Demo_Intro_data_visulization.R](./R-Program-Lessons/Day02_Data_Analysis_Managment/R_Demo_Intro_data_visulization.R)
 
 
 #### Program Challenges
