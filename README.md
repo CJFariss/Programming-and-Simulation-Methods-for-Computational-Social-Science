@@ -218,8 +218,6 @@ This sections provide an introduction to measurement models generally with speci
     - [R_Demo_logit_transformation_latent_variable.R](./R-Program-Lessons/Day05_Measurement_Intro/R_Demo_logit_transformation_latent_variable.R)
     - [R_Demo_Measurement_factor_analysis.R](./R-Program-Lessons/R_Demo_Measurement_factor_analysis.R)
     - [R_Demo_Measurement_SVD.R](./R-Program-Lessons/R_Demo_Measurement_SVD.R)
-
-#### Program Lessons
 - [R-Program-Lessons/Day05_Measurement_RSTAN](./R-Program-Lessons/Day05_Measurement_RSTAN)
     - [RSTAN_normal_distribution_simulation.R](./R-Program-Lessons/Day05_Measurement_RSTAN/RSTAN_normal_distribution_simulation.R)
     - [RSTAN_mean_simulation.R](./R-Program-Lessons/Day05_Measurement_RSTAN/RSTAN_mean_simulation.R)
