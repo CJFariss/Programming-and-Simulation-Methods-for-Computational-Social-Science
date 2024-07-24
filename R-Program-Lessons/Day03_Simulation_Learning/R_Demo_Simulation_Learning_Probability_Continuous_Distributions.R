@@ -104,11 +104,12 @@ curve(expr=dunif(x, min = -2, max = 2), n=10001, from=-10,to=10, ylab="Pr(X=x)",
 curve(expr=dunif(x, min = -2, max = 2), n=10001, from=-100,to=100, ylab="Pr(X=x)", type="l", xlim=c(-100,100), ylim=c(0,1.05), lwd=3, col="navy", main="U(-2,2) Density")
 
 
-## how many of the draws are very close to the middle of the normal distribution? (hint: what is the proportion)
+## how many of the draws are very close to the middle of the uniform distribution? (hint: what is the proportion)
 sim_n <- 10000
 random_draws <- runif(sim_n,0,1)
 summary(random_draws)
 
+## as a reminder 
 length(unique(c(1,2,2)))
 
 length(unique(random_draws))
@@ -159,7 +160,7 @@ sim_size <- 1000000
 x_samples <- sample(x, size=sim_size, replace=TRUE, prob=x_dunif)
 w <- length(unique(x_samples)) * (1/(b-a))
 w
-x_dunif_estimate <- table(x_samples)/(sim_size / w) ## modify by the length() of the unique vlaues in the x sequence
+x_dunif_estimate <- table(x_samples)/(sim_size / w) ## modify by the length() of the unique values in the x sequence
 x_dunif_estimate
 barplot(x_dunif_estimate, main="U() density approximated using sample()", ylim=c(0,1))
 MASS::truehist(x_samples, main="U() density using sample()")
@@ -179,7 +180,7 @@ MASS::truehist(x_samples, main="U() density using runif()")
 ##
 ## The sample space S for the normal distribution, is defined so that the density for any value along the real number line from negative infinity to positive infinity. Instead of directly estimating probabilities as we did above, as with the uniform distribution we will instead estimate density.
 ##
-## What is density? Density is the relative probability of sampling an event a specific point along the range of possible values defined by the function.
+## What is density? Density is the relative probability of sampling an event at a specific point along the range of possible values defined by the function.
 ##
 ## Unlike the uniform distribution the density value for a normal distribution varies (is not uniform) for different values along the real number line.
 ##
@@ -231,6 +232,12 @@ pnorm(1, mean=0, sd=1)
 pnorm(0,0,1) - pnorm(-1,0,1)
 
 
+pnorm(1,0,1) - pnorm(-1,0,1)
+
+pnorm(2,0,1) - pnorm(-2,0,1)
+
+pnorm(1.96,0,1) - pnorm(-1.96,0,1)
+
 
 ## Graph the Normal density function using the curve() function
 curve(expr=dnorm, ylab="Pr(X=x)", type="l", xlim=c(-4,4), ylim=c(0,1), lwd=3, col="navy", main="N(0,1) Density")
@@ -269,10 +276,12 @@ curve(expr=dnorm, xlim=c(-3,3), col="darkorange", add=TRUE, lwd=2)
 
 ## how many of the draws are very close to the middle of the uniform distribution?
 ## (hint: what is the proportion)
-sim_n <- 10000
+sim_n <- 100000
 random_draws <- rnorm(sim_n)
 
 table(random_draws>-1 & random_draws<1)/sim_n
+
+table(random_draws>-1.96 & random_draws<1.96)/sim_n
 
 table(random_draws>-2 & random_draws<2)/sim_n
 
@@ -281,6 +290,8 @@ table(random_draws>-3 & random_draws<3)/sim_n
 ## we can calculate the above with a p-type function in R
 ## the p-type function for a density function tells us the density or probability of a function at a given value along the x-axis
 pnorm(1) - pnorm(-1)
+
+pnorm(1.96) - pnorm(-1.96)
 
 pnorm(2) - pnorm(-2)
 
