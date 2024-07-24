@@ -220,7 +220,13 @@ This sections provide an introduction to measurement models generally with speci
     - [R_Demo_Measurement_SVD.R](./R-Program-Lessons/R_Demo_Measurement_SVD.R)
 
 - [R-Program-Lessons/Day05_Measurement_RSTAN](./R-Program-Lessons/Day05_Measurement_RSTAN)
-    - [Day05_Measurement_RSTAN](./R-Program-Lessons/Day05_Measurement_RSTAN)
+    - [RSTAN_normal_distribution_simulation.R](./R-Program-Lessons/Day05_Measurement_RSTAN/RSTAN_normal_distribution_simulation.R)
+    - [RSTAN_mean_simulation.R](./R-Program-Lessons/Day05_Measurement_RSTAN/RSTAN_mean_simulation.R)
+    - [RSTAN_linear_model_simulation.R](./R-Program-Lessons/Day05_Measurement_RSTAN/RSTAN_linear_model_simulation.R)
+    - [RSTAN_logistic_regression_simulation.R](./R-Program-Lessons/Day05_Measurement_RSTAN/RSTAN_logistic_regression_simulation.R)
+    - [RSTAN_binary_IRT_simulation.R](./R-Program-Lessons/Day05_Measurement_RSTAN/RSTAN_binary_IRT_simulation.R)
+    - [RSTAN_binary_IRT_NAs_simulation.R](./R-Program-Lessons/Day05_Measurement_RSTAN/RSTAN_binary_IRT_NAs_simulation.R)
+    - [RSTAN_ordered_IRT_simulation.R](./R-Program-Lessons/Day05_Measurement_RSTAN/RSTAN_ordered_IRT_simulation.R)
 
 #### Program Challenges
 - [R-Program-Challenges](https://github.com/CJFariss/R-Program-Challenges/tree/main/R-Program-Challenges)
