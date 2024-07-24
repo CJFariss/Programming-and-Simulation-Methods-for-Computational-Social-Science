@@ -235,10 +235,10 @@ Introduction to Regular Expressions, Document-by-Term matrices, and Construct Va
 - [R_Challenge_text_letters_and_logic.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_text_letters_and_logic.R)
 
 #### Suggested Readings:
-1. Fariss, Christopher J. and James Lo. 2020. “Innovations in Concepts and Measurement for the Study of Peace and Conflict” *Journal of Peace Research* 57(6):669-678. https://doi.org/10.1177/0022343320965670
-2. Matlofff 2011 (Ch.10: *Input/Output*, Ch.11: *String Manipulation*).
+1. Matlofff 2011 (Ch.10: *Input/Output*, Ch.11: *String Manipulation*).
 
 #### Additional Suggested Readings:
+2. Fariss, Christopher J. and James Lo. 2020. “Innovations in Concepts and Measurement for the Study of Peace and Conflict” *Journal of Peace Research* 57(6):669-678. https://doi.org/10.1177/0022343320965670
 3. Grimmer, Justin and Brandon M. Stewart. 2013. “Text as Data: The Promise and Pitfalls of Auto- matic Content Analysis Methods for Political Texts.” *Political Analysis* 21(3):267-297. https://doi.org/10.1093/pan/mps028 
 4. Roberts, Margaret E, Brandon Stewart, and Dustin Tingley. “Navigating the Local Modes of Big Data: The Case of Topic Models.” In *Data Analytics in Social Science, Government, and Industry*, New York: Cambridge University Press.
 
