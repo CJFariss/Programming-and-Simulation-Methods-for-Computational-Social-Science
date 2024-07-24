@@ -210,6 +210,7 @@ More on latent variable models.
 - [Day06_Latent_Variable_Programs](./R-Program-Lessons/Day06_Latent_Variable_Programs)
 
 #### Program Challenges
+- [R_Challenge_simulation_zombies.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_simulation_zombies.R)
 
 #### Suggested Readings:
 1. Fariss, Christopher J. and James Lo. 2020. “Innovations in Concepts and Measurement for the Study of Peace and Conflict” *Journal of Peace Research* 57(6):669-678. https://doi.org/10.1177/0022343320965670
