@@ -214,18 +214,15 @@ Social scientists are often interested in explaining concepts that are difficult
 This sections provide an introduction to measurement models generally with specific focus on Bayesian measurement models and measurement models that make use of text data. We will emphasize the use of construct validity to assess new and existing measures in applied research. We will motivate the development of these models with a discussion of the Bayesian perspective on the relationship between data and model parameters. This perspective is useful because it shifts the burden of validity from the primary source documentation and raw data to the model parameters that bind these diverse pieces of information together.
 
 #### Program Lessons
-- [R-Program-Lessons/Day05_Measurement_Intro](./R-Program-Lessons/Day05_Measurement_Intro)
-    - [R_Demo_logit_transformation_latent_variable.R](./R-Program-Lessons/Day05_Measurement_Intro/R_Demo_logit_transformation_latent_variable.R)
+- [R-Program-Lessons/Day05_Measurement](./R-Program-Lessons/Day05_Measurement)
     - [R_Demo_Measurement_factor_analysis.R](./R-Program-Lessons/R_Demo_Measurement_factor_analysis.R)
-    - [R_Demo_Measurement_SVD.R](./R-Program-Lessons/R_Demo_Measurement_SVD.R)
-- [R-Program-Lessons/Day05_Measurement_RSTAN](./R-Program-Lessons/Day05_Measurement_RSTAN)
-    - [RSTAN_normal_distribution_simulation.R](./R-Program-Lessons/Day05_Measurement_RSTAN/RSTAN_normal_distribution_simulation.R)
-    - [RSTAN_mean_simulation.R](./R-Program-Lessons/Day05_Measurement_RSTAN/RSTAN_mean_simulation.R)
-    - [RSTAN_linear_model_simulation.R](./R-Program-Lessons/Day05_Measurement_RSTAN/RSTAN_linear_model_simulation.R)
-    - [RSTAN_logistic_regression_simulation.R](./R-Program-Lessons/Day05_Measurement_RSTAN/RSTAN_logistic_regression_simulation.R)
-    - [RSTAN_binary_IRT_simulation.R](./R-Program-Lessons/Day05_Measurement_RSTAN/RSTAN_binary_IRT_simulation.R)
-    - [RSTAN_binary_IRT_NAs_simulation.R](./R-Program-Lessons/Day05_Measurement_RSTAN/RSTAN_binary_IRT_NAs_simulation.R)
-    - [RSTAN_ordered_IRT_simulation.R](./R-Program-Lessons/Day05_Measurement_RSTAN/RSTAN_ordered_IRT_simulation.R)
+    - [RSTAN_normal_distribution_simulation.R](./R-Program-Lessons/Day05_Measurement/RSTAN_normal_distribution_simulation.R)
+    - [RSTAN_mean_simulation.R](./R-Program-Lessons/Day05_Measurement/RSTAN_mean_simulation.R)
+    - [RSTAN_linear_model_simulation.R](./R-Program-Lessons/Day05_Measurement/RSTAN_linear_model_simulation.R)
+    - [RSTAN_logistic_regression_simulation.R](./R-Program-Lessons/Day05_Measurement/RSTAN_logistic_regression_simulation.R)
+    - [RSTAN_binary_IRT_simulation.R](./R-Program-Lessons/Day05_Measurement/RSTAN_binary_IRT_simulation.R)
+    - [RSTAN_binary_IRT_NAs_simulation.R](./R-Program-Lessons/Day05_Measurement/RSTAN_binary_IRT_NAs_simulation.R)
+    - [RSTAN_ordered_IRT_simulation.R](./R-Program-Lessons/Day05_Measurement/RSTAN_ordered_IRT_simulation.R)
 
 #### Program Challenges
 - [R-Program-Challenges](https://github.com/CJFariss/R-Program-Challenges/tree/main/R-Program-Challenges)
@@ -249,6 +246,7 @@ More on latent variable models, specifically the introduction of a dynamic struc
 
 #### Program Lessons
 - [Day06_Latent_Variable_Programs](./R-Program-Lessons/Day06_Latent_Variable_Programs)
+    - [R_Demo_Measurement_logit_transformation_latent_variable.R](./R-Program-Lessons/Day07_Text_as_data_programs/R_Demo_Measurement_logit_transformation_latent_variable.R)
 
 #### Program Challenges
 - [R-Program-Challenges](https://github.com/CJFariss/R-Program-Challenges/tree/main/R-Program-Challenges)
@@ -269,6 +267,7 @@ Introduction to Regular Expressions, Document-by-Term matrices, and Construct Va
 
 #### Program Lessons
 - [Day07_Text_as_data_programs](./R-Program-Lessons/Day07_Text_as_data_programs)
+    - [R_Demo_Measurement_SVD.R](./R-Program-Lessons/Day07_Text_as_data_programs/R_Demo_Measurement_SVD.R)
 
 #### Program Challenges
 - [R-Program-Challenges](https://github.com/CJFariss/R-Program-Challenges/tree/main/R-Program-Challenges)
