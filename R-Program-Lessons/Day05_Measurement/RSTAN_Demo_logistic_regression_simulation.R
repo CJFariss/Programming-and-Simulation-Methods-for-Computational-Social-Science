@@ -1,4 +1,4 @@
-## RSTAN_logistic_regression_simulation.R
+## RSTAN_Demo_logistic_regression_simulation.R
 ##########################################################################
 ## INSTRUCTOR: Christopher Fariss
 ## COURSE NAME: Programming and Simulation Methods for Computational Social Science (2W)

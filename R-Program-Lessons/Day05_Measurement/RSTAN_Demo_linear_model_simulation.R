@@ -1,4 +1,4 @@
-## RSTAN_linear_model_simulation.R
+## RSTAN_Demo_linear_model_simulation.R
 ##########################################################################
 ## INSTRUCTOR: Christopher Fariss
 ## COURSE NAME: Programming and Simulation Methods for Computational Social Science (2W)
