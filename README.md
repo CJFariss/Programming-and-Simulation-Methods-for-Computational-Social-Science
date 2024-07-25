@@ -105,7 +105,7 @@ Introduction to the simulation and research design tools used to explore and und
 
 #### Suggested Readings:
 1. Jones, Maillardet, and Robinson 2014. (Ch.1 *Setting up*, Ch2. *R as a calculating environment*). 
-2. Matlofff 2011. (Ch.2: *Getting Started*).
+2. Matloff 2011. (Ch.2: *Getting Started*).
 
 #### Additional Suggested Readings:
 3. Borsboom, Denny, Gideon J. Mellenbergh, and Jaap van Heerden. 2004. “The Concept of Validity” *Psychological Review* 111(4):1061-71. https://doi.org/10.1037/0033-295X.111.4.1061
@@ -134,11 +134,11 @@ Introduction to the R programming environment. We will review the various data a
 
 #### Suggested Readings:
 1. Jones, Maillardet, and Robinson 2014. (Ch.3: *Basic programming*, Ch.4: *I/O Input and output*, Ch.5: *Programming with functions*, Ch.6: *Sophisticated data structures*, Ch.7: *Better graphics*, Ch.8 *Points to further programming techniques*). 
-2. Matlofff 2011. (Ch.2: *Vectors*, Ch.3: *Matrices and Arrays*, Ch.4: *Lists*, Ch.5: *Data Frames*, Ch.6: *Factors and Tables*, Ch.7: *R Programming Structures*, Ch.14: *Performance Enhancement: Speed and Memory*, Ch.16: *Parallel R*).
+2. Matloff 2011. (Ch.2: *Vectors*, Ch.3: *Matrices and Arrays*, Ch.4: *Lists*, Ch.5: *Data Frames*, Ch.6: *Factors and Tables*, Ch.7: *R Programming Structures*, Ch.14: *Performance Enhancement: Speed and Memory*, Ch.16: *Parallel R*).
 
 #### Additional Suggested Readings:
 3. Bolker (Ch.2, *Exploratory data analysis and graphics*)
-4. Matlofff 2011 (Ch.9: *Object-Oriented Programming*, Ch.13: *Debugging*).
+4. Matloff 2011 (Ch.9: *Object-Oriented Programming*, Ch.13: *Debugging*).
 5. Wickham, Hadley. “The tidyverse style guide” https://style.tidyverse.org 
 6. R graph gallery. http://r-graph-gallery.com/
 <br/>
@@ -168,8 +168,8 @@ We will develop and implement simulations in R to accomplish two learning goals.
 2. Jones, Maillardet, and Robinson 2014. (Ch.14: *Probability*, Ch.15: *Random variables*, Ch.16: *Discrete random variables*, Ch.17 *Continuous random variables*, Ch.18 *Parameter estimation*). 
 
 #### Additional Suggested Readings:
-3. Efron and Hastie (Ch.1 *Algorithms and Inference*, Ch.3 *Bayesian Inference*, Ch.4 *Fisherian Inference and Maximum Likelihood Estimation*).
-4. Gelman and Hill (Ch.2 *Concepts and methods from basic probability and statistics*, Ch.3 *Linear regression: the basics*, Ch.7 *Simulation of probability models and statistical inferences*).
+3. Efron and Hastie 2016. (Ch.1 *Algorithms and Inference*, Ch.3 *Bayesian Inference*, Ch.4 *Fisherian Inference and Maximum Likelihood Estimation*).
+4. Gelman and Hill 2007. (Ch.2 *Concepts and methods from basic probability and statistics*, Ch.3 *Linear regression: the basics*, Ch.7 *Simulation of probability models and statistical inferences*).
 5. Shadish, William R. 2010. “Campbell and Rubin: A Primer and Comparison of Their Approaches to Causal Inference in Field Settings.” *Psychological Methods* 15(1):3-17. https://doi.org/10.1037/a0015916
 <br/>
 
@@ -193,15 +193,15 @@ In this section, we will program and learn several simulation based validation t
     - [R_Challenge_simulation_5card_hands.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_simulation_5card_hands.R)
 
 #### Suggested Readings:
-1. Matlofff 2011 (Ch.8: *Doing Math and Simulations in R*)
+1. Matloff 2011 (Ch.8: *Doing Math and Simulations in R*)
 2. Jones, Maillardet, and Robinson 2014. (Ch.20: *Simulation*). 
 
 #### Additional Suggested Readings:
-3. Bolker (Ch.5, *Stochastic simulation and power analysis*)
-4. Efron and Hastie (Ch.7 *James-Stein Estimation and Ridge Regression*, Ch.10 *The Jackknife and Bootstrap*, Ch.11, *Bootstrap Confidence Intervals*, Ch.12, *Cross-Validation and Cp Estimate of Prediction Error*)
-5. Gelman and Hill (Ch.8 *Simulation for checking statistical procedures and model fits*).
+3. Bolker 2007. (Ch.5 *Stochastic simulation and power analysis*)
+4. Efron and Hastie 2016. (Ch.7 *James-Stein Estimation and Ridge Regression*, Ch.10 *The Jackknife and Bootstrap*, Ch.11, *Bootstrap Confidence Intervals*, Ch.12, *Cross-Validation and Cp Estimate of Prediction Error*)
+5. Gelman and Hill 2007. (Ch.8 *Simulation for checking statistical procedures and model fits*).
 6. Jones, Maillardet, and Robinson 2014. (Ch.21: *Monte Carlo Integration*, Ch.22: *Variance reduction*). 
-
+7. Matloff 2024. (Ch. 3 *Bias, Variance, OVerfitting, and Cross-Validation*).
 
 <br/>
 
@@ -258,7 +258,7 @@ More on latent variable models, specifically the introduction of a dynamic struc
 1. Reuning, Kevin, Michael R. Kenwick, and Christopher J. Fariss. 2019. “Exploring the Dynamics of Latent Variable Models” Political Analysis 27(4):503-517. https://doi.org/10.1177/0022343320965670
 
 #### Additional Suggested Readings:
-2. Gelman and Hill (Ch.20, *Sample size and power calculations*, Ch.21 *Understanding and summarizing the fitted models*, Ch.24 *Model checking and comparison*) Ch.25, *Missing-data imputation*).
+2. Gelman and Hill 2007. (Ch.20, *Sample size and power calculations*, Ch.21 *Understanding and summarizing the fitted models*, Ch.24 *Model checking and comparison*) Ch.25, *Missing-data imputation*).
 3. Jackman, Simon. 2000. "Estimation and Inference Are Missing Data Problems: Unifying Social Science Statistics via Bayesian Simulation" *Political Analysis* 8(4):307-332. https://doi:10.1093/oxfordjournals.pan.a029818
 4. Schnakenberg, Keith E. and Christopher J. Fariss. 2014. “Dynamic Patterns of Human Rights Practices” *Political Science Research and Methods* 2(1):1-31. http://dx.doi.org/10.1017/psrm.2013.15 
 
@@ -278,12 +278,13 @@ Introduction to Regular Expressions, Document-by-Term matrices, and Construct Va
     - [R_Challenge_text_letters_and_logic.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_text_letters_and_logic.R)
 
 #### Suggested Readings:
-1. Matlofff 2011 (Ch.10: *Input/Output*, Ch.11: *String Manipulation*).
+1. Matloff 2011 (Ch.10: *Input/Output*, Ch.11: *String Manipulation*).
 
 #### Additional Suggested Readings:
 2. Fariss, Christopher J. and James Lo. 2020. “Innovations in Concepts and Measurement for the Study of Peace and Conflict” *Journal of Peace Research* 57(6):669-678. https://doi.org/10.1177/0022343320965670
 3. Grimmer, Justin and Brandon M. Stewart. 2013. “Text as Data: The Promise and Pitfalls of Auto- matic Content Analysis Methods for Political Texts.” *Political Analysis* 21(3):267-297. https://doi.org/10.1093/pan/mps028 
-4. Roberts, Margaret E, Brandon Stewart, and Dustin Tingley. “Navigating the Local Modes of Big Data: The Case of Topic Models.” In *Data Analytics in Social Science, Government, and Industry*, New York: Cambridge University Press.
+4. Matloff 2024. (Ch. 3 *Dealing with Large Numbers of Features*, Ch13. *Handling Time Series and Text Data*).
+5. Roberts, Margaret E, Brandon Stewart, and Dustin Tingley. “Navigating the Local Modes of Big Data: The Case of Topic Models.” In *Data Analytics in Social Science, Government, and Industry*, New York: Cambridge University Press.
 
 <br/>
 
@@ -302,10 +303,11 @@ Neural Networks are a powerful tool for automated classification and any other p
 1. Efron and Hastie (Ch.18, *Neural Networks and Deep Learning*).
 
 #### Additional Suggested Readings:
-2. Bolker (Ch.7, *Optimization and all that*)
-3. Efron and Hastie (Ch.21 *Empirical Bayes Estimation Strategies*).
+2. Bolker 2007. (Ch.7 *Optimization and all that*)
+3. Efron and Hastie 2016. (Ch.21 *Empirical Bayes Estimation Strategies*).
 4. Halterman, Andrew and Katherine A. Keith. 2024. "Codebook LLMs: Adapting Political Science Codebooks for LLM Use and Adapting LLMs to Follow Codebooks" https://arxiv.org/abs/2407.10747
 5. Jones, Maillardet, and Robinson 2014. (Ch.9 *Numerical accuracy and program efficiency*, Ch.10 *Root-finding*, Ch.11 *Numerical integration*, Ch.12 *Optimisation*, Ch.13 *Systems of ordinary differential equations*). 
+7. Matloff 2024. (Ch. 2 *Classification Models*, Ch.11 *Linear Models of Steroids: Neural Networks*, Ch.12 *Image Classification*).
 
 
 <br/>
@@ -324,12 +326,13 @@ Techniques for selecting a substantively meaningful model.
     - Select any program challenges [R-Program-Challenges](https://github.com/CJFariss/R-Program-Challenges/tree/main/R-Program-Challenges)
 
 #### Suggested Readings:
-1. Efron and Hastie (Ch.15 *Large-Scale Hypothesis Testing and FDRs*, Ch.20 *Inference After Model Selection*).
+1. Efron and Hastie 2016. (Ch.15 *Large-Scale Hypothesis Testing and FDRs*, Ch.20 *Inference After Model Selection*).
 
 #### Additional Suggested Readings:
-2. Efron and Hastie (Ch.16 *Sparse Modeling and the Lasso*, Ch.17 *Random Forests and Boosting*, Ch.19 *Support-Vector Machines and Kernel Methods*).
+2. Efron and Hastie 2016. (Ch.16 *Sparse Modeling and the Lasso*, Ch.17 *Random Forests and Boosting*, Ch.19 *Support-Vector Machines and Kernel Methods*).
 3. Fariss, Christopher J. and Zachary M. Jones. “Enhancing Validity in Observational Settings When Replication is Not Possible” *Political Science Research and Methods* 6(2):365-380. https://doi.org/10.1017/psrm.2017.5
-4. Gelman and Hill (Ch.20, *Sample size and power calculations*, Ch.21 *Understanding and summarizing the fitted models*, Ch.24 *Model checking and comparison*).
+4. Gelman and Hill 2007. (Ch.20, *Sample size and power calculations*, Ch.21 *Understanding and summarizing the fitted models*, Ch.24 *Model checking and comparison*).
+7. Matloff 2024. (Ch.5 *A Step Beyond K-NN: Decision Tress*, Ch.6 *Tweaking the Trees*, Ch.7 *Finding A Good Set of Hyperparameters*).
 5. Shmueli, Galit. 2010. “To Explain or to Predict?” *Statistical Science* 25(3):289-310. http://dx.doi.org/10.1214/10-STS330
 
 
@@ -352,6 +355,6 @@ We will discuss issues relating to transparency and research ethics. Whenever we
 2. Editorial Board. 2014. "Editorial Expression of Concern: Experimental evidence of massivescale emotional contagion through social networks" (July 3, 2014) *Proceedings of the National Academy of Sciences* 111(29):10779. https://doi.org/10.1073/pnas.1412469111
 
 #### Additional Suggested Readings:
-3. Bond, Robert M., Christopher J. Fariss, Jason J. Jones, Jaime E. Settle. “Network Experiments through Academic-Industry Collaboration” In *Spreading Dynamics in Social Systems*, edited by Yong Yeol Ahn and Sune Lehmann, Springer (June 2018). https://link.springer.com/chapter/10.1007/978-3-319-77332-2_18. 
+3. Bond, Robert M., Christopher J. Fariss, Jason J. Jones, Jaime E. Settle. 2018. “Network Experiments through Academic-Industry Collaboration” In *Spreading Dynamics in Social Systems*, edited by Yong Yeol Ahn and Sune Lehmann, Springer. https://link.springer.com/chapter/10.1007/978-3-319-77332-2_18. 
 4. Kramer, Adam D. I., Jamie E. Guillory, Jeffrey T. Hancock. 2014. “Emotional contagion through social networks” Proceedings of the National Academy of Sciences 111(24):8788-8790. https://doi.org/10.1073/pnas.1320040111
 5. Margetts, Helen. 2017. “Political Behaviour and the Acoustics of Social Media” Nature Human Behaviour 1 (0086). https://doi.org/10.1038/s41562-017-008
