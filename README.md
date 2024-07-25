@@ -108,7 +108,8 @@ Introduction to the simulation and research design tools used to explore and und
 2. Matloff 2011. (Ch.2: *Getting Started*).
 
 #### Additional Suggested Readings:
-3. Borsboom, Denny, Gideon J. Mellenbergh, and Jaap van Heerden. 2004. “The Concept of Validity” *Psychological Review* 111(4):1061-71. https://doi.org/10.1037/0033-295X.111.4.1061
+3. Bolker (Ch.1, *Introduction*)
+4. Borsboom, Denny, Gideon J. Mellenbergh, and Jaap van Heerden. 2004. “The Concept of Validity” *Psychological Review* 111(4):1061-71. https://doi.org/10.1037/0033-295X.111.4.1061
 
 <br/>
 
@@ -168,10 +169,12 @@ We will develop and implement simulations in R to accomplish two learning goals.
 2. Jones, Maillardet, and Robinson 2014. (Ch.14: *Probability*, Ch.15: *Random variables*, Ch.16: *Discrete random variables*, Ch.17 *Continuous random variables*, Ch.18 *Parameter estimation*). 
 
 #### Additional Suggested Readings:
-3. Efron and Hastie 2016. (Ch.1 *Algorithms and Inference*, Ch.3 *Bayesian Inference*, Ch.4 *Fisherian Inference and Maximum Likelihood Estimation*).
-4. Gelman and Hill 2007. (Ch.2 *Concepts and methods from basic probability and statistics*, Ch.3 *Linear regression: the basics*, Ch.7 *Simulation of probability models and statistical inferences*).
-5. Shadish, William R. 2010. “Campbell and Rubin: A Primer and Comparison of Their Approaches to Causal Inference in Field Settings.” *Psychological Methods* 15(1):3-17. https://doi.org/10.1037/a0015916
+3. Bolker 2007. (Ch.4 *Probability and stochastic distributions for ecological modeling*)
+4. Efron and Hastie 2016. (Ch.1 *Algorithms and Inference*, Ch.3 *Bayesian Inference*, Ch.4 *Fisherian Inference and Maximum Likelihood Estimation*).
+5. Gelman and Hill 2007. (Ch.2 *Concepts and methods from basic probability and statistics*, Ch.3 *Linear regression: the basics*, Ch.7 *Simulation of probability models and statistical inferences*).
+6. Shadish, William R. 2010. “Campbell and Rubin: A Primer and Comparison of Their Approaches to Causal Inference in Field Settings.” *Psychological Methods* 15(1):3-17. https://doi.org/10.1037/a0015916
 <br/>
+
 
 ## Day 4: Simulation Based Programming for Model Comparison and Selection
 In this section, we will program and learn several simulation based validation tools for assessing a model of observational data in comparison to an appropriate baseline model. Specifically, we will learn to evaluate model performance using in-sample and out-of-sample data.
