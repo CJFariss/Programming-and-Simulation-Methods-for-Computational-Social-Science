@@ -169,7 +169,7 @@ We will develop and implement simulations in R to accomplish two learning goals.
 2. Jones, Maillardet, and Robinson 2014. (Ch.14: *Probability*, Ch.15: *Random variables*, Ch.16: *Discrete random variables*, Ch.17 *Continuous random variables*, Ch.18 *Parameter estimation*). 
 
 #### Additional Suggested Readings:
-3. Bolker 2007. (Ch.4 *Probability and stochastic distributions for ecological modeling*)
+3. Bolker 2007. (Ch.4 *Probability and stochastic distributions for ecological modeling*, Ch.6 *Likelihood and all that*)
 4. Efron and Hastie 2016. (Ch.1 *Algorithms and Inference*, Ch.3 *Bayesian Inference*, Ch.4 *Fisherian Inference and Maximum Likelihood Estimation*).
 5. Gelman and Hill 2007. (Ch.2 *Concepts and methods from basic probability and statistics*, Ch.3 *Linear regression: the basics*, Ch.7 *Simulation of probability models and statistical inferences*).
 6. Shadish, William R. 2010. “Campbell and Rubin: A Primer and Comparison of Their Approaches to Causal Inference in Field Settings.” *Psychological Methods* 15(1):3-17. https://doi.org/10.1037/a0015916
@@ -237,9 +237,10 @@ This sections provide an introduction to measurement models generally with speci
 
 #### Additional Suggested Readings:
 2. Adcock, Robert, and David Collier. 2001. “Measurement Validity: A Shared Standard for Qual- itative and Quantitative Research.” American Political Science Review 95(3):529-546. https://doi.org/10.1017/S0003055401003100
-3. Jones, Maillardet, and Robinson 2014. (Ch.19: *Markov chains*). 
-4. Efron and Hastie (Ch.13 *Objective Bayes Inference and MCMC*).
-5. Gelman and Hill (Ch.13, *Multilevel linear models: varying slopes, non-nested models, and other complexities*, Ch.14, *Multilevel logistic regression*, Ch.16, *Multilevel modeling in Bugs and R: the basics*, Ch.25, *Missing-data imputation*).
+3. Bolker 2007. (Ch.5 *Optimization and all that*, Ch.10 *Modeling variance*)
+4. Jones, Maillardet, and Robinson 2014. (Ch.19: *Markov chains*). 
+5. Efron and Hastie (Ch.13 *Objective Bayes Inference and MCMC*).
+6. Gelman and Hill (Ch.13, *Multilevel linear models: varying slopes, non-nested models, and other complexities*, Ch.14, *Multilevel logistic regression*, Ch.16, *Multilevel modeling in Bugs and R: the basics*, Ch.25, *Missing-data imputation*).
 
 <br/>
 
@@ -264,9 +265,10 @@ More on latent variable models, specifically the introduction of a dynamic struc
 1. Reuning, Kevin, Michael R. Kenwick, and Christopher J. Fariss. 2019. “Exploring the Dynamics of Latent Variable Models” *Political Analysis* 27(4):503-517. https://doi.org/10.1177/0022343320965670
 
 #### Additional Suggested Readings:
-2. Gelman and Hill 2007. (Ch.20, *Sample size and power calculations*, Ch.21 *Understanding and summarizing the fitted models*, Ch.24 *Model checking and comparison*) Ch.25, *Missing-data imputation*).
-3. Jackman, Simon. 2000. "Estimation and Inference Are Missing Data Problems: Unifying Social Science Statistics via Bayesian Simulation" *Political Analysis* 8(4):307-332. https://doi:10.1093/oxfordjournals.pan.a029818
-4. Schnakenberg, Keith E. and Christopher J. Fariss. 2014. “Dynamic Patterns of Human Rights Practices” *Political Science Research and Methods* 2(1):1-31. http://dx.doi.org/10.1017/psrm.2013.15 
+2. Bolker 2007. (Ch.11 *Dynamic models*)
+3. Gelman and Hill 2007. (Ch.20, *Sample size and power calculations*, Ch.21 *Understanding and summarizing the fitted models*, Ch.24 *Model checking and comparison*) Ch.25, *Missing-data imputation*).
+4. Jackman, Simon. 2000. "Estimation and Inference Are Missing Data Problems: Unifying Social Science Statistics via Bayesian Simulation" *Political Analysis* 8(4):307-332. https://doi:10.1093/oxfordjournals.pan.a029818
+5. Schnakenberg, Keith E. and Christopher J. Fariss. 2014. “Dynamic Patterns of Human Rights Practices” *Political Science Research and Methods* 2(1):1-31. http://dx.doi.org/10.1017/psrm.2013.15 
 
 <br/>
 
