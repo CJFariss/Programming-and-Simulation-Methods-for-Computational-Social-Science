@@ -267,7 +267,19 @@ Introduction to Regular Expressions, Document-by-Term matrices, and Construct Va
 
 #### Program Lessons
 - [Day07_Text_as_data_programs](./R-Program-Lessons/Day07_Text_as_data_programs)
+    - [R_Demo_text_as_data_regular_expressions.R](./R-Program-Lessons/Day07_Text_as_data_programs/R_Demo_text_as_data_regular_expressions.R)
+    - [R_Demo_text_as_data_DTM.R](./R-Program-Lessons/Day07_Text_as_data_programs/R_Demo_text_as_data_DTM.R)
+    - [R_Demo_text_as_data_DTM_tm_package.R](./R-Program-Lessons/Day07_Text_as_data_programs/R_Demo_text_as_data_DTM_tm_package.R)
+    - [R_Demo_text_as_data_DTM_stm_package.R](./R-Program-Lessons/Day07_Text_as_data_programs/R_Demo_text_as_data_DTM_stm_package.R)
+    - [R_Demo_text_as_data_word_probabilities_and_STM.R](./R-Program-Lessons/Day07_Text_as_data_programs/R_Demo_text_as_data_word_probabilities_and_STM.R)
+    - [R_Demo_text_as_wikip_stm.R](./R-Program-Lessons/Day07_Text_as_data_programs/R_Demo_text_as_wikip_stm.R)
+    - [R_Demo_text_as_data_package_description.R](./R-Program-Lessons/Day07_Text_as_data_programs/R_Demo_text_as_data_package_description.R)
+    - [R_Demo_text_as_data_NYT_Text_Process_v03.R](./R-Program-Lessons/Day07_Text_as_data_programs/R_Demo_text_as_data_NYT_Text_Process_v03.R)
+    - [R_Demo_Measurement_Ternary_Diriclet_visulaization.R](./R-Program-Lessons/Day07_Text_as_data_programs/R_Demo_Measurement_Ternary_Diriclet_visulaization.R)
     - [R_Demo_Measurement_SVD.R](./R-Program-Lessons/Day07_Text_as_data_programs/R_Demo_Measurement_SVD.R)
+    - [R_Demo_google_trends_Texas_Storms.R](./R-Program-Lessons/Day07_Text_as_data_programs/R_Demo_google_trends_Texas_Storms.R)
+    - [R_Demo_google_trends_Human_Rights.R](./R-Program-Lessons/Day07_Text_as_data_programs/R_Demo_google_trends_Human_Rights.R)
+    - [R_Demo_google_search_trends_paired_comparisons.R](./R-Program-Lessons/Day07_Text_as_data_programs/R_Demo_google_search_trends_paired_comparisons.R)
 
 #### Program Challenges
 - [R-Program-Challenges](https://github.com/CJFariss/R-Program-Challenges/tree/main/R-Program-Challenges)
