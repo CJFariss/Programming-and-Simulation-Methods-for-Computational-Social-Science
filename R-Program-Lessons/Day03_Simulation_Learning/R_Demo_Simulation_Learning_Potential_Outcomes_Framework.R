@@ -17,8 +17,7 @@
 ##
 ## Note that we will know with certainty two distinct values of the dependent variable for each individual subject i.
 ##
-## Because we are simulating the data, we will know what the i_th subject's outcome is when given the treatment variable
-## and not given the treatment variable (and a continuous range of treatment values).
+## Because we are simulating the data, we will know what the i_th subject's outcome is when given the treatment variable and not given the treatment variable (and a continuous range of treatment values).
 ##
 ## The simulated experiments in part 1, part 2, and part 4 are equivalent to a two-group,
 ## Post-test only design using the Trochim and Donnely notation (see also the discussion in Shadish).
