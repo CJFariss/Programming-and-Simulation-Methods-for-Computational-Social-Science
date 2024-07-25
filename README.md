@@ -215,7 +215,7 @@ This sections provide an introduction to measurement models generally with speci
 
 #### Program Lessons
 - [R-Program-Lessons/Day05_Measurement](./R-Program-Lessons/Day05_Measurement)
-    - [R_Demo_Measurement_factor_analysis.R](./R-Program-Lessons/R_Demo_Measurement_factor_analysis.R)
+    - [R_Demo_Measurement_factor_analysis.R](./R-Program-Lessons/Day05_Measurement/R_Demo_Measurement_factor_analysis.R)
     - [RSTAN_normal_distribution_simulation.R](./R-Program-Lessons/Day05_Measurement/RSTAN_normal_distribution_simulation.R)
     - [RSTAN_mean_simulation.R](./R-Program-Lessons/Day05_Measurement/RSTAN_mean_simulation.R)
     - [RSTAN_linear_model_simulation.R](./R-Program-Lessons/Day05_Measurement/RSTAN_linear_model_simulation.R)
@@ -246,7 +246,7 @@ More on latent variable models, specifically the introduction of a dynamic struc
 
 #### Program Lessons
 - [Day06_Latent_Variable_Programs](./R-Program-Lessons/Day06_Latent_Variable_Programs)
-    - [R_Demo_Measurement_logit_transformation_latent_variable.R](./R-Program-Lessons/Day07_Text_as_data_programs/R_Demo_Measurement_logit_transformation_latent_variable.R)
+    - [R_Demo_Measurement_logit_transformation_latent_variable.R](./R-Program-Lessons/Day06_Latent_Variable_Programs/R_Demo_Measurement_logit_transformation_latent_variable.R)
 
 #### Program Challenges
 - [R-Program-Challenges](https://github.com/CJFariss/R-Program-Challenges/tree/main/R-Program-Challenges)
