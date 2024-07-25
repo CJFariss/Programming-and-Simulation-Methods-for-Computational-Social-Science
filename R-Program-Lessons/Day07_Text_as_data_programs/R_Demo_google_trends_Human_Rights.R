@@ -16,7 +16,9 @@
 ## Use the google trends API to access google trends data and generate a graph comparing search terms for a specific geographic and temporal context.
 ##
 ## Examples taken from:
-## Dancy, Geoff and Christopher J. Fariss. “The Global Resonance of Human Rights: What Google Trends Can Tell Us.” American Political Science Review (Forthcoming).
+## Dancy, Geoff and Christopher J. Fariss. 2024. “The Global Resonance of Human Rights: What Google Trends Can Tell Us.” American Political Science Review 118(1):252-273.
+##
+## Available here: http://cfariss.com/documents/DancyFariss2023APSR.pdf
 ##
 ##########################################################################
 
