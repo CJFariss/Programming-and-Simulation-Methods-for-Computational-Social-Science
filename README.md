@@ -293,6 +293,15 @@ Neural Networks are a powerful tool for automated classification and any other p
 
 #### Program Lessons
 - [Day08_Applied_Machine_Learning_AML_Intro](./R-Program-Lessons/Day08_Applied_Machine_Learning_AML_Intro)
+    - [.R](./R-Program-Lessons/Day08_Applied_Machine_Learning_AML_Intro/R_Demo_AML_neuralnet_gradiant_decent_mu.R)
+    - [.R](./R-Program-Lessons/Day08_Applied_Machine_Learning_AML_Intro/R_Demo_AML_neuralnet_gradiant_decent_lm.R)
+    - [.R](./R-Program-Lessons/Day08_Applied_Machine_Learning_AML_Intro/R_Demo_AML_neuralnet_gradiant_decent_glm.R)
+    - [.R](./R-Program-Lessons/Day08_Applied_Machine_Learning_AML_Intro/R_Demo_AML_neuralnet_squared_term_example.R)
+    - [.R](./R-Program-Lessons/Day08_Applied_Machine_Learning_AML_Intro/R_Demo_AML_neuralnet_interaction_example.R)
+    - [.R](./R-Program-Lessons/Day08_Applied_Machine_Learning_AML_Intro/R_Demo_AML_keras_example.R)
+    - [.R](./R-Program-Lessons/Day08_Applied_Machine_Learning_AML_Intro/R_Demo_AML_MNIST_example.R)
+    - [.R](./R-Program-Lessons/Day08_Applied_Machine_Learning_AML_Intro/R_Demo_AML_huggingface_intro.R)
+
 
 #### Program Challenges
 - [R-Program-Challenges](https://github.com/CJFariss/R-Program-Challenges/tree/main/R-Program-Challenges)
