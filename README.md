@@ -258,7 +258,7 @@ More on latent variable models, specifically the introduction of a dynamic struc
     - [R_Challenge_simulation_zombies.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_simulation_zombies.R)
 
 #### Suggested Readings:
-1. Reuning, Kevin, Michael R. Kenwick, and Christopher J. Fariss. 2019. “Exploring the Dynamics of Latent Variable Models” Political Analysis 27(4):503-517. https://doi.org/10.1177/0022343320965670
+1. Reuning, Kevin, Michael R. Kenwick, and Christopher J. Fariss. 2019. “Exploring the Dynamics of Latent Variable Models” *Political Analysis* 27(4):503-517. https://doi.org/10.1177/0022343320965670
 
 #### Additional Suggested Readings:
 2. Gelman and Hill 2007. (Ch.20, *Sample size and power calculations*, Ch.21 *Understanding and summarizing the fitted models*, Ch.24 *Model checking and comparison*) Ch.25, *Missing-data imputation*).
