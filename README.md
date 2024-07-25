@@ -216,13 +216,13 @@ This sections provide an introduction to measurement models generally with speci
 #### Program Lessons
 - [R-Program-Lessons/Day05_Measurement](./R-Program-Lessons/Day05_Measurement)
     - [R_Demo_Measurement_factor_analysis.R](./R-Program-Lessons/Day05_Measurement/R_Demo_Measurement_factor_analysis.R)
-    - [RSTAN_normal_distribution_simulation.R](./R-Program-Lessons/Day05_Measurement/RSTAN_normal_distribution_simulation.R)
-    - [RSTAN_mean_simulation.R](./R-Program-Lessons/Day05_Measurement/RSTAN_mean_simulation.R)
-    - [RSTAN_linear_model_simulation.R](./R-Program-Lessons/Day05_Measurement/RSTAN_linear_model_simulation.R)
-    - [RSTAN_logistic_regression_simulation.R](./R-Program-Lessons/Day05_Measurement/RSTAN_logistic_regression_simulation.R)
-    - [RSTAN_binary_IRT_simulation.R](./R-Program-Lessons/Day05_Measurement/RSTAN_binary_IRT_simulation.R)
-    - [RSTAN_binary_IRT_NAs_simulation.R](./R-Program-Lessons/Day05_Measurement/RSTAN_binary_IRT_NAs_simulation.R)
-    - [RSTAN_ordered_IRT_simulation.R](./R-Program-Lessons/Day05_Measurement/RSTAN_ordered_IRT_simulation.R)
+    - [RSTAN_Demo_normal_distribution_simulation.R](./R-Program-Lessons/Day05_Measurement/RSTAN_Demo_normal_distribution_simulation.R)
+    - [RSTAN_Demo_mean_simulation.R](./R-Program-Lessons/Day05_Measurement/RSTAN_Demo_mean_simulation.R)
+    - [RSTAN_Demo_linear_model_simulation.R](./R-Program-Lessons/Day05_Measurement/RSTAN_Demo_linear_model_simulation.R)
+    - [RSTAN_Demo_logistic_regression_simulation.R](./R-Program-Lessons/Day05_Measurement/RSTAN_Demo_logistic_regression_simulation.R)
+    - [RSTAN_Demo_binary_IRT_simulation.R](./R-Program-Lessons/Day05_Measurement/RSTAN_binary_IRT_Demo_simulation.R)
+    - [RSTAN_Demo_binary_IRT_NAs_simulation.R](./R-Program-Lessons/Day05_Measurement/RSTAN_Demo_binary_IRT_NAs_simulation.R)
+    - [RSTAN_Demo_ordered_IRT_simulation.R](./R-Program-Lessons/Day05_Measurement/RSTAN_Demo_ordered_IRT_simulation.R)
 
 #### Program Challenges
 - [R-Program-Challenges](https://github.com/CJFariss/R-Program-Challenges/tree/main/R-Program-Challenges)
