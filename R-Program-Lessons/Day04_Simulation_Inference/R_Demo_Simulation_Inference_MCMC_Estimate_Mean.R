@@ -23,18 +23,22 @@
 ##
 ## The parameter for the mean will be selected based on the likelihood function that links the parameter to the data contained in the x variable.
 ##
-## A key feature of this simulation method is the dependence of each estimate of the parameter(s) on the only the most recent estimate of the prior.
+## A key feature of this simulation method is the dependence of each estimate of the parameter(s) on only the most recent estimate of the prior.
 ## 
 ## Select a starting value for the parameter. The first estimate of the simulation will be based on this starting value. 
 ##
 ## Repeat the simulation several thousand times.
+##
+## To review Markov chains with an intuitive program challenge, go here: https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_simulation_weather_forecast.R
+##
+## There is a nice explainer here too: https://nicercode.github.io/guides/mcmc/
 ##
 ##########################################################################
 
 ## load library
 library(MASS) # load library with truehist function
 
-
+set.seed(940)
 ## set x values
 #x <- 1:5
 x <- rnorm(1000, mean=pi, sd=1)
@@ -43,6 +47,7 @@ x <- rnorm(1000, mean=pi, sd=1)
 mean(x)
 
 ## Prior distribution
+## we take the log of the density because we are going to combine it with the value of the loglikelihood later on
 log_prior <- function(mu){
     value <- dunif(x=mu, -100, 100, log=T)
     return(value)
@@ -76,7 +81,7 @@ proposal_width <- .2
 ## (NOTE: I have selected a really poor value to start with because it is really far away from the truth which is 3 or 3.141593...
 estimate <- -20
 
-loglik <- log_likelihood(mu=estimate[1], data=x) +  log_prior(mu=estimate[1])
+loglik <- log_likelihood(mu=estimate[1], data=x) + log_prior(mu=estimate[1])
 loglik
 
 ## monitor the number of times the algorithm accepts the new estimate
@@ -91,7 +96,7 @@ for(i in 2:samples){
     
     ## propose new values and calculate LL
     estimate[i] <- rnorm(1, mean=estimate[i-1], sd = proposal_width)
-    loglik[i] <- log_likelihood(mu=estimate[i], data=x) +  log_prior(estimate[i])
+    loglik[i] <- log_likelihood(mu=estimate[i], data=x) + log_prior(estimate[i])
     
     current_ll <- loglik[i]
     last_ll <- loglik[i-1]
@@ -102,8 +107,8 @@ for(i in 2:samples){
     ## decide whether to accept or not
     if (comp[i] >= 0) {
         accept_new_estiamte[i] <- 1
-        ## estimate[i] <- estimate[i] ## redundant but this is what is occuring
-        ## loglik[i] <- loglik[i] ## redundant but this is what is occuring
+        ## estimate[i] <- estimate[i] ## redundant but this is what is occurring
+        ## loglik[i] <- loglik[i] ## redundant but this is what is occurring
     } else {
         accept_new_estiamte[i] <- 0
         estimate[i] <- estimate[i-1]
@@ -120,7 +125,7 @@ summary(comp)
 ## graph the full chain
 plot(estimate, type="l")
 
-## graph the chain after disregarding a burin period
+## graph the chain after disregarding a burn-in period
 plot(estimate[2001:4000], type="l")
 
 ##
