@@ -62,14 +62,14 @@ model {
 ## -------------------------------------------------- #
 
 ## simulated data
-n <- 100
+n <- 300
 theta <- rnorm(n,0,1)
 ##theta <- runif(n,-3,3)
 
 ## set parameters for each item
 ## alpha (the intercept) is the difficulty parameter or base-line probability of 1
 ## beta (the slope) is the discrimination parameter or the strength of the relationship
-## between the estiamted latent trait theta and the indvidiaul item
+## between the estimated latent trait theta and the individual item
 
 ## item 1 is the most difficult item (it is centered over the +1/+2 on the latent trait)
 alpha1 <- -2.000000
@@ -98,7 +98,7 @@ pi_1 <- 1 / (1 + exp(-xb1))
 pi_2 <- 1 / (1 + exp(-xb2))
 pi_3 <- 1 / (1 + exp(-xb3))
 
-## generate the items with theta and measurment error
+## generate the items with theta and measurement error
 y1 <- rbinom(n, size=1, prob=pi_1)
 y2 <- rbinom(n, size=1, prob=pi_2)
 y3 <- rbinom(n, size=1, prob=pi_3)
@@ -110,7 +110,7 @@ y <- cbind(y1, y2, y3)
 data_list <- list(y1=y1, y2=y2, y3=y3, j=j, n=n)
 
 ## fit stan model
-fit <- stan(model_code = model, data = data_list, iter = 1000, chains = 4)
+fit <- stan(model_code = model, data = data_list, iter = 2000, chains = 4, cores=4)
 
 ## this summarizes the named parameters but not along the dimensions
 fit
@@ -129,7 +129,7 @@ apply(output$theta,2,mean)
 latentmean <- apply(output$theta,2,mean)
 
 ## plot true latent variable with posterior mean
-par(mar=c(4,4,1,1), font=2, font.lab=2, cex=1.3)
+par(mfrow=c(1,1), mar=c(4,4,1,1), font=2, font.lab=2, cex=1.3)
 plot(latentmean, theta, xlim=c(-3,3), ylim=c(-3,3), ylab="true x", xlab="posterior mean of x")
 abline(a=0, b=1, col=2, lwd=2)
 
