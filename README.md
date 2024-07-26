@@ -266,7 +266,7 @@ More on latent variable models, specifically the introduction of a dynamic struc
 
 #### Additional Suggested Readings:
 2. Bolker 2007. (Ch.11 *Dynamic models*)
-3. Gelman and Hill 2007. (Ch.20, *Sample size and power calculations*, Ch.21 *Understanding and summarizing the fitted models*, Ch.24 *Model checking and comparison*) Ch.25, *Missing-data imputation*).
+3. Gelman and Hill 2007. (Ch.20 *Sample size and power calculations*, Ch.21 *Understanding and summarizing the fitted models*, Ch.24 *Model checking and comparison*) Ch.25 *Missing-data imputation*).
 4. Jackman, Simon. 2000. "Estimation and Inference Are Missing Data Problems: Unifying Social Science Statistics via Bayesian Simulation" *Political Analysis* 8(4):307-332. https://doi:10.1093/oxfordjournals.pan.a029818
 5. Schnakenberg, Keith E. and Christopher J. Fariss. 2014. “Dynamic Patterns of Human Rights Practices” *Political Science Research and Methods* 2(1):1-31. http://dx.doi.org/10.1017/psrm.2013.15 
 
