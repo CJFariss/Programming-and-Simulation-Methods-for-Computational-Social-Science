@@ -31,7 +31,7 @@
 ##
 ## To review Markov chains with an intuitive program challenge, go here: https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_simulation_weather_forecast.R
 ##
-## There is a nice explainer here too: https://nicercode.github.io/guides/mcmc/
+## There is a nice explain-er here too: https://nicercode.github.io/guides/mcmc/
 ##
 ##########################################################################
 
@@ -45,6 +45,7 @@ x <- rnorm(1000, mean=pi, sd=1)
 
 ## print the mean to the console screen
 mean(x)
+truehist(x)
 
 ## Prior distribution
 ## we take the log of the density because we are going to combine it with the value of the loglikelihood later on
