@@ -127,6 +127,8 @@ dat$y.hat[dat$fold==1] <- y.hat.fold1
 rmse <- sqrt(mean((dat$y.hat-dat$y)^2))
 rmse
 
+fit <- lm(y ~ x + I(x^2) + I(x^3), data=dat)
+sqrt(mean((as.numeric(predict(fit))-dat$y)^2))
 
 
 ## more compact version of Model 1 above using a for loop
