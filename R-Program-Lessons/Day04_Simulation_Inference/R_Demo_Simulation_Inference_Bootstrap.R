@@ -64,12 +64,14 @@ summary(x)
 samples_r <- 2000
 x_r <- c()
 for(i in 1:samples_r){
-    temp <- x[sample(1:length(x),size=sim_n,replace=TRUE)]
+    index_r <- sample(1:sim_n,size=sim_n,replace=TRUE)
+    temp <- x[index_r]
     x_r[i] <- mean(temp)
 }
 mean(x_r)
 sd(x_r)
 MASS::truehist(x_r)
+abline(v=pi, col=2, lwd=2)
 
 x_r <- lapply(1:samples_r, function(i){
     x_r <- x[sample(1:length(x),size=sim_n,replace=TRUE)]
