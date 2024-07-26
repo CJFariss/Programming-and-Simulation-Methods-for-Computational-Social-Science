@@ -46,6 +46,9 @@ plot(x=x, y=y)
 
 ## create a subject/unit ID variable with one values for each unit
 ## here the indicator values takes on 2-Fold values {1,2}
+folds <- sample(1:2, size=n, replace=TRUE)
+table(folds)
+
 folds <- sample(rep(1:2, n/2), size=n, replace=FALSE)
 folds
 table(folds)
@@ -86,6 +89,13 @@ in_sample_rmse
 pred <- predict(fit, newdata=test)
 rmse <- sqrt(mean((as.numeric(pred)-test$y)^2))
 rmse
+
+## prove something
+mean(train$y)
+
+y_simple <- c(1,2,3,4,5)
+summary(lm(y_simple ~ 1))
+
 
 ## Model 1: fit a linear model
 fit <- lm(y ~ x, data=train)
