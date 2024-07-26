@@ -40,7 +40,7 @@ model <- "
         // by default the priors on the parameters are flat unless we provide more information (see the other examples)
         // likelihood (link data to some combination of parameters and more data)
         
-        mu ~ normal(0,.1);
+        mu ~ normal(0,0.1);
         
         for(i in 1:n){
             y[i] ~ normal(mu, sigma);
@@ -75,9 +75,9 @@ data_list
 time1 <- Sys.time()
 
 # fit stan model
-fit <- stan(model_code = model, data = data_list, iter = 1000, chains = 4)
+fit <- stan(model_code = model, data = data_list, iter = 1000, chains = 4, cores = 4)
 
-## calcuate the duration of the program file up to this point
+## calculate the duration of the program file up to this point
 print(Sys.time() - time1)
 
 ## extract draws from stan model object (creates a list object)

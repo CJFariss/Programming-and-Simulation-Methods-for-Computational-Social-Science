@@ -124,3 +124,4 @@ plot(y, apply(model_predictions,2,mean))
 
 
 
+apply(model_parameters, 2, mean)

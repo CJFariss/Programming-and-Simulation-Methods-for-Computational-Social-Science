@@ -38,8 +38,8 @@ model <- "
     }
     model {
         // priors (these are variances not precision)
-        //alpha ~ normal(0,10);
-        //beta ~ normal(0,10);
+        alpha ~ normal(0,10);
+        beta ~ normal(0,10);
     
         // likelihood (link data to some combination of parameters and more data)
         y ~ bernoulli_logit(alpha + beta * x);
@@ -113,4 +113,11 @@ dim(output$y_predict)
 plot(apply(model_predictions,2,mean), y)
 
 
+apply(model_parameters, 2, mean)
 
+
+boxplot(model_parameters)
+
+par(mfrow=c(1,2))
+truehist(model_parameters[,1])
+truehist(model_parameters[,2])
