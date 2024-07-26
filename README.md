@@ -240,7 +240,7 @@ This sections provide an introduction to measurement models generally with speci
 3. Bolker 2007. (Ch.5 *Optimization and all that*, Ch.10 *Modeling variance*)
 4. Jones, Maillardet, and Robinson 2014. (Ch.19: *Markov chains*). 
 5. Efron and Hastie (Ch.13 *Objective Bayes Inference and MCMC*).
-6. Gelman and Hill (Ch.13, *Multilevel linear models: varying slopes, non-nested models, and other complexities*, Ch.14, *Multilevel logistic regression*, Ch.16, *Multilevel modeling in Bugs and R: the basics*, Ch.25, *Missing-data imputation*).
+6. Gelman and Hill (Ch.13 *Multilevel linear models: varying slopes, non-nested models, and other complexities*, Ch.14 *Multilevel logistic regression*, Ch.16 *Multilevel modeling in Bugs and R: the basics*, Ch.25 *Missing-data imputation*).
 
 <br/>
 
