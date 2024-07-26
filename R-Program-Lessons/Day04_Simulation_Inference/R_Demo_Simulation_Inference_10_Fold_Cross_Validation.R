@@ -34,7 +34,7 @@
 set.seed(940)
 
 ## set number of observations for simulation
-n <- 100
+n <- 1000
 
 ## number of folds (randomly created sub samples of data)
 k <- 10
@@ -48,11 +48,11 @@ plot(x,y)
 
 ## create a subject/unit ID variable with one values for each unit
 ## here the indicator values takes on 2-Fold values {1,2}
-folds <- sample(rep(1:k, k), n, replace=FALSE)
+folds <- sample(rep(1:k, n/k), n, replace=FALSE)
 
 table(folds)
 
-## create a data frame with the dependent varaible, independent variable, and randomly created ID
+## create a data frame with the dependent variable, independent variable, and randomly created ID
 dat <- data.frame(y, x, folds)
 
 ## create vectors for storing predictions
@@ -89,9 +89,9 @@ for(i in 1:k){
     dat$y.hat2[dat$fold==i] <- y.hat2
 
     ## fit a linear model with a squared term and cubic term
-    fit2 <- lm(y ~ x + I(x^2) + I(x^3), data=subset(dat, folds!=i))
-    pred2 <- predict(fit2, newdata=subset(dat, folds==i))
-    y.hat3 <- as.numeric(pred2)
+    fit3 <- lm(y ~ x + I(x^2) + I(x^3), data=subset(dat, folds!=i))
+    pred3 <- predict(fit3, newdata=subset(dat, folds==i))
+    y.hat3 <- as.numeric(pred3)
     
     dat$y.hat3[dat$fold==i] <- y.hat3
     
@@ -128,6 +128,9 @@ cor.fit3
 c(cor.fit0, cor.fit1, cor.fit2, cor.fit3)
 
 
+fit <- lm(y ~ x + I(x^2) + I(x^3), data=dat)
+sqrt(mean((as.numeric(predict(fit))-dat$y)^2))
+summary(fit)
 
 
 
