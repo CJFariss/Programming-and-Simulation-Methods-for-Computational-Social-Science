@@ -236,7 +236,7 @@ This sections provide an introduction to measurement models generally with speci
 1. Fariss, Christopher J., Michael R. Kenwick, and Kevin Reuning "Measurement Models", in *SAGE Handbook of Research Methods is Political Science & International Relations*, edited by Luigi Curini and Robert J. Franzese, Jr., SAGE Press (May 2020). http://cfariss.com/documents/FarissKenwickReuning2020_MesurementModels.pdf 
 
 #### Additional Suggested Readings:
-2. Adcock, Robert, and David Collier. 2001. “Measurement Validity: A Shared Standard for Qual- itative and Quantitative Research.” American Political Science Review 95(3):529-546. https://doi.org/10.1017/S0003055401003100
+2. Adcock, Robert, and David Collier. 2001. “Measurement Validity: A Shared Standard for Qualitative and Quantitative Research.” American Political Science Review 95(3):529-546. https://doi.org/10.1017/S0003055401003100
 3. Bolker 2007. (Ch.5 *Optimization and all that*, Ch.10 *Modeling variance*)
 4. Jones, Maillardet, and Robinson 2014. (Ch.19: *Markov chains*). 
 5. Efron and Hastie (Ch.13 *Objective Bayes Inference and MCMC*).
