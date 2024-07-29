@@ -32,9 +32,6 @@ time_index
 unit_index <- 1:10
 unit_index
 
-# simulation for checking the distribution of correlations
-#value <- NA
-#for(j in 1:1000){
 
 x <- matrix(NA, nrow=length(time_index), ncol=length(unit_index))
 
@@ -42,7 +39,7 @@ x[1,] <- rnorm(length(unit_index), mean=0, sd=1)
 x[1,]
 
 for(i in 2:length(time_index)){
-  x[i,] <- rnorm(length(unit_index), mean=x[i-1,], sd=.25)
+  x[i,] <- rnorm(length(unit_index), mean=x[i-1,], sd=0.25)
 }
 x
 
@@ -51,13 +48,6 @@ plot(x[,1], type="n", ylim=c(-3,3))
 for(i in 1:10){
   lines(x[,i], col=i)
 }
-#MASS::truehist(x)
-
-#cbind(x[2:length(time_index)], x[1:(length(time_index)-1)])
-
-#value[j] <- cor(x[2:length(time_index)], x[1:(length(time_index)-1)])
-#}
-#MASS::truehist(value)
 
 ## stack the columns of x
 x_column <- c(x)
@@ -106,7 +96,8 @@ for(i in 1:10){
   lines(x_column[unit_column==i], col=i)
 }
 
-cor(additive_scale,x_column)
+cor(additive_scale,x_column, method="pearson")
+cor(as.numeric(additive_scale), as.numeric(x_column), method="spearman")
 
 table(additive_scale)
 
@@ -167,7 +158,7 @@ model <- "
 data_list <- list(n_t=length(unit_column), k=4, y1=y1, y2=y2, y3=y3, y4=y4, unit_column=unit_column, time_column=time_column)
 data_list
 
-fit <- stan(model_code=model, data=data_list, iter=1000, chains=4, pars=c("theta_star", "sigma_star"), include=FALSE)
+fit <- stan(model_code=model, data=data_list, iter=2000, chains=4, pars=c("theta_star", "sigma_star"), include=FALSE, cores = 4)
 fit
 
 output <- extract(fit)
@@ -181,7 +172,7 @@ theta_hat <- apply(output$theta, MARGIN=2, FUN=mean)
 theta_hat
 
 par(mfrow=c(1,1))
-plot(x=x, y=theta_hat, xlab="true x", ylab="estiamted theta of x")
+plot(x=x, y=theta_hat, xlab="true theta", ylab="estiamted theta of theta")
 abline(reg=lm(theta_hat~x_column),col=2)
 cor(x_column, theta_hat)
 cor(additive_scale, theta_hat)
