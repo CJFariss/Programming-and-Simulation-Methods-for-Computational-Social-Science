@@ -223,7 +223,7 @@ This sections provide an introduction to measurement models generally with speci
     - [RSTAN_Demo_mean_simulation.R](./R-Program-Lessons/Day05_Measurement/RSTAN_Demo_mean_simulation.R)
     - [RSTAN_Demo_linear_model_simulation.R](./R-Program-Lessons/Day05_Measurement/RSTAN_Demo_linear_model_simulation.R)
     - [RSTAN_Demo_logistic_regression_simulation.R](./R-Program-Lessons/Day05_Measurement/RSTAN_Demo_logistic_regression_simulation.R)
-    - [RSTAN_Demo_binary_IRT_simulation.R](./R-Program-Lessons/Day05_Measurement/RSTAN_binary_IRT_Demo_simulation.R)
+    - [RSTAN_Demo_binary_IRT_simulation.R](./R-Program-Lessons/Day05_Measurement/RSTAN_Demo_binary_IRT_simulation.R)
     - [RSTAN_Demo_binary_IRT_NAs_simulation.R](./R-Program-Lessons/Day05_Measurement/RSTAN_Demo_binary_IRT_NAs_simulation.R)
     - [RSTAN_Demo_ordered_IRT_simulation.R](./R-Program-Lessons/Day05_Measurement/RSTAN_Demo_ordered_IRT_simulation.R)
 
