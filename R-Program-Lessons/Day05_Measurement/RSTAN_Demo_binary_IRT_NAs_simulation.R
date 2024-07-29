@@ -59,21 +59,20 @@ parameters {
 }
 
 transformed parameters {
-    vector[n_j] alpha_star; // column vector of alpha parameters
-    real<lower=0> beta_star[n_j]; // column vector of beta paramets
-    vector[n_j] theta_star; // column vector of latent variable parameters
+    //vector[n_j] alpha_star; // column vector of alpha parameters
+    //real<lower=0> beta_star[n_j]; // column vector of beta paramets
+    //vector[n_j] theta_star; // column vector of latent variable parameters
     vector[n_j] xb; // column vector of linear combination of parameter column vectors
     
     for(i in 1:n_j){
         // loop through parameters vectors to generate column vectors
-        alpha_star[i] = alpha[item[i]];
-        beta_star[i] = beta[item[i]];
-        theta_star[i] = theta[id[i]];
+        //alpha_star[i] = alpha[item[i]];
+        //beta_star[i] = beta[item[i]];
+        //theta_star[i] = theta[id[i]];
         
         // linear component
-        xb[i] = alpha_star[i] + beta_star[i] * theta_star[i];
-
-        //xb[i] = alpha[item[i]] + beta[item[i]] * theta[id[i]];
+        //xb[i] = alpha_star[i] + beta_star[i] * theta_star[i]; // this is the incorrect version
+        xb[i] = alpha[item[i]] + beta[item[i]] * theta[id[i]]; // this is the correct version
     }
     
 }
@@ -89,10 +88,11 @@ model {
 "
 # -------------------------------------------------- #
 
-n <- 100
+n <- 300
 MISSING <- round(n/10)
 MISSING
 
+## suppose an observable latent characteristic or ability 
 theta <- rnorm(n,0,1)
 
 alpha1 <- -1.000000
@@ -103,7 +103,7 @@ alpha4 <- 0.000000
 beta1 <- 1.000000
 beta2 <- 2.000000
 beta3 <- 3.000000
-beta4 <- 3.000000
+beta4 <- 10.000000
 
 # define j as the number of items
 j <- 4
@@ -116,16 +116,16 @@ xb4 <- alpha4 + beta4 * theta
 
 # transform the linear xb terms using the logit function
 # so that theta is bound from 0 to 1
-eta1 <- 1 / (1 + exp(-xb1))
-eta2 <- 1 / (1 + exp(-xb2))
-eta3 <- 1 / (1 + exp(-xb3))
-eta4 <- 1 / (1 + exp(-xb4))
+pi_1 <- 1 / (1 + exp(-xb1))
+pi_2 <- 1 / (1 + exp(-xb2))
+pi_3 <- 1 / (1 + exp(-xb3))
+pi_4 <- 1 / (1 + exp(-xb4))
 
-# generate the items with theta and measurment error
-y1 <- rbinom(n, size=1, prob=eta1)
-y2 <- rbinom(n, size=1, prob=eta2)
-y3 <- rbinom(n, size=1, prob=eta3)
-y4 <- rbinom(n, size=1, prob=eta4)
+# generate the items with theta and measurement error
+y1 <- rbinom(n, size=1, prob=pi_1)
+y2 <- rbinom(n, size=1, prob=pi_2)
+y3 <- rbinom(n, size=1, prob=pi_3)
+y4 <- rbinom(n, size=1, prob=pi_4)
 
 # ADD MISSINGNESS TO y1
 y1[sample(1:length(y1), size=MISSING)] <- NA
@@ -133,12 +133,14 @@ y2[sample(1:length(y2), size=MISSING)] <- NA
 y3[sample(1:length(y3), size=MISSING)] <- NA
 y4[sample(1:length(y4), size=MISSING)] <- NA
 
+
 # make a matrix of the item response
 y <- cbind(y1, y2, y3, y4)
 
 # make a column vector of the item response with missing values excluded
 y_missing <- which(!is.na(y))
 summary(y)
+
 
 y <- y[y_missing]
 summary(y)
@@ -150,12 +152,18 @@ n_j
 
 # make a column vector of the item numbers with missing values excluded
 item <- matrix(c(1:j),ncol=j,nrow=n, byrow=T)
+head(item)
+
 item <- c(item)
+head(item, 10)
+
 item <- item[y_missing]
 
 
 # make a column vector of the subject ids with missing values excluded
 id <- matrix(1:n,ncol=j,nrow=n, byrow=F)
+head(id)
+
 id <- c(id)
 id <- id[y_missing]
 
@@ -164,9 +172,11 @@ head(cbind(y, item, id), 20)
 # create data list to pass to STAN
 data_list <- list(y=y, j=j, n=n, n_j=n_j, item=item, id=id)
 
+lapply(data_list, head)
+lapply(data_list, length)
 
 # fit stan model
-fit <- stan(model_code = model, data = data_list, iter = 1000, chains = 4)
+fit <- stan(model_code = model, data = data_list, iter = 1000, chains = 4, cores=4)
 
 
 # this summarizes the named parameters but not along the dimensions
@@ -184,7 +194,7 @@ apply(output$theta,2,mean)
 
 # plot true latent variable with posterior mean
 par(mar=c(4,4,1,1), font=2, font.lab=2, cex=1.3)
-plot(apply(output$theta,2,mean), theta, xlim=c(-3,3), ylim=c(-3,3), ylab="true x", xlab="posterior mean of x")
+plot(apply(output$theta,2,mean), theta, xlim=c(-3,3), ylim=c(-3,3), ylab="true theta", xlab="posterior mean of theta")
 abline(a=0, b=1, col=2, lwd=2)
 
 
