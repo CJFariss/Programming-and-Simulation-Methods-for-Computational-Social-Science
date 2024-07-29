@@ -22,16 +22,15 @@
 ##########################################################################
 
 ##
-##
 library(boot)
 library(rstan)
 
 time_index <- 1:30
 time_index
 
-# simulation for checking the distribution of correlations
-#value <- NA
-#for(j in 1:1000){
+## simulation for checking the distribution of correlations
+value <- NA
+for(j in 1:1000){
 x <- rnorm(1, mean=0, sd=1)
 x
 
@@ -40,34 +39,46 @@ for(i in 2:length(time_index)){
 }
 x
 
+par(mfrow=c(1,1))
 #plot(x, type="l")
 #MASS::truehist(x)
 
 #cbind(x[2:length(time_index)], x[1:(length(time_index)-1)])
 
-#value[j] <- cor(x[2:length(time_index)], x[1:(length(time_index)-1)])
-#}
-
+value[j] <- cor(x[2:length(time_index)], x[1:(length(time_index)-1)])
+}
 MASS::truehist(value)
+summary(value)
 
-alpha1 <- -1
-beta1 <- 2
+x <- rnorm(1, mean=0, sd=1)
+x
+
+for(i in 2:length(time_index)){
+  x[i] <- rnorm(1, mean=x[i-1], sd=1)
+}
+x
+
+par(mfrow=c(1,1))
+plot(x, type="l")
+
+
+alpha1 <- -2.5
+beta1 <- 6
 prob_y1 <- inv.logit(alpha1 + beta1*x + rnorm(length(time_index)))
 y1 <- rbinom(length(time_index), 1, prob=prob_y1)
-#y1 <- alpha + beta*x + 
 
-alpha2 <- 0
-beta2 <- 2
+alpha2 <- -0.5
+beta2 <- 6
 prob_y2 <- inv.logit(alpha2 + beta2*x + rnorm(length(time_index)))
 y2 <- rbinom(length(time_index), 1, prob=prob_y2)
 
-alpha3 <- 1
-beta3 <- 2
+alpha3 <- 1.5
+beta3 <- 6
 prob_y3 <- inv.logit(alpha3 + beta3*x + rnorm(length(time_index)))
 y3 <- rbinom(length(time_index), 1, prob=prob_y3)
 
-alpha4 <- 1
-beta4 <- 2
+alpha4 <- 2.5
+beta4 <- 6
 prob_y4 <- inv.logit(alpha4 + beta4*x + rnorm(length(time_index)))
 y4 <- rbinom(length(time_index), 1, prob=prob_y4)
 
@@ -101,17 +112,38 @@ model <- "
     real<lower=0> sigma;
   }
   
-  model{
-    // priors
-    theta[1] ~ normal(0, 1);
+  transformed parameters{
+    real theta_star[n];
+    real sigma_star[n];
     
+    // alternative dynamic prior on theta
+    // this part is only necessary for alternartive prior below in the model{} block
+    for(i in 1:n){
+      if(i==1){
+        theta_star[i]=0;
+        sigma_star[i]=1;
+      }
+      else{
+        theta_star[i]=theta[i-1];
+        sigma_star[i]=sigma;
+      }
+    }
+  }
+  
+  model{
+    //priors
+    alpha ~ normal(0,10);
+    beta ~ normal(0,10);
+    sigma ~ normal(0,1);
+    
+    // dynamic prior on theta
+    theta[1] ~ std_normal();
     for(i in 2:n){
-      theta[i] ~ normal(theta[i-1], 1);
+      theta[i] ~ normal(theta[i-1], sigma);
     }
     
-    alpha ~ normal(0,1);
-    beta ~ normal(0,1);
-    sigma ~ normal(0,1);
+    // alternative dynamic prior on theta
+    //theta ~ normal(theta_star, sigma_star);
     
     // likelihood
     for(i in 1:n){
@@ -127,7 +159,7 @@ model <- "
 data_list <- list(n=length(time_index), k=4, y1=y1, y2=y2, y3=y3, y4=y4)
 data_list
 
-fit <- stan(model_code=model, data=data_list, iter=1000, chains=4, pars=c("theta_star", "sigma_star"), include=FALSE)
+fit <- stan(model_code=model, data=data_list, iter=2000, chains=4, pars=c("theta_star", "sigma_star"), include=FALSE, cores = 4)
 fit
 
 output <- extract(fit)
@@ -141,7 +173,7 @@ theta_hat <- apply(output$theta, MARGIN=2, FUN=mean)
 theta_hat
 
 par(mfrow=c(1,1))
-plot(x=x, y=theta_hat, xlab="true x", ylab="estiamted theta of x")
+plot(x=x, y=theta_hat, xlab="true theta", ylab="estiamted theta of theta")
 abline(reg=lm(theta_hat~x),col=2)
 cor(x, theta_hat)
 cor(additive_scale, theta_hat)
@@ -181,4 +213,3 @@ abline(v=inflection_points[4], col=2); abline(h=.5, lty=2)
 
 #apply(output$sigma, MARGIN=2, FUN=mean)
 mean(output$sigma)
-
