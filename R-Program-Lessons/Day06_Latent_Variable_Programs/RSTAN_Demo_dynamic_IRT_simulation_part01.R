@@ -103,10 +103,10 @@ model <- "
   
   model{
     // priors
-    theta[1] ~ normal(0, 1);
-    
+    theta[1] ~ std_normal(); // implies theta[1] ~ normal(0,1);
     for(i in 2:n){
-      theta[i] ~ normal(theta[i-1], 1);
+      theta[i] ~ normal(theta[i-1], sigma); // see Schnakenberg and Fariss (2014)
+      //theta[i] ~ normal(theta[i-1], 1);
     }
     
     alpha ~ normal(0,1);
