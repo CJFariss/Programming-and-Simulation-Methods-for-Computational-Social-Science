@@ -74,7 +74,6 @@ alpha1 <- -2
 beta1 <- 2
 prob_y1 <- inv.logit(alpha1 + beta1*x_column + rnorm(length(x_column)))
 y1 <- rbinom(length(x_column), 1, prob=prob_y1)
-#y1 <- alpha + beta*x + 
 
 alpha2 <- 0
 beta2 <- 1
@@ -166,7 +165,7 @@ model <- "
 data_list <- list(n_t=300, n_t_k=length(unit_column), k=4, y=y_column, item_column=item_column, unit_column=unit_column, time_column=time_column, unit_time_column=unit_time_column)
 data_list
 
-fit <- stan(model_code=model, data=data_list, iter=2000, chains=4, pars=c("theta_star", "sigma_star", "xb"), include=FALSE)
+fit <- stan(model_code=model, data=data_list, iter=2000, chains=4, pars=c("theta_star", "sigma_star", "xb"), include=FALSE, cores = 4)
 fit
 
 output <- extract(fit)
@@ -180,7 +179,7 @@ theta_hat <- apply(output$theta, MARGIN=2, FUN=mean)
 theta_hat
 
 par(mfrow=c(1,1))
-plot(x=x, y=theta_hat, xlab="true x", ylab="estiamted theta of x")
+plot(x=x, y=theta_hat, xlab="true theta", ylab="estiamted theta of theta")
 abline(reg=lm(theta_hat~x_column),col=2)
 cor(x_column, theta_hat)
 cor(additive_scale, theta_hat)
