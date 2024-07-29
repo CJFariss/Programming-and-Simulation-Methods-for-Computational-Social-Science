@@ -22,7 +22,7 @@
 
 ## load library
 library(rstan) # load rstan library
-library(MASS) # loaed library with truehist function
+library(MASS) # load library with truehist function
 
 ## -------------------------------------------------- ##
 ## define STAN model
@@ -32,11 +32,11 @@ data {
     // declared the data in memory
     int<lower=0> n;
     int<lower=0> j;
-    int<lower=1> y[n,j];
+    int<lower=1,upper=3> y[n,j];  // note this is a matrix
 }
 parameters {
     // declared the parameters in memory
-    ordered[2] cut_points[j];
+    ordered[2] cut_points[j]; // this is the ordered variable type
     real<lower=0> beta[j];
     vector[n] theta;
 }
@@ -67,10 +67,17 @@ library(rstan)
 
 
 # simulate the latent variable x
-# and set the "true" population values for the alphaa and betas
+# and set the "true" population values for the alphas and betas
 n <- 300
 theta <- rnorm(n,0,1)
 
+## discrimination parameters
+beta1 <- 3.000000
+beta2 <- 3.000000
+beta3 <- 3.000000
+beta4 <- 3.000000
+
+## cutpoint parameters
 alpha1.1 <- -4.000000
 alpha1.2 <- -1.000000
 alpha2.1 <- -2.00000
@@ -79,10 +86,6 @@ alpha3.1 <- -1.5000000
 alpha3.2 <- 1.5000000
 alpha4.1 <- 0.000000
 alpha4.2 <- 1.000000
-beta1 <- 3.000000
-beta2 <- 3.000000
-beta3 <- 3.000000
-beta4 <- 3.000000
 
 # define j as the number of items
 j <- 4
@@ -125,7 +128,7 @@ P4.2 <- eta4.2 - eta4.1
 P4.3 <- 1 - eta4.2
 
 
-# generate the items with theta and measurment error
+# generate the items with theta and measurement error
 y1 <- y2 <- y3 <- y4 <- NA
 for(i in 1:n){
     y1[i] <- sample(c(0,1,2), size=1, replace=T, prob=c(P1.1[i],P1.2[i],P1.3[i]))
@@ -135,14 +138,22 @@ for(i in 1:n){
 }
 
 y <- cbind(y1, y2, y3, y4)
+
+## inspect the y matrix
+head(y, 10)
+
+## no matter the scale is, we need the min of the scale to be 1 for the Stan program
 y <- y+1
+
+## inspect 1 more time 
+head(y, 10)
 
 
 ## tell us how many items are binary and ordered respectively
-data <- list(y=y, n=nrow(y), j=j)
+data_list <- list(y=y, n=nrow(y), j=j)
 
 ## fit stan model
-fit <- stan(model_code = model, data = data, iter = 1000, chains = 4)
+fit <- stan(model_code = model, data = data_list, iter = 1000, chains = 4, cores = 4)
 
 ## extract draws from stan model object
 output <- extract(fit, permuted = TRUE)
@@ -160,7 +171,7 @@ latentmean <- apply(output$theta,2,mean)
 
 ## plot true latent variable with posterior mean
 par(mar=c(4,4,1,1), font=2, font.lab=2, cex=1.3)
-plot(latentmean, theta, xlim=c(-3,3), ylim=c(-3,3), ylab="true x", xlab="posterior mean of x")
+plot(latentmean, theta, xlim=c(-3,3), ylim=c(-3,3), ylab="true theta", xlab="posterior mean of theta")
 abline(a=0, b=1, col=2, lwd=2)
 
 ## correlate the true latent variable and the additive scale
