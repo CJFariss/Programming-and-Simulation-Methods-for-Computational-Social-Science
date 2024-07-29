@@ -35,7 +35,7 @@ x <- rnorm(1, mean=0, sd=1)
 x
 
 for(i in 2:length(time_index)){
-  x[i] <- rnorm(1, mean=x[i-1], sd=1)
+  x[i] <- rnorm(1, mean=x[i-1], sd=.25)
 }
 x
 
@@ -136,14 +136,14 @@ model <- "
     beta ~ normal(0,10);
     sigma ~ normal(0,1);
     
-    // dynamic prior on theta
-    theta[1] ~ std_normal();
-    for(i in 2:n){
-      theta[i] ~ normal(theta[i-1], sigma);
-    }
+    // dynamic prior on theta (see part01 program lesson for more on this)
+    //theta[1] ~ std_normal();
+    //for(i in 2:n){
+    //  theta[i] ~ normal(theta[i-1], sigma);
+    //}
     
     // alternative dynamic prior on theta
-    //theta ~ normal(theta_star, sigma_star);
+    theta ~ normal(theta_star, sigma_star);
     
     // likelihood
     for(i in 1:n){
