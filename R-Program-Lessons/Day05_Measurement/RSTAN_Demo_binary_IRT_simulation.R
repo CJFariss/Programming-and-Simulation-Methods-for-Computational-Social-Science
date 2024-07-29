@@ -22,7 +22,7 @@
 
 ## load library
 library(rstan) # load rstan library
-library(MASS) # loaed library with truehist function
+library(MASS) # load library with truehist function
 
 ## -------------------------------------------------- ##
 ## define STAN model
@@ -47,10 +47,11 @@ transformed parameters {
 }
 model {
     // priors (these are variances not precision)
+    //theta ~ std_normal(); //priors on latent variable
     theta ~ normal(0,1); //priors on latent variable
     
-    alpha ~ normal(0,10); //priors for the intercepts (these are variances not precision)
-    beta ~ normal(0,10); // priors for the slope. This is truncated so that the lowest possible value is 0
+    alpha ~ normal(0,10); //priors for the intercepts/difficulty (these are variances not precision)
+    beta ~ normal(0,10); // priors for the slope/discrimination. This is truncated so that the lowest possible value is 0
     
     // likelihood (link data to some combination of parameters and more data)
     // one equation for each of the observed items
@@ -63,7 +64,7 @@ model {
 
 ## simulated data
 n <- 300
-theta <- rnorm(n,0,1)
+theta <- rnorm(n,0,1) ## standard normal latent estimand (it's an estimand because we cannot actually observe this)
 ##theta <- runif(n,-3,3)
 
 ## set parameters for each item
@@ -130,7 +131,7 @@ latentmean <- apply(output$theta,2,mean)
 
 ## plot true latent variable with posterior mean
 par(mfrow=c(1,1), mar=c(4,4,1,1), font=2, font.lab=2, cex=1.3)
-plot(latentmean, theta, xlim=c(-3,3), ylim=c(-3,3), ylab="true x", xlab="posterior mean of x")
+plot(latentmean, theta, xlim=c(-3,3), ylim=c(-3,3), ylab="true theta", xlab="posterior mean of theta")
 abline(a=0, b=1, col=2, lwd=2)
 
 
