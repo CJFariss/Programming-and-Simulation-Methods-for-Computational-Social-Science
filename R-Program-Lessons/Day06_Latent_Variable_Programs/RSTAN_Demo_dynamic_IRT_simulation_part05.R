@@ -23,6 +23,7 @@
 
 ##
 ## adds missingness
+## also explores using the student's t-distribution instead of the normal density for the latent trait parameter
 
 ##
 library(boot)
@@ -97,19 +98,21 @@ additive_scale <- y1 + y2 + y3 + y4
 
 plot(additive_scale ~ x_column)
 
+## create column vectors
 y_column <- c(y1,y2,y3,y4)
 item_column <- rep(1:4, each=300)
 cbind(y_column, item_column)
 unit_column <- rep(unit_column, 4)
 time_column <- rep(time_column, 4)
 
+## check that all the column vector ids are lining up
 cbind(y_column, item_column, unit_column, time_column)[1:100,]
 cbind(y_column, item_column, unit_column, time_column)[301:400,]
 
 unit_time_column <- rep(1:300, times=4)
 length(unit_time_column)
 
-
+## randomly generate some missingness for the model, which we also need to track with another column (just a column in R and not in Stan)
 missing_ids <- sample(1:length(y_column), size=10, replace=FALSE)
 missing_ids
 
@@ -189,7 +192,7 @@ model <- "
 data_list <- list(n_t=300, n_t_k=length(unit_column), k=4, y=y_column, item_column=item_column, unit_column=unit_column, time_column=time_column, unit_time_column=unit_time_column)
 data_list
 
-fit <- stan(model_code=model, data=data_list, iter=2000, chains=4, pars=c("theta_star", "sigma_star", "xb"), include=FALSE)
+fit <- stan(model_code=model, data=data_list, iter=2000, chains=4, pars=c("theta_star", "sigma_star", "xb"), include=FALSE, cores = 4)
 fit
 
 output <- extract(fit)
