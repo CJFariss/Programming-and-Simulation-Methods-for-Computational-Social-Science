@@ -70,14 +70,14 @@ n <- length(theta)
 
 
 ## set beta here (pick three values for beta, the item discrimination parameter)
-beta <- c(.5,1,3,2000)
+beta <- c(.5,1,3,25)
 
-par(mfrow=c(4,3), mar=c(5,3,.5,.5))
+par(mfrow=c(4,3), mar=c(6,5,.5,.5))
 for(j in 1:length(beta)){
     ## set intercepts * an expansion factor, which is the item discrimination from above
     ## values correspond exactly to the position along the standard normal x variable
     ## specifically, these are the position along x at which point at which Pr(y=1)=.5
-    alpha <- beta[j]*c(-2,-.5,2)
+    alpha <- beta[j]*c(-3,-.5,2). ## the difficulty-position is scaled by beta into the difficulty parameter 
     
     # linear terms of the model
     # transform the linear xb terms using the logit function into a probability
@@ -92,8 +92,8 @@ for(j in 1:length(beta)){
         ## graph theta values along the the x-axis
         ## x values are projected onto the probability of y using the inverse logit function of xb
         plot(theta, p[,i], xlim=c(-4.0,4.0), ylim=c(0,1), xaxt="n", xlab="", type="l", lwd=2, col=grey(.5), ylab="")
-        if(j==3)mtext(side=1, expression(theta), cex=1.25, line=3)
-        if(i==1)mtext(side=2, expression("Probability Y=1"), cex=1.25, line=3)
+        if(j==4)mtext(side=1, expression(theta), cex=1.25, line=3)
+        if(i==1)mtext(side=2, expression("Pr(Y=1)"), cex=1.25, line=3)
         A <- alpha[i]
         B <- beta[j]
         text(-3.25,.95, substitute(paste(beta, " = ", B), list(B = B)), cex=1.5)
