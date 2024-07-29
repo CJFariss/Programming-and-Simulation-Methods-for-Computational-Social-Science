@@ -1,4 +1,4 @@
-## RSTAN_Demo_ordered_IRT_simulation.R
+## RSTAN_Demo_ordered_IRT_simulation_part02.R
 ##########################################################################
 ## INSTRUCTOR: Christopher Fariss
 ## COURSE NAME: Programming and Simulation Methods for Computational Social Science (2W)
