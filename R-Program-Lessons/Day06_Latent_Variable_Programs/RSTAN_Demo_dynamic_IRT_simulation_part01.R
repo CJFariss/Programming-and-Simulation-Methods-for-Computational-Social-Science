@@ -22,6 +22,7 @@
 ##########################################################################
 
 ##
+##
 library(boot)
 library(rstan)
 
@@ -100,25 +101,14 @@ model <- "
     real<lower=0> sigma;
   }
   
-  transformed parameters{
-    real theta_star[n];
-    real sigma_star[n];
-    
-    for(i in 1:n){
-      if(i==1){
-        theta_star[i]=0;
-        sigma_star[i]=1;
-      }
-      else{
-        theta_star[i]=theta[i-1];
-        sigma_star[i]=sigma;
-      }
-    }
-  }
-  
   model{
     // priors
-    theta ~ normal(theta_star, sigma_star);
+    theta[1] ~ normal(0, 1);
+    
+    for(i in 2:n){
+      theta[i] ~ normal(theta[i-1], 1);
+    }
+    
     alpha ~ normal(0,1);
     beta ~ normal(0,1);
     sigma ~ normal(0,1);
@@ -191,3 +181,4 @@ abline(v=inflection_points[4], col=2); abline(h=.5, lty=2)
 
 #apply(output$sigma, MARGIN=2, FUN=mean)
 mean(output$sigma)
+
