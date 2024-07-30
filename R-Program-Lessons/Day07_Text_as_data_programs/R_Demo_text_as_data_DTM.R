@@ -80,7 +80,11 @@ table(unlist(tweet.term.list))
 ## view logical subsetting command to remove stopwords from the first tweet
 tweet.term.list[[1]] %in% as.character(stopwords$V1)
 
-## remove stopwords with not ! symbol for first elemnet in list of words (! flips FALSE to TRUE and TRUE to FALSE)
+c(1,2,3) %in% c(2,4,6,8)
+
+c(2,4,6,8) %in% c(1,2,3)
+
+## remove stopwords with not ! symbol for first element in list of words (! flips FALSE to TRUE and TRUE to FALSE)
 ! tweet.term.list[[1]] %in% as.character(stopwords$V1)
 
 index <- ! tweet.term.list[[1]] %in% as.character(stopwords$V1) 
@@ -173,11 +177,11 @@ DTM
 dim(DTM)
 
 
-## inspect the frequency of terms for 25 terms in the firt 5 tweets
+## inspect the frequency of terms for 25 terms in the first 5 tweets
 #DTM[1:5,1:25]
 
 
-## cacluate total calculation time
+## calculate total calculation time
 print(Sys.time() - time1)
 
 
@@ -217,13 +221,13 @@ DTM
 #DTM[1:5,1:25]
 
 
-## cacluate total calculation time
+## calcuate total calculation time
 print(Sys.time() - time1)
 
 
 
 
-## create a doc_by_doc matrix
+## create a doc_by_doc matrix, which tells us the lengths of the documents
 DDM <- DTM %*% t(DTM)
 DDM
 
