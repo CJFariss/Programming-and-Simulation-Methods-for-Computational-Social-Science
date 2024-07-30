@@ -234,12 +234,11 @@ TTM
 
 
 
-## create the TTM with a loop instead of using matrix multiplication
-row.names(DTM)
+## try to create the DDM with a loop instead of using matrix multiplication
 
-Var1=="fake"
-
-for(i in 1:length(unique.terms)){
-  
-  row.sums(DTM$Var1=="fake")
-}
+## try to create the TTM with a loop instead of using matrix multiplication
+#row.names(DTM)
+#Var1=="fake"
+#for(i in 1:length(unique.terms)){
+##  row.sums(DTM$Var1=="fake")
+#}
