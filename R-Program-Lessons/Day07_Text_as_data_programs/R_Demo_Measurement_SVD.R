@@ -14,7 +14,7 @@
 ##
 ## Introduction to tutorial:
 ##
-## (1) Review some linear alegbra functions (inner and outer product functions and alternatives)
+## (1) Review some linear algebra functions (inner and outer product functions and alternatives)
 ##
 ## (2) The Hilbert function (proofs are elsewhere)
 ##
@@ -27,6 +27,8 @@
 ## We could spend a couple weeks unpacking all of these ideas.
 ##
 ## R contains fast and efficient linear algebra functions (based in Fortran code from the 1950s/1960s) so it is easy to explore.
+## 
+## Unlike a latent variable model, we are looking for a set of matrices that are smaller in dimension than the original set of observed variables that can nearly fully characterize the original data. It turns out though that the first dimension of the SVD is highly correlated with the a simulated latent variable that produces the observed variables. SVD is also used to reduce the dimensionality of observed data that enter machine learning models.
 ##
 ##########################################################################
 
@@ -134,11 +136,22 @@ x <- cbind(x1, x2, x3)
 
 ## recover theta via the decomposition of x with SVD
 s <- svd(x)
+s
 D <- diag(s$d)
+D
 
 ##
 s$u %*% D %*% t(s$v) #  X = U D V'
 t(s$u) %*% x %*% s$v #  D = U' X V
+
+## this is D
+diag(t(s$u) %*% x %*% s$v)
+D
+
+## compare the first 6 rows in each matrix
+head(s$u)
+head(x)
+
 
 ## comparing the singular values of U to theta
 cor(s$u[,1], theta)
@@ -150,3 +163,8 @@ cor(x[,1], theta)
 cor(x[,2], theta)
 cor(x[,3], theta)
 
+
+## plot theta and the first dimension of the SVD solution
+par(mfrow=c(1,1))
+plot(y=theta, x=s$u[,1])
+abline(reg=lm(theta~I(s$u[,1])), col=2, lwd=2)
