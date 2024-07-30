@@ -46,7 +46,7 @@ n <- length(theta)
 ##
 ## the step function will reside over the inflection point of the logit curve
 ##
-## the inflection point is always -(alpha/beta)
+## the inflection point is always -(alpha/beta) if alpha + beta (typical for Bernoulli logit) 
 ##
 ## because of this identity, we have to expand the intercepts below by a factor of beta
 ##
@@ -72,7 +72,7 @@ n <- length(theta)
 ## set beta here (pick three values for beta, the item discrimination parameter)
 beta <- c(.5,1,3,25)
 
-par(mfrow=c(4,3), mar=c(6,5,.5,.5))
+par(mfrow=c(4,3), mar=c(4,5,.5,.5))
 for(j in 1:length(beta)){
     ## set intercepts * an expansion factor, which is the item discrimination from above
     ## values correspond exactly to the position along the standard normal x variable
