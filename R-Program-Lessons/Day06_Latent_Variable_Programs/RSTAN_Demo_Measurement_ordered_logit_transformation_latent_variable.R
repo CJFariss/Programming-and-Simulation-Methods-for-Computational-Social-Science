@@ -46,7 +46,8 @@ n <- length(theta)
 ##
 ## the step function will reside over the inflection point of the logit curve
 ##
-## the inflection point is always -(alpha/beta)
+## the inflection point is always -(alpha/beta) if alpha + beta (typical for Bernoulli logit) 
+## or its alpha/beta if alpha - beta (typical for ordered logit)
 ##
 ## because of this identity, we have to expand the intercepts below by a factor of beta
 ##
@@ -72,7 +73,7 @@ n <- length(theta)
 ## set beta here (pick three values for beta, the item discrimination parameter)
 beta <- c(.5,1,3,9)
 
-par(mfrow=c(4,3), mar=c(6,5,.5,.5))
+par(mfrow=c(4,3), mar=c(4,5,.5,.5))
 for(j in 1:length(beta)){
   ## set intercepts * an expansion factor, which is the item discrimination from above
   ## values correspond exactly to the position along the standard normal x variable
@@ -82,34 +83,36 @@ for(j in 1:length(beta)){
   
   # linear terms of the model
   # transform the linear xb terms using the logit function into a probability
-  xb1 <- xb2 <- p1 <- p2 <- p3 <- y <- matrix(NA, nrow=n, ncol=length(alpha))
+  xb1 <- xb2 <- p1 <- p2 <- p3 <- eta1 <- eta2 <- eta3 <- y <- matrix(NA, nrow=n, ncol=length(alpha))
   for(i in 1:length(alpha)){
-    xb1[,i] <- alpha_1[i] + beta[j] * theta
-    xb2[,i] <- alpha_2[i] + beta[j] * theta
-    p1[,i] <- 1 / (1 + exp(-xb1[,i]))
-    p2[,i] <- (1 / (1 + exp(-xb2[,i]))) - p1[,i]
-    p3[,i] <- 1 - p2[,i]
+    xb1[,i] <- alpha_1[i] - beta[j] * theta
+    xb2[,i] <- alpha_2[i] - beta[j] * theta
+    eta1[,i] <- 1 / (1 + exp(-xb1[,i]))
+    eta2[,i] <- 1 / (1 + exp(-xb2[,i]))
+    p1[,i] <- eta1[,i]
+    p2[,i] <- eta2[,i] - eta1[,i]
+    p3[,i] <- 1 - eta2[,i]
     for(z in 1:n) y[z,i] <- sample(0:2, size=1, prob=c(p1[z,i], p2[z,i], p3[z,i]))
   }
   
   for(i in 1:length(alpha)){
     ## graph theta values along the the x-axis
     ## x values are projected onto the probability of y using the inverse logit function of xb
-    plot(theta, p1[,i], xlim=c(-4.0,4.0), ylim=c(0,1), xaxt="n", xlab="", type="l", lwd=2, col=grey(.5), ylab="")
+    plot(theta, p1[,i], xlim=c(-4.0,4.0), ylim=c(0,1), xaxt="n", xlab="", type="l", lwd=2, col=grey(.85), ylab="")
     lines(theta, p2[,i], lwd=2, col=grey(.5))
-    lines(theta, p3[,i], lwd=2, col=grey(.5))
+    lines(theta, p3[,i], lwd=2, col=grey(.15))
     if(j==4)mtext(side=1, expression(theta), cex=1.25, line=3)
-    if(i==1)mtext(side=2, expression("Pr(Y=1)"), cex=1.25, line=3)
+    if(i==1)mtext(side=2, expression("Pr(Y=level)"), cex=1.25, line=3)
     A1 <- alpha_1[i]
     A2 <- alpha_2[i]
     B <- beta[j]
     text(-3.25,.95, substitute(paste(beta, " = ", B), list(B = B)), cex=1.5)
-    text(-3.25,.85, substitute(paste(alpha, " = ", A1), list(A1 = A1)), cex=1.5)
-    text(-3.25,.70, substitute(paste(alpha, " = ", A2), list(A2 = A2)), cex=1.5)
+    text(-3.25,.85, substitute(paste(alpha[1], " = ", A1), list(A1 = A1)), cex=1.5)
+    text(-3.25,.70, substitute(paste(alpha[2], " = ", A2), list(A2 = A2)), cex=1.5)
     axis(side=1, at=-5:5, cex.axis=1.25)
     abline(h=0.5)
-    abline(v=-(alpha_1[i]/beta[j]), col=2)
-    abline(v=-(alpha_2[i]/beta[j]), col=2)
+    abline(v=(alpha_1[i]/beta[j]), col=2)
+    abline(v=(alpha_2[i]/beta[j]), col=2)
     #abline(v=-((alpha[i]+log(2.75))/beta[j]), col=2, lwd=.5, lty=2)
     #abline(v=-((alpha[i]-log(2.75))/beta[j]), col=2, lwd=.5, lty=2)
   }
