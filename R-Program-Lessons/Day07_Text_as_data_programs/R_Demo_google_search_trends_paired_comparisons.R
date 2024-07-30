@@ -31,12 +31,12 @@ library(MASS)
 
 ## load necessary libraries 
 ## change groundhog to TRUE to install original versions of libraries from April-2022
-source("R-Program-Lessons/Day06_Text_as_data_programs/groundhog_library_func.R")
+source("R-Program-Lessons/Day07_Text_as_data_programs/groundhog_library_func.R")
 groundhog_library_func(groundhog=FALSE, regular_install=FALSE)
 
 #pdf("Rplots/Google_search_term_pairs.pdf", height=6, width=6)
 #pdf("Rplots/Google_search_term_pairs_shortlist.pdf", height=6, width=6)
-pdf("Rplots/Google_search_term_pairs_longlist.pdf", height=6, width=6)
+#pdf("Rplots/Google_search_term_pairs_longlist.pdf", height=6, width=6)
 
 #time
 #war
@@ -149,6 +149,6 @@ world <- gtrends(TERMS[[i]], time=TIME, low_search_volume=T)$interest_over_time
 
 }
 
-dev.off()
+#dev.off()
 
 
