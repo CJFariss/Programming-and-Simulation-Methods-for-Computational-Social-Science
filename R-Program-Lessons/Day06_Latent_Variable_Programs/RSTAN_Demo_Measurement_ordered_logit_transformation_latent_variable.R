@@ -79,11 +79,11 @@ for(j in 1:length(beta)){
   ## values correspond exactly to the position along the standard normal x variable
   ## specifically, these are the position along x at which point at which Pr(y=1)=.5
   alpha_1 <- beta[j]*c(-3.0, 0, 1.0) ## the difficulty-position is scaled by beta into the difficulty parameter 
-  alpha_2 <- beta[j]*c(-1.0, 1.5, 2.0) ## the difficulty-position is scaled by beta into the difficulty parameter 
+  alpha_2 <- beta[j]*c(3.0, 1.5, 2.0) ## the difficulty-position is scaled by beta into the difficulty parameter 
   
   # linear terms of the model
   # transform the linear xb terms using the logit function into a probability
-  xb1 <- xb2 <- p1 <- p2 <- p3 <- eta1 <- eta2 <- eta3 <- y <- matrix(NA, nrow=n, ncol=length(alpha))
+  xb1 <- xb2 <- p1 <- p2 <- p3 <- eta1 <- eta2 <- y <- matrix(NA, nrow=n, ncol=length(alpha))
   for(i in 1:length(alpha)){
     xb1[,i] <- alpha_1[i] - beta[j] * theta
     xb2[,i] <- alpha_2[i] - beta[j] * theta
