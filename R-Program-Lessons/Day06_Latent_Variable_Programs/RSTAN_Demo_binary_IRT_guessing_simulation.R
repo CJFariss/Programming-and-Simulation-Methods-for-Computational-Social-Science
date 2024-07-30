@@ -68,6 +68,8 @@ model {
     //theta ~ std_normal(); //priors on latent variable
     theta ~ normal(0,1); //priors on latent variable
     
+    guessing ~ uniform(0,.2)
+    
     alpha ~ normal(0,10); //priors for the intercepts/difficulty (these are variances not precision)
     beta ~ normal(0,10); // priors for the slope/discrimination. This is truncated so that the lowest possible value is 0
     
@@ -121,8 +123,8 @@ j <- 5
 xb1 <- alpha1 + beta1 * theta
 xb2 <- alpha2 + beta2 * theta
 xb3 <- alpha3 + beta3 * theta
-xb4 <- alpha3 + beta3 * theta
-xb5 <- alpha3 + beta3 * theta
+xb4 <- alpha4 + beta4 * theta
+xb5 <- alpha5 + beta5 * theta
 
 guessing_rate <- 1/5  ## assumes 5 multiple choices options and 1 correct answer
 
@@ -131,15 +133,15 @@ guessing_rate <- 1/5  ## assumes 5 multiple choices options and 1 correct answer
 pi_1 <- guessing_rate + ((1-guessing_rate) / (1 + exp(-xb1))) ## equivalent to g + (1-g)*inv.logit(p)
 pi_2 <- guessing_rate + ((1-guessing_rate) / (1 + exp(-xb2)))
 pi_3 <- guessing_rate + ((1-guessing_rate) / (1 + exp(-xb3)))
-pi_4 <- guessing_rate + ((1-guessing_rate) / (1 + exp(-xb5)))
-pi_5 <- guessing_rate + ((1-guessing_rate) / (1 + exp(-xb1)))
+pi_4 <- guessing_rate + ((1-guessing_rate) / (1 + exp(-xb4)))
+pi_5 <- guessing_rate + ((1-guessing_rate) / (1 + exp(-xb5)))
 
 ## generate the items with theta and measurement error
 y1 <- rbinom(n, size=1, prob=pi_1)
 y2 <- rbinom(n, size=1, prob=pi_2)
 y3 <- rbinom(n, size=1, prob=pi_3)
-y4 <- rbinom(n, size=1, prob=pi_3)
-y5 <- rbinom(n, size=1, prob=pi_3)
+y4 <- rbinom(n, size=1, prob=pi_4)
+y5 <- rbinom(n, size=1, prob=pi_5)
 
 ## create matrix of observed items
 y <- cbind(y1, y2, y3, y4, y5)
@@ -148,7 +150,7 @@ y <- cbind(y1, y2, y3, y4, y5)
 data_list <- list(y1=y1, y2=y2, y3=y3, y4=y4, y5=y5, j=j, n=n)
 
 ## fit stan model
-fit <- stan(model_code = model, data = data_list, iter = 2000, chains = 4, cores=4)
+fit <- stan(model_code = model, data = data_list, iter = 4000, chains = 4, cores=4, thin=2)
 
 ## this summarizes the named parameters but not along the dimensions
 fit
@@ -233,8 +235,6 @@ abline(v=inflection_points[5], col=2); abline(h=.5, lty=2)
 abline(h=guessing_rate, lty=2)
 
 
-#apply(output$sigma, MARGIN=2, FUN=mean)
-mean(output$sigma)
 
 ##
 par(mfrow=c(2,3))
