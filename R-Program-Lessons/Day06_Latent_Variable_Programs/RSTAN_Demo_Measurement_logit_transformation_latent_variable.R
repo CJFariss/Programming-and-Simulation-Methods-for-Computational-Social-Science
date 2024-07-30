@@ -77,7 +77,7 @@ for(j in 1:length(beta)){
     ## set intercepts * an expansion factor, which is the item discrimination from above
     ## values correspond exactly to the position along the standard normal x variable
     ## specifically, these are the position along x at which point at which Pr(y=1)=.5
-    alpha <- beta[j]*c(-3,-.5,2). ## the difficulty-position is scaled by beta into the difficulty parameter 
+    alpha <- beta[j]*c(-3,-.5,2) ## the difficulty-position is scaled by beta into the difficulty parameter 
     
     # linear terms of the model
     # transform the linear xb terms using the logit function into a probability
