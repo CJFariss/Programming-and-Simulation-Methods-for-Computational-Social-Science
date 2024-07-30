@@ -94,4 +94,3 @@ TernaryPlot(alab="Redder \u2192", blab="\u2190 Greener", clab="Bluer\u2192",
             axis.col=rgb(0.6, 0.6, 0.6), ticks.col=rgb(0.6, 0.6, 0.6),
             padding=0.08, main="simplex")
 TernaryPoints(value6, col=grey(.75))
-
