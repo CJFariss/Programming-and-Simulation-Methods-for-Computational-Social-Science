@@ -248,6 +248,7 @@ More on latent variable models, specifically the introduction of a dynamic struc
 
 #### Program Lessons
 - [Day06_Latent_Variable_Programs](./R-Program-Lessons/Day06_Latent_Variable_Programs)
+    - [RSTAN_Demo_binary_IRT_guessing_simulation.R](./R-Program-Lessons/Day06_Latent_Variable_Programs/RSTAN_Demo_binary_IRT_guessing_simulation.R)
     - [RSTAN_Demo_ordered_IRT_simulation_part01.R](./R-Program-Lessons/Day06_Measurement/RSTAN_Demo_ordered_IRT_simulation_part01.R)
     - [RSTAN_Demo_ordered_IRT_simulation_part02.R](./R-Program-Lessons/Day06_Measurement/RSTAN_Demo_ordered_IRT_simulation_part02.R)
     - [RSTAN_Demo_dynamic_IRT_simulation_part01.R](./R-Program-Lessons/Day06_Latent_Variable_Programs/RSTAN_Demo_dynamic_IRT_simulation_part01.R)
@@ -256,7 +257,9 @@ More on latent variable models, specifically the introduction of a dynamic struc
     - [RSTAN_Demo_dynamic_IRT_simulation_part04.R](./R-Program-Lessons/Day06_Latent_Variable_Programs/RSTAN_Demo_dynamic_IRT_simulation_part04.R)
     - [RSTAN_Demo_dynamic_IRT_simulation_part05.R](./R-Program-Lessons/Day06_Latent_Variable_Programs/RSTAN_Demo_dynamic_IRT_simulation_part05.R)
     - [RSTAN_Demo_Measurement_logit_transformation_latent_variable.R](./R-Program-Lessons/Day06_Latent_Variable_Programs/RSTAN_Demo_Measurement_logit_transformation_latent_variable.R)
-    
+    - [RSTAN_Demo_Measurement_logit_transformation_guessing_latent_variable.R](./R-Program-Lessons/Day06_Latent_Variable_Programs/RSTAN_Demo_Measurement_logit_transformation_guessing_latent_variable.R)
+    - [RSTAN_Demo_Measurement_ordered_logit_transformation_latent_variable.R](./R-Program-Lessons/Day06_Latent_Variable_Programs/RSTAN_Demo_Measurement_ordered_logit_transformation_latent_variable.R)
+
 #### Program Challenges
 - [R-Program-Challenges](https://github.com/CJFariss/R-Program-Challenges/tree/main/R-Program-Challenges)
     - [R_Challenge_simulation_zombies.R](https://github.com/CJFariss/R-Program-Challenges/blob/main/R-Program-Challenges/R_Challenge_simulation_zombies.R)
