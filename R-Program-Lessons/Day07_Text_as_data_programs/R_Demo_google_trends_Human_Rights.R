@@ -32,7 +32,7 @@ library(countrycode)
 library(stm)
 library(tm)
 library(MASS)
-library(colorbrewer)
+#library(colorbrewer)
 
 ## country codes
 data("countries")
