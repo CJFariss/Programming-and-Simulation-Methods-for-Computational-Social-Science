@@ -110,6 +110,7 @@ table(apply(docs_data[,5:6],1,sum))
 docs_data[1,7]
 
 is.character(docs_data[,7])
+is.numeric(docs_data[,7])
 
 summary(docs_data[,1:6])
 
