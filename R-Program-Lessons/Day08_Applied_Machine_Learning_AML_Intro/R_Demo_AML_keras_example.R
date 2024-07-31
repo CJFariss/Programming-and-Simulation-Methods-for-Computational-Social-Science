@@ -116,6 +116,8 @@ history <- model %>% fit(
 ## evaluate the model
 model %>% evaluate(x_test, y_test,verbose = 0)
 
+
+
 ## model definition
 model <- keras_model_sequential()
 model %>%
