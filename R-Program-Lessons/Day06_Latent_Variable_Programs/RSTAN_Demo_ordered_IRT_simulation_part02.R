@@ -210,3 +210,26 @@ cor(latentmean,theta, method="spearman")
 
 ## how do these correlations compare when the true alpha parameters are spaced equally from one another and when they are not?
 
+
+cut_points_1_hat <- apply(output$cut_points[,,1], MARGIN=2, FUN=mean)
+cut_points_2_hat <- apply(output$cut_points[,,2], MARGIN=2, FUN=mean)
+beta_hat <- apply(output$beta, MARGIN=2, FUN=mean)
+cut_points_1_hat
+cut_points_2_hat
+beta_hat
+
+cut_points_3levels_1_hat <- mean(output$cut_points_3levels[,,1])
+cut_points_3levels_2_hat <- mean(output$cut_points_3levels[,,2])
+cut_points_3levels_3_hat <- mean(output$cut_points_3levels[,,3])
+beta_3levels_hat <- apply(output$beta_3levels, MARGIN=2, FUN=mean)
+cut_points_3levels_1_hat
+cut_points_3levels_2_hat
+cut_points_3levels_3_hat
+beta_3levels_hat
+
+
+## check against this grm {ltm}	package for a MLE gradient response model (which should be equivalent)
+library(ltm)
+fit_grm <- grm(data=y, IRT.param=TRUE)
+fit_grm
+fit_grm$coefficients
