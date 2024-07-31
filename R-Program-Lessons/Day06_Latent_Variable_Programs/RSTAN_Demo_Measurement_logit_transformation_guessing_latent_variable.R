@@ -106,7 +106,8 @@ for(j in 1:length(beta)){
     text(-3.25,.85, substitute(paste(alpha, " = ", A), list(A = A)), cex=1.5)
     axis(side=1, at=-5:5, cex.axis=1.25)
     abline(h=0.5)
-    abline(v=(1-guessing_parameter)*-(alpha[i]/beta[j]), col=2)
+    abline(h=(1-guessing_parameter)/2 + guessing_parameter, col="skyblue")
+    abline(v=-(alpha[i])/(beta[j]), col=2)
     #abline(v=-((alpha[i]+log(2.75))/beta[j]), col=2, lwd=.5, lty=2)
     #abline(v=-((alpha[i]-log(2.75))/beta[j]), col=2, lwd=.5, lty=2)
   }
