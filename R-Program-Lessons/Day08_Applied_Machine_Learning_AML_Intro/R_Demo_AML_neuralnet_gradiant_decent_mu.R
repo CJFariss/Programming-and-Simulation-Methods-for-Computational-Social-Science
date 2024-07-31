@@ -72,6 +72,7 @@ for (j in 1:iterations){
 
 mu_hat[length(mu_hat)]
 
+par(mfrow=c(1,1))
 plot(mu_hat)
 
 plot(mu_hat[-1], delta_mu_hat)
