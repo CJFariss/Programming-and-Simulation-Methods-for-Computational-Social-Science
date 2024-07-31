@@ -205,9 +205,7 @@ sqrt(mean((y-y_hat[,1000])^2))
 
 
 library(neuralnet)
-
 test <- data.frame(y,x)
-
 nn <- neuralnet(y ~ x, data=test, hidden=c(0), linear.output=T, err.fct="sse")
 #pr.nn <- compute(nn, covariate=data[,2])
 nn_hat <- unlist(nn$net.result)
@@ -241,7 +239,7 @@ w_hat[,1000]
 
 
 
-nn <- neuralnet(y ~ x, data=test, hidden=c(4,2), linear.output=T, err.fct="sse")
+nn <- neuralnet(y ~ x, data=test, hidden=c(3,2), linear.output=T, err.fct="sse")
 #pr.nn <- compute(nn, covariate=data[,2])
 nn_hat <- unlist(nn$net.result)
 rmse.nn <- sqrt(mean((y - nn_hat)^2))
