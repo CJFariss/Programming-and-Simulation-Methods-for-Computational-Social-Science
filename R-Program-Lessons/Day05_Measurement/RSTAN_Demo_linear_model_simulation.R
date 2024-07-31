@@ -82,7 +82,7 @@ data_list <- list(y = y, x=x, n=n)
 time1 <- Sys.time()
 
 # fit stan model
-fit <- stan(model_code = model, data = data_list, iter = 1000, chains = 4)
+fit <- stan(model_code = model, data = data_list, iter = 1000, chains = 4, cores = 4)
 
 ## calcuate the duration of the program file up to this point
 print(Sys.time() - time1)
