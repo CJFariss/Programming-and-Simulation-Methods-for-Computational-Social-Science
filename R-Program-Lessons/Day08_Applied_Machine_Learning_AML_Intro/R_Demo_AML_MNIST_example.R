@@ -24,7 +24,7 @@
 ##########################################################################
 
 ## load package
-install.packages("keras")
+#install.packages("keras")
 library(keras)
 #mnist <- dataset_mnist()
 
