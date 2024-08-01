@@ -83,7 +83,7 @@ model {
     }
 }
 generated quantities {
-    // posterior predictions
+    // posterior predictions for model comparison
     vector[n] y1_predict;
     vector[n] y2_predict;
     vector[n] y3_predict;
@@ -246,3 +246,29 @@ alpha4_hat
 
 MASS::truehist(theta_hat)
 MASS::truehist(theta)
+
+
+
+test1 <- test2 <- test3 <- test4 <- c()
+model_predictions <- as.matrix(fit, pars = c("y1_predict"))
+for(i in 1:nrow(model_predictions)){
+  test1[i] <- cor(y1, model_predictions[i,], method="spearman")
+}        
+
+model_predictions <- as.matrix(fit, pars = c("y2_predict"))
+for(i in 1:nrow(model_predictions)){
+  test2[i] <- cor(y2, model_predictions[i,], method="spearman")
+}        
+
+model_predictions <- as.matrix(fit, pars = c("y3_predict"))
+for(i in 1:nrow(model_predictions)){
+  test3[i] <- cor(y3, model_predictions[i,], method="spearman")
+}        
+
+model_predictions <- as.matrix(fit, pars = c("y4_predict"))
+for(i in 1:nrow(model_predictions)){
+  test4[i] <- cor(y4, model_predictions[i,], method="spearman")
+}        
+
+par(mfrow=c(2,1))
+boxplot(test1, test2, test3, test4, main="IRT softmax")
