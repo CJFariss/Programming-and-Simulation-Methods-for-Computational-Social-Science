@@ -58,6 +58,21 @@ model {
     y[,2] ~ ordered_logistic(beta[2] * theta, cut_points[2]);
     y[,3] ~ ordered_logistic(beta[3] * theta, cut_points[3]);
     y[,4] ~ ordered_logistic(beta[4] * theta, cut_points[4]);
+}  
+generated quantities {
+    // posterior predictions for model comparison
+    vector[n] y1_predict;
+    vector[n] y2_predict;
+    vector[n] y3_predict;
+    vector[n] y4_predict;
+
+    // the loop is necessary within the generated quantities block
+    for(i in 1:n){
+        y1_predict[i] = ordered_logistic_rng(beta[1] * theta[i], cut_points[1]);
+        y2_predict[i] = ordered_logistic_rng(beta[2] * theta[i], cut_points[2]);
+        y3_predict[i] = ordered_logistic_rng(beta[3] * theta[i], cut_points[3]);
+        y4_predict[i] = ordered_logistic_rng(beta[4] * theta[i], cut_points[4]);
+    }
 }
 "
 ## -------------------------------------------------- #
@@ -68,7 +83,10 @@ library(rstan)
 
 # simulate the latent variable x
 # and set the "true" population values for the alphas and betas
-n <- 300
+set.seed(940)
+#n <- 300
+n <- 1000
+theta <- rnorm(n,0,1)
 theta <- rnorm(n,0,1)
 
 ## discrimination parameters
@@ -185,3 +203,28 @@ cor(latentmean,theta, method="spearman")
 
 ## how do these correlations compare when the true alpha parameters are spaced equally from one another and when they are not?
 
+
+
+test1 <- test2 <- test3 <- test4 <- c()
+model_predictions <- as.matrix(fit, pars = c("y1_predict"))
+for(i in 1:nrow(model_predictions)){
+  test1[i] <- cor(y1, model_predictions[i,], method="spearman")
+}        
+
+model_predictions <- as.matrix(fit, pars = c("y2_predict"))
+for(i in 1:nrow(model_predictions)){
+  test2[i] <- cor(y2, model_predictions[i,], method="spearman")
+}        
+
+model_predictions <- as.matrix(fit, pars = c("y3_predict"))
+for(i in 1:nrow(model_predictions)){
+  test3[i] <- cor(y3, model_predictions[i,], method="spearman")
+}        
+
+model_predictions <- as.matrix(fit, pars = c("y4_predict"))
+for(i in 1:nrow(model_predictions)){
+  test4[i] <- cor(y4, model_predictions[i,], method="spearman")
+}        
+
+out_plot <- boxplot(test1, test2, test3, test4)
+boxplot(out_plot$stats, main="Ordered IRT")
