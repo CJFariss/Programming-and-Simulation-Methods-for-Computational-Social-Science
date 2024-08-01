@@ -270,5 +270,5 @@ for(i in 1:nrow(model_predictions)){
   test4[i] <- cor(y4, model_predictions[i,], method="spearman")
 }        
 
-par(mfrow=c(2,1))
-boxplot(test1, test2, test3, test4, main="IRT softmax")
+par(mfrow=c(1,2))
+outplot_softmax <- boxplot(test1, test2, test3, test4, main="IRT softmax", ylim=c(0.5,1))
