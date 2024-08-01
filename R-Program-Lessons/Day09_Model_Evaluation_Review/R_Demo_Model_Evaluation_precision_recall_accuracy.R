@@ -273,3 +273,5 @@ abline(v=threshold[which(F1_score==max(F1_score, na.rm=T))])
 
 ## recall the true proportion of 1s and 0s from the simulated data
 table(y)
+
+table(y_hat, y)
