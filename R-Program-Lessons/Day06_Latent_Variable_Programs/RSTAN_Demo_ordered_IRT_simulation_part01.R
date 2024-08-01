@@ -227,4 +227,4 @@ for(i in 1:nrow(model_predictions)){
 }        
 
 out_plot <- boxplot(test1, test2, test3, test4)
-boxplot(out_plot$stats, main="Ordered IRT")
+boxplot(out_plot$stats, main="Ordered IRT", ylim=c(0.5,1))
