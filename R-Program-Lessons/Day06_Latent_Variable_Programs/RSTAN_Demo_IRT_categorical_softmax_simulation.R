@@ -75,6 +75,7 @@ model {
     alpha4 ~ normal(0,10);
     beta ~ normal(0,10);
     
+    // likelihood
     for(i in 1:n){  
       y1[i] ~ categorical(prob_eta1[,i]);
       y2[i] ~ categorical(prob_eta2[,i]);
