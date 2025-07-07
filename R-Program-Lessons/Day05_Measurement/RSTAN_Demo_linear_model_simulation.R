@@ -1,10 +1,10 @@
 ## RSTAN_Demo_linear_model_simulation.R
 ##########################################################################
 ## INSTRUCTOR: Christopher Fariss
-## COURSE NAME: Programming and Simulation Methods for Computational Social Science (2W)
+## COURSE NAME: Programming and Simulation Methods for Computational Social Science (1T, 2W)
 ## University of Essex Summer School 2024
 ##
-## Date: 2024-07-22
+## Date: 2025-07-11
 ##
 ## Please e-mail me if you find any errors or have and suggestions
 ## e-mail: cjf0006@gmail.com
