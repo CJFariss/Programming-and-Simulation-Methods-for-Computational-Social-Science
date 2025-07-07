@@ -1,10 +1,10 @@
 ## R_Demo_Simulation_Learning_Potential_Outcomes_Framework.R
 ##########################################################################
 ### INSTRUCTOR: Christopher Fariss
-## COURSE NAME: Programming and Simulation Methods for Computational Social Science (2W)
+## COURSE NAME: Programming and Simulation Methods for Computational Social Science (1T, 2W)
 ## University of Essex Summer School 2023
 ##
-## Date: 2024-07-22
+## Date: 2025-07-09
 ##
 ## Please e-mail me if you find any errors or have and suggestions (either email is fine)
 ## e-mail: cjf0006@gmail.com
