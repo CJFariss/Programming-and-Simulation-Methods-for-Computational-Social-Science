@@ -59,6 +59,9 @@
 ## the work space and working directory
 ##########################################################################
 
+## example
+sample(1:3)
+
 ## The working directory is the location where R will look for outside datasets
 
 ## what is the current working directory?
