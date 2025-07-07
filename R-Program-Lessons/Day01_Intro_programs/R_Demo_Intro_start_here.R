@@ -2,7 +2,7 @@
 ##########################################################################
 ## INSTRUCTOR: Christopher Fariss
 ## COURSE NAME: Programming and Simulation Methods for Computational Social Science (1T, 2W)
-## University of Essex Summer School 2024
+## University of Essex Summer School 2025
 ##
 ## Date: 2025-07-07
 ##
@@ -42,6 +42,7 @@
 
 
 
+
 ##########################################################################
 ## Getting Started
 ##########################################################################
@@ -67,6 +68,8 @@ sample(1:3)
 ## what is the current working directory?
 getwd()
 
+list.files() # see the files in the working directory
+
 ## set the working directory to an object using the assignment operator <- or = (more on this later)
 wd <- getwd()
 
@@ -81,12 +84,19 @@ wd
 ## see the full path
 getwd()
 
+list.files() # see the files in the working directory
+
 ## a generalized way to move up one folder level
 setwd("../.")
 getwd()
 
+list.files() # see the files in the working directory
+
 wd <- "/Users/christopherfariss/Documents/GitHub/"
 setwd(wd)
+
+list.files() # see the files in the working directory
+
 ## see the full path
 getwd()
 
@@ -144,8 +154,12 @@ help.search("remove")
 ## I go back and forth between both but I try to avoid using "." most of the time now in my own code.
 
 
-dice.roll <- 2
+dice.roll <- 2 # try this over version
 dice_roll <- 2
+#dice-roll <- 2 # this doesn't work. why not?
+
+dice.roll
+dice_roll
 
 ##########################################################################
 ## assignment operator
@@ -182,8 +196,12 @@ some_other_function()
 ## more examples using the assignment operator
 ##########################################################################
 
+## object "assignment operator" function
+## obj <- func()
+
+
 ## create an object and assign a scalar to it (it's really just a vector with one element)
-obj1 <- 3
+obj1 <- 3 ## I recommend only using this version, not either of the two below
 
 ## display the value of the object
 obj1
@@ -202,6 +220,11 @@ obj1 ^ 2
 
 ## remove just obj1 from memory
 rm(obj1)
+
+ls() ## see what objects are available in memory
+
+list.files()
+
 
 ## removing objects is often not necessary but memory management is sometimes important if your
 ## code is making new objects from old ones instead of overwriting old objects.
