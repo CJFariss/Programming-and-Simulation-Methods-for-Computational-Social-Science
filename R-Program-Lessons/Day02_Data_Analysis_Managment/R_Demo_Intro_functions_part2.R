@@ -109,7 +109,7 @@ truehist(unlist(simulation_values_list), col="steelblue1")
 ## declare variables
 
 ## to raise the number of simulations
-power <- c(2,3,4)
+power <- c(2,3,4,5)
 
 ## don't go above 5!
 #power <- c(2,3,4,5)
@@ -191,6 +191,8 @@ recursion_func_example <- function(x){
   }
   return(x)
 }
+recursion_func_example
+
 recursion_func_example(-100)
 
 recursion_func_example(120)
@@ -207,6 +209,10 @@ factorial_func <- function(x) {
 }
 
 ## call function
+factorial_func(5)
+
+5*4*3*2*1
+
 factorial_func(5)
 
 ## compare to base R factorial function

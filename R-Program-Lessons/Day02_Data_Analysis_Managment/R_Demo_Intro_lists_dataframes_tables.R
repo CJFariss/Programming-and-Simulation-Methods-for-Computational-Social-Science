@@ -33,18 +33,27 @@
 ##########################################################################
 ## dataframes
 ##########################################################################
-## dataframes are special types of lists that have the look and feel of a matrix. The elements in a dataframe are vectors of the same length and each vector is arranged in the same way as a matrix. But importantly, each column in a dataframe can be a different variable type. A matrix can contain only contain one variable type: numbers, characters, or logical values. But the columns in a dataframe can contain a separate variable type. We navigate the coordinate system of a dataframe just like the coordinate system of a matrix. [,] where the left-hand (left of the comma) side coordinate represents the row coordinate of the dataframe or matrix and the right-hand (right of the comma) side coordinate  represents the column coordinates of the datafrae or matrix.
+## dataframes are special types of lists that have the look and feel of a matrix. The elements in a dataframe are vectors of the same length and each vector is arranged in the same way as a matrix. But importantly, each column in a dataframe can be a different variable type. A matrix can contain only contain one variable type: numbers, characters, or logical values. But the columns in a dataframe can contain a separate variable type. We navigate the coordinate system of a dataframe just like the coordinate system of a matrix. [,] where the left-hand (left of the comma) side coordinate represents the row coordinate of the dataframe or matrix and the right-hand (right of the comma) side coordinate  represents the column coordinates of the dataframe or matrix.
 
 
 ## note the difference: [1,2] vs. [c(1,2)]
 
-mat <- matrix(c(1,2,3,4),2,2)
+mat <- matrix(c(5,6,7,8),2,2)
 mat
 
 mat[1,2]
 mat[c(1,2)]
 mat[1:4]
 
+mat[1]
+mat[2]
+mat[3]
+mat[4]
+
+c(mat)[1]
+c(mat)[2]
+c(mat)[3]
+c(mat)[4]
 
 vec <- c(40,50,60)
 vec[c(1,2)]
@@ -94,7 +103,16 @@ s[1]
 
 ## print the first element of the list (this a numeric scalar in a list)
 s[[1]]
+s[[2]]
 
+s[1] + 1
+s[2] + 1
+
+s[[1]] + 1
+s[[2]] + 1
+
+
+## reminder about data types
 v <- c("a", "b")
 v
 v <- c(1, "b")

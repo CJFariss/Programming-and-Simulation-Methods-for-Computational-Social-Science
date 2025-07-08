@@ -375,7 +375,12 @@ vec
 vec[1]
 length(vec)
 
+rm(vec)
+vec[1] <- 1
+
 ## set i to the ith position of the vector each ith iteration the loop
+vec <- c()
+
 for(i in 1:10){
   vec[i] <- i
 }
@@ -402,23 +407,34 @@ i
 
 dice_rolls <- c()
 
-simulation_size <- 10
+simulation_size <- 20
 dice_rolls <- list()
+
 for(i in 1:simulation_size){
   dice_rolls[[i]] <- sample(1:6, size=10, replace=TRUE)
 }
 dice_rolls
+length(unlist(dice_rolls))
 
 ## we could also just set the size argument to simulation_size and return the sample result. 
 ## this is a vectorized version of the loop version above.
 
-dice_rolls <- sample(1:6, size=simulation_size, replace=TRUE)
+dice_rolls <- sample(1:6, size=10*simulation_size, replace=TRUE)
 dice_rolls
+
+length(dice_rolls)
 
 
 ##########################################################################
 ## while loop
 ##########################################################################
+
+
+dice_roll <- 1
+while(dice_roll != 6){
+  dice_roll <- sample(1:6,size=1,T)
+  print(dice_roll)
+}
 
 ## the while loop is constructed to do something until a logical condition becomes TRUE
 i <- 0
@@ -426,14 +442,10 @@ i <- 0
 ## is starts at 0
 i
 
-dice_roll <- 1
-while(dice_roll != 6){
-  dice_roll <- sample(1:6,size=1,T)
-  print(dice_roll)
-}
 ## this structure is similar to the for loop in terms of the process; however it ends when a condition is met instead of iterating through the values of an index
 while(i <= 10){
   i <- i + 1
+  print(i)
 }
 
 ## i is 11 because the loop stopped once i no longer satisfied the logical condition
@@ -547,37 +559,6 @@ apply(mat,2,mean)
 ## apply() a function to margins (the rows or columns) of a dataframe
 ##########################################################################
 
-## read data from the current working directory
-survey_data <- read.csv("Datasets/survey_498_20200129.csv", header=TRUE)
-survey_data
-
-## use the sum function on the rows (the first dimension of the matrix) but make sure to exclude the first column because it is the subject ids
-apply(survey_data[,-1], MARGIN=1, FUN=sum)
-
-
-## we can add extra arguments to apply
-## note that any additional arguments that we add in the apply() function are used for and in reference to the function we specify for the FUN argument in apply()
-## since we are using the sum() function, we can use ?sum to find the additional arguments for addressing missing values
-apply(survey_data[,-1], MARGIN=1, FUN=sum, na.rm=T)
-
-sum(c(1,2,3))
-sum(c(1,2,3,NA))
-sum(c(1,2,3,NA), na.rm=T)
-
-## use the above function to add a new column to our dataframe
-survey_data$subject_sums <- apply(survey_data[,-1], MARGIN=1, FUN=sum, na.rm=T)
-
-## view the data
-survey_data
-
-## tablulate the data
-table(survey_data$subject_sums)
-
-## graph the tabulation
-barplot(table(survey_data$subject_sums))
-
-## use the new count data to examine specific cases with subset() function and logical statements
-subset(survey_data, subject_sums>=7)
 
 
 ##########################################################################
@@ -641,7 +622,7 @@ mean(1:6)
 sum((1:6 - mean(1:6))^2 * (1/6))
 
 ## repeat the simulation 10,000 times and calculate the average
-n_sims <- 2000
+n_sims <- 10000
 
 ## number of samples to roll each iteration
 n_samples <- 10

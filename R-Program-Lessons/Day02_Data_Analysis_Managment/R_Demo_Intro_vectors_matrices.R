@@ -134,6 +134,7 @@ seq(from=1, to=5, by=.5)
 
 seq(from=1, to=5, by=2)
 
+## create evens and odds
 seq(from=1, to=10, by=2)
 seq(from=2, to=10, by=2)
 
@@ -157,9 +158,12 @@ rep(1,times=10)
 ## we can replicate values from another vector
 rep(c(1,2,3), times=2)
 
+?rep
+
 ## notice the difference between using the times argument compared to the each argument
 rep(c(1,2,3), each=2)
 
+rep(c(1,2,3), each=4)
 
 
 ##########################################################################
@@ -203,6 +207,11 @@ sample(1:20, size=2, replace=TRUE)
 sample(1:20, size=6, replace=TRUE)
 
 
+## sample out of a bag
+bag_of_fruit <- c("lime", "orange", "lemon")
+sample(bag_of_fruit, size=2, replace=FALSE)
+
+
 ## sample 1 element from a vector with character string elements (lower case letters)
 sample(letters,size=1,replace=T)
 
@@ -219,19 +228,31 @@ sample(c("red", "blue", "yellow"), size=3, replace=FALSE)
 ##########################################################################
 
 ## lets create and manipulate logical vectors (see week 7 lesson for much more detail on this)
+T
+
+F
+
 TRUE
 
 FALSE
 
 c(TRUE, FALSE)
 
+
+c(TRUE, FALSE, TRUE, TRUE, rep(FALSE, 10))
+
+## which() function
 which(c(TRUE, FALSE))
 
 which(c(FALSE, TRUE))
 
+which(c(FALSE, TRUE, TRUE, FALSE))
+
+
 ## use a vector of logical values to get multiple elements from a vector
 v <- c(6,7,8,9,10)
 v
+
 v[c(TRUE,TRUE,FALSE,FALSE,FALSE)]
 
 v==6
@@ -248,6 +269,9 @@ v[which(v==7)]
 v[which(v==8)]
 v[which(v==9)]
 v[which(v==10)]
+
+v[v==6]
+v[v==7]
 
 
 
@@ -277,6 +301,7 @@ m
 ## covert the matrix back into a vector (note the order of the values)
 c(m)
 
+
 ## 2D arrays using the array function which produces the same object as matrix( c(1,2,3,4,5,6), nrow=2, ncol=3)
 m <- array( c(1,2,3,4,5,6), dim=c(2,3))
 m
@@ -288,6 +313,7 @@ m
 ## arrays with more than 3 dimensions
 m3 <- array( c(1:18), dim=c(2,3,3))
 m3
+length(m3); prod(c(2,3,3))
 
 ## covert the array back into a vector
 c(m3)
@@ -296,15 +322,18 @@ c(m3)
 mymat <- rbind(c(1,3,4),5:3,c(100,20,90),11:13)
 mymat
 
-## additional functions to learn about the structure of the object (i.e., is it a matrix)
+## inspect 
+## additional functions to learn or INSPECT about the structure of the object (i.e., is it a matrix)
 dim(mymat)
 nrow(mymat)
 ncol(mymat)
-length(mymat)
-
-dim(mymat)[2]
+length(mymat);
 
 dim(mymat)[1]
+dim(mymat)[2]
+dim(mymat)[3] ## nothing here because we made a 2D object
+
+
 
 mymat_dim <- dim(mymat)
 mymat_dim

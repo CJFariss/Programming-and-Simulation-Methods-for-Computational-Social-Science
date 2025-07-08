@@ -83,11 +83,13 @@ summary(macro_variables_1990)
 ## calculate correlation coefficients for each pair of variables in the macro_variables dataset
 cor(macro)
 
+cor(macro[,3:6])
+
 cor(macro_variables)
 
 cor(macro_variables$unem, macro_variables$trade)
 
-cor_test(macro_variables$unem, macro_variables$trade)
+cor.test(macro_variables$unem, macro_variables$trade)
 
 
 
@@ -96,7 +98,7 @@ cor_test(macro_variables$unem, macro_variables$trade)
 ## ESTIMATE A SIMPLE LINEAR MODEL: BIVARIATE REGRESSION
 ##########################################################################
 
-## linear algrebra for the linear model
+## linear algebra for the linear model
 ## for more information on the syntax for matrix
 ##algebra in R see http://www_statmethods_net/advstats/matrix_html
 
@@ -144,6 +146,13 @@ values
 ## create a new data set that is the length of the sequence created above that contains the variables gdp, unem, capmob, trade
 new_macro <- macro[1:length(values), 3:6]
 
+new_macro <- data.frame(gdp=rep(NA, length(values)), 
+                        unem=rep(NA, length(values)),
+                        capmob=rep(NA, length(values)),
+                        trade=rep(NA, length(values)))
+
+head(new_macro)
+
 ## loop through the new data set and change the values of the four variables
 for(i in 1:length(values)){
     
@@ -160,14 +169,21 @@ for(i in 1:length(values)){
     
 }
 
+head(new_macro)
+tail(new_macro)
+summary(new_macro)
+
 ##########################################################################
 ## use the predict function
 ##########################################################################
 ## see the syntax to predict
 ?predict
 
+## reminder
+model_01
+
 ## predict the value unem in the new_macro data object using the coefficients contained in the model_01 object
-predict_model_01 <- predict(model_01, new_macro, se.fit=TRUE)
+predict_model_01 <- predict(object=model_01, newdata=new_macro, se.fit=TRUE)
 
 ## view the values contained in the new prediction object
 predict_model_01
@@ -180,6 +196,7 @@ predict_model_01$fit
 ## PLOT THE SUBSTANTIVE EFFECTS/QUANTITIES OF INTEREST
 ##########################################################################
 
+par(mfrow=c(1,1), mar=c(5,5,2,1))
 plot(values, predict_model_01$fit, type="n", ylim=c(0,max(macro$unem)), ylab="Predicted Value of Unemployment", xlab="Amount of Trade", main="SWANKY TITLE HERE")
 
 lines(values, predict_model_01$fit, lty=1, lwd=3, col=1)
