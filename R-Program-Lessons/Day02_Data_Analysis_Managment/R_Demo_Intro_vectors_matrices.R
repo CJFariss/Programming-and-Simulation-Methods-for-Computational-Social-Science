@@ -124,8 +124,6 @@ seq(from=1, to=5, by=.5)
 ## we can create the same sequence as above using the : operator
 1:5
 
-5:1
-
 ## : only produces sequences so that the values are 1 unit distance from one another but the start and end values do not need to be integers
 1.5:5.5
 
@@ -231,8 +229,6 @@ which(c(TRUE, FALSE))
 
 which(c(FALSE, TRUE))
 
-which(c(FALSE, TRUE, FALSE, TRUE))
-
 ## use a vector of logical values to get multiple elements from a vector
 v <- c(6,7,8,9,10)
 v
@@ -304,10 +300,16 @@ mymat
 dim(mymat)
 nrow(mymat)
 ncol(mymat)
+length(mymat)
+
 dim(mymat)[2]
 
 dim(mymat)[1]
 
+mymat_dim <- dim(mymat)
+mymat_dim
+mymat_dim[1]
+mymat_dim[2]
 
 
 ##########################################################################
@@ -323,6 +325,7 @@ A
 ## print out one element in matrix A at row 3, column 2
 A[3,2]
 
+##
 ## print out one column in matrix A at column 2
 A[,2]
 
@@ -466,6 +469,8 @@ nrow(mat1 %*% mat2) == nrow(mat1) | ncol(mat1 %*% mat2) == ncol(mat2)
 
 ## note that this doesn't work:
 mat2 %*% mat1
+
+
 
 
 
