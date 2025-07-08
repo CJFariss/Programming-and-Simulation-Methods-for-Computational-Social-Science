@@ -60,7 +60,7 @@ sd(macro$unem)
 summary(macro)
 
 ## generate plots of the distribution of the trade variable
-hist(macro$trade, col=grey(_5), xlab="Trade", ylab="Frequency", main="Distribution of Trade")
+hist(macro$trade, col=grey(.5), xlab="Trade", ylab="Frequency", main="Distribution of Trade")
 plot(density(macro$trade), col=2, lwd=3, xlab="Trade", ylab="Density", main="Distribution of Trade")
 
 
@@ -69,7 +69,7 @@ macro_variables <- subset(macro, select=c(gdp, unem, capmob, trade))
 dim(macro_variables)
 summary(macro_variables)
 
-## select only the observations (rows) that occured in the year 1990 from the full data set
+## select only the observations (rows) that occurred in the year 1990 from the full data set
 macro_1990 <- subset(macro, year==1990)
 dim(macro_1990)
 summary(macro_1990)
