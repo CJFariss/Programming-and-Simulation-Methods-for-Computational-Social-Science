@@ -103,8 +103,6 @@ FALSE | TRUE
 
 TRUE | FALSE
 
-TRUE | TRUE
-
 FALSE | FALSE
 
 
@@ -174,14 +172,6 @@ if(FALSE){
   print(2+2)
 }
 
-if(FALSE){
-  ## some code if TRUE
-} else if(FALSE){
-  ## some more code if TRUE
-} else{
-  print(2+2)
-}
-
 ## ifelse() takes three arguments, a logical condition and two values to be returned for either the TRUE or FALSE condition
 
 ifelse(TRUE, 1, 0)
@@ -195,6 +185,60 @@ ifelse(pi==1, pi, 1)
 
 ifelse(1 == pi & pi == pi, "print this character string", "is this really a helpful example??")
 
+
+## read data from the current working directory
+#survey_data <- read.csv("DSIS_data/survey_498_20200129.csv", header=TRUE)
+
+## this doesn't work quite right
+#survey_data <- read.csv("DSIS_data/funYesNoQuestions.csv", header=TRUE)
+survey_data <- read.csv("Datasets/373survey.csv")
+names(survey_data)
+dim(survey_data)
+nrow(survey_data)
+ncol(survey_data)
+head(survey_data)
+
+
+#survey_data <- read.csv("DSIS_data/funYesNoQuestions.csv", header=TRUE, sep=";")
+#names(survey_data)
+
+dim(survey_data)
+
+head(survey_data)
+
+## use ifelse statement to add an age value for the over_21 question
+#ifelse(survey_data$over_21==1, "old person", "not old person")
+
+## we can use the same statement above to add a new character variable to the dataframe
+#survey_data$old_person <- ifelse(survey_data$over_21==1, "old person", "non old person")
+
+survey_data
+
+table(survey_data[,3])
+
+table(survey_data$Do.you.think.you.could.win.in.a.fight.against.10.beavers.)
+
+table(survey_data$Do.you.like.football.saturdays.)
+
+#table(survey_data$Have.aliens.ever.seen.earth.)
+
+table(survey_data$Do.you.think.you.could.win.in.a.fight.against.10.beavers., survey_data$Do.you.like.football.saturdays.)
+
+summary(survey_data)
+
+head(survey_data)
+
+#test <- ifelse(survey_data$Are.dogs.better.than.cats.=="Yes", 1, 0)
+
+table(survey_data$Have.you.seen.Game.of.Thrones.)
+
+survey_data$Have.you.seen.Game.of.Thrones.=="Yes"
+
+test <- ifelse(survey_data$Have.you.seen.Game.of.Thrones.=="Yes", 1, 0)
+
+table(test)
+
+mean(test)
 
 ##########################################################################
 ## > greater than
@@ -288,9 +332,7 @@ for(i in seq(2,10,2)){
   print(i)
 }
 
-for(i in letters){
-  print(i)
-}
+
 ## print the indicator variable times the indicator variable each time the loop iterates
 for(i in 1:10){
   print(i*i)
@@ -333,24 +375,9 @@ vec
 vec[1]
 length(vec)
 
-rm(vec)
-vec[i] <- 1
-vec <- 1
-vec[i] <- 1
-
 ## set i to the ith position of the vector each ith iteration the loop
 for(i in 1:10){
   vec[i] <- i
-}
-vec
-
-rm(vec)
-for(i in 1:10){
-  if(i==1){
-    vec <- i
-  }else{
-    vec[i] <- i
-  }
 }
 vec
 
@@ -385,7 +412,7 @@ dice_rolls
 ## we could also just set the size argument to simulation_size and return the sample result. 
 ## this is a vectorized version of the loop version above.
 
-dice_rolls <- sample(1:6, size=10*simulation_size, replace=TRUE)
+dice_rolls <- sample(1:6, size=simulation_size, replace=TRUE)
 dice_rolls
 
 
@@ -400,14 +427,10 @@ i <- 0
 i
 
 dice_roll <- 1
-count <- 0
 while(dice_roll != 6){
-    dice_roll <- sample(1:6,size=1,T)
-    print(dice_roll)
-    count <- count + 1
+  dice_roll <- sample(1:6,size=1,T)
+  print(dice_roll)
 }
-count
-
 ## this structure is similar to the for loop in terms of the process; however it ends when a condition is met instead of iterating through the values of an index
 while(i <= 10){
   i <- i + 1
@@ -482,6 +505,16 @@ for(j in 1:ncol(mat)){
 }
 column_sums
 
+column_proportions <- NA
+for(j in 1:ncol(survey_data)){
+  column_proportions[j] <- mean(ifelse(survey_data[,j]=="Yes", 1, 0))
+}
+column_proportions
+
+data.frame(names(survey_data), column_proportions)
+
+survey_data
+
 ##########################################################################
 ## apply() a function to margins (the rows or columns) of an array or matrix
 ##########################################################################
@@ -515,7 +548,7 @@ apply(mat,2,mean)
 ##########################################################################
 
 ## read data from the current working directory
-survey_data <- read.csv("survey_498_20200129.csv", header=TRUE)
+survey_data <- read.csv("Datasets/survey_498_20200129.csv", header=TRUE)
 survey_data
 
 ## use the sum function on the rows (the first dimension of the matrix) but make sure to exclude the first column because it is the subject ids
@@ -675,6 +708,8 @@ var((sim_mean_values - 3.5))
 
 var(sim_mean_values)
 var(sim_var_values)
+
+
 
 
 
