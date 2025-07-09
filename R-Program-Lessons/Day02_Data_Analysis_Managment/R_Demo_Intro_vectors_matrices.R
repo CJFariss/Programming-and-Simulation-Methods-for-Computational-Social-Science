@@ -1,8 +1,9 @@
+## University of Essex Summer School 2025
 ## R_Demo_Intro_vectors_matrices.R
 ##########################################################################
 ## INSTRUCTOR: Christopher Fariss
 ## COURSE NAME: Programming and Simulation Methods for Computational Social Science (1T, 2W)
-## University of Essex Summer School 2024
+## University of Essex Summer School 2025
 ##
 ## Date: 2025-07-08
 ##
