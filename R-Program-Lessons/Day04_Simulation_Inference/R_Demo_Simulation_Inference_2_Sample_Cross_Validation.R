@@ -9,7 +9,9 @@
 ## Please e-mail me if you find any errors or have and suggestions (either email is fine)
 ## e-mail: cjf0006@gmail.com
 ## e-mail: cjfariss@umich.edu
+##
 ##########################################################################
+##
 ## Introduction to tutorial:
 ##
 ## Goal: Improve the predictive power or predictive validity of a model when applied to new observed values
