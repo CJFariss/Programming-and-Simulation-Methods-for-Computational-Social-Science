@@ -1,5 +1,18 @@
-## RSTAN_Demo_categorical_softmax_simulation_part2.R
-
+##########################################################################
+## INSTRUCTOR: Christopher Fariss
+## COURSE NAME: Programming and Simulation Methods for Computational Social Science (1T, 2W)
+## University of Essex Summer School 2025
+##
+## Date: 2025-07-14
+##
+## Please e-mail me if you find any errors or have and suggestions
+## e-mail: cjf0006@gmail.com
+##
+##########################################################################
+##
+## Introduction to tutorial:
+##
+##
 ## -------------------------------------------------- ##
 ## define STAN model
 ## -------------------------------------------------- ##
