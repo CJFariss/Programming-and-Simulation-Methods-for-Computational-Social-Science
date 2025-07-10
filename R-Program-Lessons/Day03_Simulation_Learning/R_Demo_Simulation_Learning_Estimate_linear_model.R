@@ -94,6 +94,7 @@ beta_estimate
 ## generate vector of possible values for the parameter estimates of alpha and beta by brute force
 alpha.hat <- seq(from=-6,6,.05)
 beta.hat <- seq(from=-6,6,.05)
+length(alpha.hat) * length(beta.hat)
 
 sumsquare <- matrix(NA, nrow=length(alpha.hat), ncol=length(beta.hat))
 
@@ -156,7 +157,7 @@ summary(lm(y~x1))
 ## plot gradient paths for the following algorithims: "Nelder-Mead", "BGFS", "CG", "L-BFGS-B", "SANN"
 eval <- array(dim=c(1500,4))
 iter <- 1
-optim.out <- optim(par = c(-2,-2), ols.func, X=X, method="Nelder-Mead", control=list(fnscale = -1), hessian = TRUE)
+optim.out <- optim(par = c(-4,4), ols.func, X=X, method="Nelder-Mead", control=list(fnscale = -1), hessian = TRUE)
 contour(alpha.hat,beta.hat,log(-sumsquare), xlab=expression(hat(alpha)), ylab=expression(hat(beta)), cex.lab=1.5)
 lines(eval[1:iter,1], eval[1:iter,2], col="purple", lwd=.5)
 optim.out$par
@@ -247,6 +248,11 @@ mean(y[x1==1])
 
 ## this is the intercept  (the proportion of y when x==0)
 mean(y[x1==0])
+
+fit
+
+mean(y[x1==0])
+mean(y[x1==1]) - mean(y[x1==0])
 
 
 ## generate vector of possible values for the parameter estimates of alpha and beta by brute force

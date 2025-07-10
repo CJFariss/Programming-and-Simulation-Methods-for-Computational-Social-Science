@@ -45,7 +45,7 @@ summary(e_i)
 Y_i0 <- -.10 + e_i
 
 ## potential outcome with treatment
-Y_i1 <- .20 + e_i
+Y_i1 <- .30 + e_i
 
 ## calculate mean for subject without treatment effect
 mean(Y_i0)
@@ -55,6 +55,9 @@ mean(Y_i1)
 
 ## calculate true difference in means for the potential outcome of subjects with treatment and without treatment effect
 mean(Y_i1) - mean(Y_i0)
+
+mean(Y_i1 - Y_i0)
+
 
 ## create vector of treatment assignments for the units (W_i==1 if treated, W_i==0 if control)
 W_i <- c(rep(0,n/2), rep(1, n/2))
@@ -92,6 +95,7 @@ summary(fit)
 summary(fit)$coefficient[2,1] + summary(fit)$coefficient[1,1]
 
 ## Graph observed subject values by treatment indicator
+par(mfrow=c(1,1), mar=c(4,5,2,1))
 plot(c(Y_obs_i[W_i==0], Y_obs_i[W_i==1]), col=c(W_i[W_i==0], W_i[W_i==1])+1)
 abline(h=mean(Y_obs_i[W_i==1]), col=2, lwd=2)
 abline(h=mean(Y_obs_i[W_i==0]), col=1, lwd=2)

@@ -50,7 +50,7 @@ single_coin_flip_sample_space <- c("Heads", "Tails")
 single_coin_flip_sample_space
 
 
-## we could also define the sample space for a single coin flip as the follwing: the sample space for a coin flip is S = {Heads, not Heads}
+## we could also define the sample space for a single coin flip as the following: the sample space for a coin flip is S = {Heads, not Heads}
 single_coin_flip_sample_space <- c("Heads", "not Heads")
 single_coin_flip_sample_space
 
@@ -73,7 +73,7 @@ single_coin_flip_event4
 ## Heads and not Heads are complements: the complement of Heads is not Heads; the complement of not Heads is Heads.
 ## Importantly the complement of S is the empty set {Ø}. This is because S contains all the possible events and its compliment contains no possible events.
 
-## The union of the sample space Heads U Tails occurs with probability 1 for the single coin flip. The union operator U is logigically the same as the OR operator "|"
+## The union of the sample space Heads U Tails occurs with probability 1 for the single coin flip. The union operator U is logically the same as the OR operator "|"
 ## So the total probability of the sample space is P(S)=1.
 
 ## The sample space for a single coin flip is not equivalent to the sample space for B (the Borel field).
@@ -206,6 +206,7 @@ mean(test_value)
 sd(test_value)
 
 ## graph the distribution (note that the "::" operator takes two arguments: a package name on the left and a function name on the right)
+par(mfrow=c(1,1))
 MASS::truehist(test_value)
 
 ##

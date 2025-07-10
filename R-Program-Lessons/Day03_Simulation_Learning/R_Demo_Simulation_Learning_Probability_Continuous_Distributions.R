@@ -217,6 +217,9 @@ dnorm(-1, mean=1, sd=1)
 dnorm(1, mean=1, sd=1)
 dnorm(1.5, mean=1, sd=1)
 
+
+
+
 ## Remember that for a normal distribution the probability of observing a specific event or value of a variable
 ## changes depending on where along the real number line the value resides.
 
@@ -381,13 +384,24 @@ dnorm(0)
 barplot(x_dnorm_estimate, main="N() density approximated using sample()")
 truehist(x_samples, main="N() density approximated using sample()")
 
-
+##################################################
+## sample function approximation
+##################################################
 ## update the sequence so it is more fine grained (more values to draw)
 x <- seq(from=-6, to=6, by=.5)
 x
+
+## set mean and variance parameters
+mu <- 0
+sigma <- 1
+sigma_pow2 <- sigma^2
+
 x_dnorm <- dnorm(x, mean=mu, sd=sigma)
 x_dnorm
 sim_size <- 10000
+
+cbind(x, x_dnorm)
+
 
 ## approximate normal distribution using sample() function
 x_samples <- sample(x, size=sim_size, replace=TRUE, prob=x_dnorm)

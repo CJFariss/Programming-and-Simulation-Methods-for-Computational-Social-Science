@@ -62,7 +62,7 @@ x_density
 
 ## plot the two estimated densities to verify that they are the same
 par(mfrow=c(1,1))
-plot(x, x_density)
+plot(x, x_density, col=2)
 
 ## calculate the density using the normal distribution function built into R
 x_dnorm <- dnorm(x, mean=mu, sd=sigma)
@@ -80,13 +80,13 @@ normal_density <- function(data, mu, sigma){
 normal_density(data=x, mu=3, sigma=1)
 
 ## plot the two estimated densities to verify that they are the same
-par(mfrow=c(1,1), mar=c(4,4,1,1))
-plot(x, normal_density(data=x, mu=0, sigma=1))
-plot(x, normal_density(data=x, mu=1, sigma=1))
-plot(x, normal_density(data=x, mu=2, sigma=1))
-plot(x, normal_density(data=x, mu=3, sigma=1))
-plot(x, normal_density(data=x, mu=4, sigma=1))
-plot(x, normal_density(data=x, mu=5, sigma=1))
+par(mfrow=c(3,2), mar=c(4,4,1,1))
+plot(x, normal_density(data=x, mu=0, sigma=1), cex=1.5, pch=19)
+plot(x, normal_density(data=x, mu=1, sigma=1), cex=1.5, pch=19)
+plot(x, normal_density(data=x, mu=2, sigma=1), cex=1.5, pch=19)
+plot(x, normal_density(data=x, mu=3, sigma=1), cex=1.5, pch=19)
+plot(x, normal_density(data=x, mu=4, sigma=1), cex=1.5, pch=19)
+plot(x, normal_density(data=x, mu=5, sigma=1), cex=1.5, pch=19)
 
 ## data (we want the mean estimate for this numeric vector)
 x <- c(1,2,3,4,5)
@@ -105,6 +105,9 @@ prod(1/(sigma*sqrt(2*pi)) * exp(-(x - mu)^2/2*sigma^2))
 
 ## reminder
 prod(1:3)
+prod(c(.5,.5))
+prod(c(.5,.5,.5))
+prod(c(.5,.5,.5,.5))
 
 ## let's check to see if the best estimate for the mean is 2
 mu <- 2
@@ -204,8 +207,8 @@ normal_density(data=simple_data, mu=3, sigma=1)
 ## what is the density for each value in the dataset if we assume mu, the average, is 4?
 normal_density(data=simple_data, mu=4, sigma=1)
 
-## what is the density for each value in the dataset if we assume mu, the average, is 4?
-normal_density(data=simple_data, mu=4, sigma=1)
+## what is the density for each value in the dataset if we assume mu, the average, is 5?
+normal_density(data=simple_data, mu=5, sigma=1)
 
 ##########################################################################
 ## note: we can summarize these values by using the loss function defined above, which we called the log-likelihood
@@ -282,10 +285,26 @@ mean(x)
 
 # pass function to optim with initial values
 loglik_func <- function(par, data){
-    -sum(log(normal_density(data=data, mu=par, sigma=1)))
+  return(-sum(log(normal_density(data=data, mu=par, sigma=1))))
 }
 
-optim.out <- optim(par = c(0), fn=loglik_func, data=x, method="BFGS")
+## generate variables for monitoring the function
+
+loglik_func <- function(par, data, iterate=TRUE){
+   out <-  -sum(log(normal_density(data=data, mu=par, sigma=1)))
+  
+  if(iterate==TRUE){
+    eval[iter,1] <<- par
+    eval[iter,2] <<- out
+    iter <<- iter+1
+  }
+  
+   return(out)
+}
+
+eval <- array(dim=c(100,2))
+iter <- 1
+optim.out <- optim(par = c(.1), fn=loglik_func, data=x, method="BFGS")
 optim.out
 
 ## estimate mean from the optim function
@@ -296,6 +315,10 @@ mean(x)
 
 ## the difference between the estimated parameter and the empirical mean is vanishingly small
 optim.out$par - mean(x)
+
+##
+head(eval,30) 
+lines(x=eval[1:iter,1], y=eval[1:iter,2], col="purple", lwd=.5) # not that interesting 
 
 ##########################################################################
 ## Question: what if we repeated this process over and over again? 
