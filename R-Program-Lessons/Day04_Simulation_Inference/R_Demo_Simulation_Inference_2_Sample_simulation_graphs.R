@@ -106,10 +106,16 @@ for(i in 1:10000){
   }
   rmse_2foldcross[i] <- sqrt(mean((dat$y.hat-dat$y)^2))
   
+  for(h in 1:10){
+    fit2 <- lm(y ~ x + I(x^2), data=subset(dat, folds!=h))
+    pred2 <- predict(fit2, newdata=subset(dat, folds==h))
+    dat$y.hat2[dat$fold==h] <- as.numeric(pred2)
+  }
+  rmse_10foldcross[i] <- sqrt(mean((dat$y.hat2-dat$y)^2))
   
 }
 
-boxplot(in_sample_rmse, rmse, rmse_2foldcross, xaxt="n")
+boxplot(in_sample_rmse, rmse, rmse_2foldcross, rmse_10foldcross, xaxt="n")
 abline(h=1, col=2)
 axis(side=1, at=1:3, labels=c("in sample", "out of sample \nno crossing", "out of sample \ncrossing"))
 
