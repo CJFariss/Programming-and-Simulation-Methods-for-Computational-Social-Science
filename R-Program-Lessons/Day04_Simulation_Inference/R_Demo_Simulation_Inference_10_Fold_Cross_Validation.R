@@ -34,7 +34,7 @@
 set.seed(940)
 
 ## set number of observations for simulation
-n <- 1000
+n <- 100
 
 ## number of folds (randomly created sub samples of data)
 k <- 10
@@ -66,14 +66,14 @@ dat$y.hat3 <- NA
 ##  function to
 for(i in 1:k){
     
-    ## fit a linear model
+    ## fit a linear model with only an intercept
     fit0 <- lm(y ~ 1, data=subset(dat, folds!=i))
     pred0 <- predict(fit0, newdata=subset(dat, folds==i))
     y.hat0 <- as.numeric(pred0)
   
     dat$y.hat0[dat$fold==i] <- y.hat0
   
-  ## fit a linear model
+    ## fit a linear model
     fit1 <- lm(y ~ x, data=subset(dat, folds!=i))
     pred1 <- predict(fit1, newdata=subset(dat, folds==i))
     y.hat1 <- as.numeric(pred1)

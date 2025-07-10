@@ -1,4 +1,4 @@
-#### R_Demo_Simulation_Inference_2_Sample_Hold_out.R
+#### R_Demo_Simulation_Inference_2_Sample_simulation_graphs.R
 ##########################################################################
 ## INSTRUCTOR: Christopher Fariss
 ## COURSE NAME: Programming and Simulation Methods for Computational Social Science (1T, 2W)
@@ -30,10 +30,11 @@
 
 #set.seed(940)
 
-in_sample_rmse <- rmse <- rmse_2foldcross <- c()
+in_sample_rmse <- rmse <- rmse_2foldcross <- rmse_10foldcross <- c()
 in_sample_rmse
 rmse
 rmse_2foldcross
+rmse_10foldcross
 
 for(i in 1:10000){
 
@@ -117,7 +118,7 @@ for(i in 1:10000){
 
 boxplot(in_sample_rmse, rmse, rmse_2foldcross, rmse_10foldcross, xaxt="n")
 abline(h=1, col=2)
-axis(side=1, at=1:3, labels=c("in sample", "out of sample \nno crossing", "out of sample \ncrossing"))
+axis(side=1, at=1:4, labels=c("in sample", "out of sample \nno crossing", "out of sample \n2 fold crossing", "out of sample \n10 fold crossing"))
 
 plot(density(in_sample_rmse), col=2, xlim=c(.5,1.5))
 lines(density(rmse), col=4)

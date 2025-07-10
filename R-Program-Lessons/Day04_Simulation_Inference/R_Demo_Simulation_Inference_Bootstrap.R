@@ -20,7 +20,7 @@
 ##
 ## And we are interested in standard error or confidence interval for a statistic using that data s(X).
 ##
-## s() is any statistics: e.g., mean(), median(), sum(), etc.
+## s() is any statistics: e.g., mean(), median(), sum(), lm(), etc.
 ##
 ## The bootstrap repeats R times: 
 ## 
