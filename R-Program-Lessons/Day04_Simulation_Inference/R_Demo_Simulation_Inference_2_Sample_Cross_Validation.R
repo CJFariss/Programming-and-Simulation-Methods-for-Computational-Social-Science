@@ -133,6 +133,7 @@ fit <- lm(y ~ x + I(x^2) + I(x^3), data=dat)
 sqrt(mean((as.numeric(predict(fit))-dat$y)^2))
 
 
+
 ## more compact version of Model 1 above using a for loop
 for(i in 1:2){
     fit <- lm(y ~ 1, data=subset(dat, folds!=i))

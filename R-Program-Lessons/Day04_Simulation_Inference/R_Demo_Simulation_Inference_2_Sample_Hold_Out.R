@@ -52,6 +52,7 @@ table(folds)
 folds <- sample(rep(1:2, n/2), size=n, replace=FALSE)
 folds
 table(folds)
+length(folds)
 
 ## doesn't always yield 50/50 ratio of 1s and 2s
 #folds <- sample(1:2, size=n, replace=TRUE)
@@ -83,6 +84,10 @@ nrow(test)
 
 ## Model 0: fit a linear model
 fit <- lm(y ~ 1, data=train)
+fit
+fit$coefficients
+mean(train$y)
+
 in_sample_rmse <- sqrt(mean((as.numeric(predict(fit))-train$y)^2))
 in_sample_rmse
 
@@ -90,7 +95,7 @@ pred <- predict(fit, newdata=test)
 rmse <- sqrt(mean((as.numeric(pred)-test$y)^2))
 rmse
 
-## prove something
+## prove that the lm() returns the mean value of a numeric vector when only the intercept is estimated
 mean(train$y)
 
 y_simple <- c(1,2,3,4,5)
@@ -108,6 +113,9 @@ rmse
 
 ## this is what predict function is doing under the hood
 y_hat <- fit$coefficients[1] + fit$coefficients[2] * test$x 
+rmse <- sqrt(mean((y_hat-test$y)^2))
+rmse
+
 
 ## Model 2: fit a linear model with a squared term
 fit <- lm(y ~ x + I(x^2), data=train)

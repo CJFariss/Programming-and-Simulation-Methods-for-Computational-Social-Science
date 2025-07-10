@@ -319,6 +319,7 @@ optim.out$par - mean(x)
 ##
 head(eval,30) 
 lines(x=eval[1:iter,1], y=eval[1:iter,2], col="purple", lwd=.5) # not that interesting 
+abline(v=optim.out$par, col=2)
 
 ##########################################################################
 ## Question: what if we repeated this process over and over again? 
