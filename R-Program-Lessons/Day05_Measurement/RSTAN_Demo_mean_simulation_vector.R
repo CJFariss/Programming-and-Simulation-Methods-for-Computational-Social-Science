@@ -39,7 +39,7 @@ model <- "
     }
 
     model {
-        // there are no prior statements for mu or sigma; 
+        // there are prior statements for mu or sigma; 
         // by default the priors on the parameters are flat unless we provide more information (see the other examples)
         // likelihood (link data to some combination of parameters and more data)
         

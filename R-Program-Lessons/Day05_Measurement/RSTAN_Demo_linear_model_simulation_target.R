@@ -45,7 +45,7 @@ model <- "
 
         // likelihood (link data to some combination of parameters and more data)
         target += normal_lpdf(y | alpha + beta * x, sigma);
-        
+
     }
     generated quantities {
         // posterior predictions

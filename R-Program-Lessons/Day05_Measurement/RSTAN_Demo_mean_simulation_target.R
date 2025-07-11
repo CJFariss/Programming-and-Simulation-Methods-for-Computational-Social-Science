@@ -47,6 +47,7 @@ model <- "
         sigma ~ normal(0,3);
         
         target += normal_lpdf(y | mu, sigma); // log-likelihood
+        //increment_log_prob(normal_log(y,mu,sigma));
 
     }
     generated quantities {
@@ -63,8 +64,8 @@ model <- "
 
 
 ## set data for simulation
-#y <- 1:5
-y <- rep(1:5,200)
+y <- 1:5
+#y <- rep(1:5,200)
 
 n <- length(y)
 y

@@ -41,19 +41,10 @@ model <- "
         // by default the priors on the parameters are flat unless we provide more information (see the other examples)
         // likelihood (link data to some combination of parameters and more data)
         
-        mu ~ normal(0,0.1);
+        // mu is flat here (see next lesson for prior specification)
         
         for(i in 1:n){
             y[i] ~ normal(mu, sigma);
-        }
-    }
-    generated quantities {
-        // posterior predictions
-        vector[n] y_predict;
-
-        // the loop is necessary within the generated quantities block
-        for(i in 1:n){
-            y_predict[i] = normal_rng(mu, sigma);
         }
     }
 "
@@ -61,8 +52,8 @@ model <- "
 
 
 ## set data for simulation
-#y <- 1:5
-y <- rep(1:5,200)
+y <- 1:5
+#y <- rep(1:5,200)
 
 n <- length(y)
 y

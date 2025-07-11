@@ -85,7 +85,7 @@ data_list <- list(y = y, x=x, n=n)
 summary(glm(y~x, family=binomial(link="logit")))
 
 ## fit stan model
-fit <- stan(model_code = model, data = data_list, iter = 1000, chains = 4)
+fit <- stan(model_code = model, data = data_list, iter = 1000, chains = 4, cores=4)
 
 ## extract draws from stan model object
 output <- extract(fit, permuted = TRUE)

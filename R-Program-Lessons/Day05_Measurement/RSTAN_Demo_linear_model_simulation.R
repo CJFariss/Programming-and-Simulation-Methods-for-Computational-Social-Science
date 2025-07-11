@@ -40,8 +40,8 @@ model <- "
     }
     model {
         // priors (these are variances not precision)
-        //alpha ~ normal(0,10);
-        //beta ~ normal(0,10);
+        alpha ~ normal(0,10);
+        beta ~ normal(0,10);
 
         // likelihood (link data to some combination of parameters and more data)
         for(i in 1:n){
@@ -110,7 +110,12 @@ model_predictions <- as.matrix(fit, pars = "y_predict")
 dim(model_parameters)
 names(model_parameters)
 
-plot(model_parameters[1:500,2], type="l", col=1)
+plot(model_parameters[1:500,1], type="l", col=1, main="trace plot of alpha")
+lines(model_parameters[501:1000,1], type="l", col=2)
+lines(model_parameters[1001:1500,1], type="l", col=3)
+lines(model_parameters[1501:2000,1], type="l", col=4)
+
+plot(model_parameters[1:500,2], type="l", col=1, main="trace plot of beta")
 lines(model_parameters[501:1000,2], type="l", col=2)
 lines(model_parameters[1001:1500,2], type="l", col=3)
 lines(model_parameters[1501:2000,2], type="l", col=4)

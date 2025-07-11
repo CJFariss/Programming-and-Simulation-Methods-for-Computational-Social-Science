@@ -138,6 +138,14 @@ y4[sample(1:length(y4), size=MISSING)] <- NA
 # make a matrix of the item response
 y <- cbind(y1, y2, y3, y4)
 
+## check missing; is anyone missing more than 3?
+foo <- function(x){
+  sum(is.na(x))
+}
+
+table(apply(y,1,foo))
+
+
 # make a column vector of the item response with missing values excluded
 y_missing <- which(!is.na(y))
 summary(y)

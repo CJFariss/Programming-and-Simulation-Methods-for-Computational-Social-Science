@@ -31,7 +31,7 @@ library(MASS) # load library with truehist function
 model <- "
 
 parameters {
-    real mu;
+    real mu; // comments here to the right of //
 }
 
 model {

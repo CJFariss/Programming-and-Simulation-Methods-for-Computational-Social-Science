@@ -67,6 +67,10 @@ model {
 n <- 300
 theta <- rnorm(n,0,1) ## standard normal latent estimand (it's an estimand because we cannot actually observe this)
 ##theta <- runif(n,-3,3)
+#theta <- c(rnorm(n/2,-2,1), rnorm(n/2,2,1))
+
+MASS::truehist(theta)
+
 
 ## set parameters for each item
 ## alpha (the intercept) is the difficulty parameter or base-line probability of 1
@@ -74,17 +78,17 @@ theta <- rnorm(n,0,1) ## standard normal latent estimand (it's an estimand becau
 ## between the estimated latent trait theta and the individual item
 
 ## item 1 is the most difficult item (it is centered over the +1/+2 on the latent trait)
-alpha1 <- -2.000000
+alpha1 <- -1.000000
 ##alpha1 <- -1.000000
-beta1 <- 1.000000
+beta1 <- 5.000000
 
 ## item 2 is of medium difficulty relative to the two other items
 alpha2 <- 0.000000
-beta2 <- 1.000000
+beta2 <- 5.000000
 
 ## item 3 is the least difficult item but is also the most informative (it is centered over the -1 on the latent trait)
-alpha3 <- 0.000000
-beta3 <- 10.000000
+alpha3 <- 1.000000
+beta3 <- 5.000000
 
 ## define j as the number of items
 j <- 3
@@ -135,6 +139,7 @@ par(mfrow=c(1,1), mar=c(4,4,1,1), font=2, font.lab=2, cex=1.3)
 plot(latentmean, theta, xlim=c(-3,3), ylim=c(-3,3), ylab="true theta", xlab="posterior mean of theta")
 abline(a=0, b=1, col=2, lwd=2)
 
+MASS::truehist(latentmean)
 
 ## correlate the true latent variable and the additive scale
 cor(theta,(y1+y2+y3), method="spearman")
@@ -146,3 +151,5 @@ cor(latentmean,(y1+y2+y3), method="spearman")
 cor(latentmean,theta, method="spearman")
 
 ## how do these correlations compare when the true alpha parameters are spaced equally from one another and when they are not?
+
+
