@@ -127,7 +127,8 @@ summary(comp)
 plot(estimate, type="l")
 
 ## graph the chain after disregarding a burn-in period
-plot(estimate[2001:4000], type="l")
+plot(estimate[2001:4000], type="l", xaxt="n")
+axis(side=1, at=c(1, seq(200, 2000, 200)), labels=c(2000, seq(2200, 4000, 200)))
 
 ##
 truehist(estimate[2001:4000], col="grey")
