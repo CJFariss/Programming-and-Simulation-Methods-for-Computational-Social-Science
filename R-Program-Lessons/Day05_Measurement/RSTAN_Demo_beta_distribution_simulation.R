@@ -31,11 +31,11 @@ library(MASS) # load library with truehist function
 model <- "
 
 parameters {
-    real mu;
+    real b;
 }
 
 model {
-    mu ~ beta(2.5,6);
+    b ~ beta(2.5,6);
 }
 "
 ## -------------------------------------------------- #
@@ -69,7 +69,7 @@ lapply(output, sd)
 length(output$mu)
 
 ## create a matrix using some of the named slots in the list
-model_parameters <- as.matrix(fit, pars = c("mu"))
+model_parameters <- as.matrix(fit, pars = c("b"))
 
 dim(model_parameters)
 
