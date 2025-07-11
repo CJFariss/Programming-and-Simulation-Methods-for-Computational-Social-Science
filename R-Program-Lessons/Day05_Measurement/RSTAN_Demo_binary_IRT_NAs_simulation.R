@@ -149,11 +149,11 @@ table(apply(y,1,foo))
 # make a column vector of the item response with missing values excluded
 y_missing <- which(!is.na(y))
 summary(y)
-
+length(y)
 
 y <- y[y_missing]
 summary(y)
-
+length(y)
 
 # scalar for the total number of subjects by observed items
 n_j <- length(y_missing)
@@ -167,7 +167,7 @@ item <- c(item)
 head(item, 10)
 
 item <- item[y_missing]
-
+length(item)
 
 # make a column vector of the subject ids with missing values excluded
 id <- matrix(1:n,ncol=j,nrow=n, byrow=F)
@@ -175,6 +175,7 @@ head(id)
 
 id <- c(id)
 id <- id[y_missing]
+length(id)
 
 head(cbind(y, item, id), 20)
 
@@ -185,7 +186,7 @@ lapply(data_list, head)
 lapply(data_list, length)
 
 # fit stan model
-fit <- stan(model_code = model, data = data_list, iter = 1000, chains = 4, cores=4)
+fit <- stan(model_code = model, data = data_list, iter = 2000, chains = 4, cores=4)
 
 
 # this summarizes the named parameters but not along the dimensions
