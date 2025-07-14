@@ -31,7 +31,7 @@ parameters {
     real beta;
 }
 transformed parameters {
-    vector[3] eta;
+    //vector[3] eta;
     matrix[3,n] prob_eta;
     
     //eta = alpha;
