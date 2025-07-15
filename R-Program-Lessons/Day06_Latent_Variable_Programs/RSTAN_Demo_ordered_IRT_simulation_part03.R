@@ -174,7 +174,7 @@ head(y, 10)
 data_list <- list(y=y, n=nrow(y), j=j)
 
 ## fit stan model
-fit <- stan(model_code = model, data = data_list, iter = 1000, chains = 4, cores = 4)
+fit <- stan(model_code = model, data = data_list, iter = 2000, chains = 4, cores = 4)
 
 fit 
 
@@ -209,27 +209,32 @@ cor(latentmean,theta, method="spearman")
 ## how do these correlations compare when the true alpha parameters are spaced equally from one another and when they are not?
 
 
+dim(output$y_predict)
 
 test1 <- test2 <- test3 <- test4 <- c()
-model_predictions <- as.matrix(fit, pars = c("y1_predict"))
+#model_predictions <- as.matrix(fit, pars = c("y_predict"))
+model_predictions <- as.matrix(output$y_predict[,,1])
 for(i in 1:nrow(model_predictions)){
   test1[i] <- cor(y1, model_predictions[i,], method="spearman")
 }        
 summary(test1)
 
-model_predictions <- as.matrix(fit, pars = c("y2_predict"))
+#model_predictions <- as.matrix(fit, pars = c("y2_predict"))
+model_predictions <- as.matrix(output$y_predict[,,2])
 for(i in 1:nrow(model_predictions)){
   test2[i] <- cor(y2, model_predictions[i,], method="spearman")
 }        
 summary(test2)
 
-model_predictions <- as.matrix(fit, pars = c("y3_predict"))
+#model_predictions <- as.matrix(fit, pars = c("y3_predict"))
+model_predictions <- as.matrix(output$y_predict[,,3])
 for(i in 1:nrow(model_predictions)){
   test3[i] <- cor(y3, model_predictions[i,], method="spearman")
 }        
 summary(test3)
 
-model_predictions <- as.matrix(fit, pars = c("y4_predict"))
+#model_predictions <- as.matrix(fit, pars = c("y4_predict"))
+model_predictions <- as.matrix(output$y_predict[,,4])
 for(i in 1:nrow(model_predictions)){
   test4[i] <- cor(y4, model_predictions[i,], method="spearman")
 }        
