@@ -15,14 +15,16 @@
 ## Introduction to tutorial:
 ##
 ##
+##########################################################################
 rm(list=ls())
 
 ##
-theta <- seq(-5,5,.0001)
+theta <- seq(-50,5,.0001)
 n <- length(theta)
 n
 
 beta <- c(seq(0.01, 0.1, .01), seq(0.2, 1, .1), 2:10, 25, 100, 1000, 100000)
+beta <- c(seq(0.1, 1, .1), 2:10, 25, 100, 1000, 100000)
 beta
 
 guessing_parameter <- 0.2 ## assumes a multiple choice question with one correct answer and 5 possible choices 
@@ -52,7 +54,7 @@ for(j in 1:length(beta)){
 mat <- do.call("cbind", out_p)
 head(mat)
 
-## find the minimum probability that is either closest to 1 or closest to 0
+## find the minimum probability that is neither closest to 1 nor closest to 0 (closest to .5)
 foo <- function(x){
   return(which.min(sqrt((.5 - x)^2)))
 }
@@ -60,5 +62,7 @@ foo <- function(x){
 INDEX <- apply(mat, MARGIN=2, FUN=foo)
 INDEX
 
-matrix(theta[INDEX], ncol=4, byrow = T)
+out <- matrix(theta[INDEX], ncol=4, byrow = T)
 
+
+cbind(beta, out)

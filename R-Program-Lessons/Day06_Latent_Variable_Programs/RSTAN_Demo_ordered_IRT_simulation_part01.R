@@ -37,7 +37,7 @@ data {
 }
 parameters {
     // declared the parameters in memory
-    ordered[2] cut_points[j]; // this is the ordered variable type
+    ordered[2] cut_points[j]; // this is the ordered variable type (note the two subscripts here)
     real<lower=0> beta[j];
     vector[n] theta;
 }
@@ -88,13 +88,12 @@ set.seed(940)
 #n <- 300
 n <- 1000
 theta <- rnorm(n,0,1)
-theta <- rnorm(n,0,1)
 
 ## discrimination parameters
-beta1 <- 3.000000
+beta1 <- 1.000000
 beta2 <- 3.000000
 beta3 <- 3.000000
-beta4 <- 3.000000
+beta4 <- 9.000000
 
 ## cutpoint parameters
 alpha1.1 <- -4.000000
@@ -189,7 +188,7 @@ latentmean <- apply(output$theta,2,mean)
 
 
 ## plot true latent variable with posterior mean
-par(mar=c(4,4,1,1), font=2, font.lab=2, cex=1.3)
+par(mfrow=c(1,1), mar=c(4,4,1,1), font=2, font.lab=2, cex=1.3)
 plot(latentmean, theta, xlim=c(-3,3), ylim=c(-3,3), ylab="true theta", xlab="posterior mean of theta")
 abline(a=0, b=1, col=2, lwd=2)
 
@@ -211,21 +210,25 @@ model_predictions <- as.matrix(fit, pars = c("y1_predict"))
 for(i in 1:nrow(model_predictions)){
   test1[i] <- cor(y1, model_predictions[i,], method="spearman")
 }        
+summary(test1)
 
 model_predictions <- as.matrix(fit, pars = c("y2_predict"))
 for(i in 1:nrow(model_predictions)){
   test2[i] <- cor(y2, model_predictions[i,], method="spearman")
 }        
+summary(test2)
 
 model_predictions <- as.matrix(fit, pars = c("y3_predict"))
 for(i in 1:nrow(model_predictions)){
   test3[i] <- cor(y3, model_predictions[i,], method="spearman")
 }        
+summary(test3)
 
 model_predictions <- as.matrix(fit, pars = c("y4_predict"))
 for(i in 1:nrow(model_predictions)){
   test4[i] <- cor(y4, model_predictions[i,], method="spearman")
 }        
+summary(test4)
 
 out_plot <- boxplot(test1, test2, test3, test4)
-boxplot(out_plot$stats, main="Ordered IRT", ylim=c(0.5,1))
+boxplot(out_plot$stats, main="Ordered IRT", ylim=c(0,1))
