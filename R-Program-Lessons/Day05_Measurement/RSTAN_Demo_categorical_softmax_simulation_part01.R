@@ -72,5 +72,8 @@ apply(output$prob_eta, 2, mean)
 cbind(apply(output$eta, 2, mean), apply(output$csum_eta, 2, mean), apply(output$prob_eta, 2, mean))
 
 
+## how do we calculate the probabilities?
 exp((apply(output$csum_eta, 2, mean))) / sum(exp(apply(output$csum_eta, 2, mean)))
+
+
 
