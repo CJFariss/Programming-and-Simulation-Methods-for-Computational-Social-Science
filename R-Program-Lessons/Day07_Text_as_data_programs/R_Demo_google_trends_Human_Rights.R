@@ -45,8 +45,7 @@ COLORS <- c("#fdae61", "#a6cee3", "#1f78b4", "#b2df8a", "#33a02c")
 
 
 ##
-TERMS <- c("Donald Trump", "Brexit")
-
+TERMS <- c("'human rights'", "'derechos humanos'", "'direitos humanos'", "'huquq al'iinsan'", "'droits'", "'human rights' (topic)")
 
 
 world <- gtrends(TERMS[c(1,2)])

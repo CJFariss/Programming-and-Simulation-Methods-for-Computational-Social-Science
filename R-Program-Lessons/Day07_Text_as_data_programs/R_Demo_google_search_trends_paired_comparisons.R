@@ -27,6 +27,10 @@ library(countrycode)
 library(stm)
 library(tm)
 library(MASS)
+library(bcp)
+library(ghit)
+install_github("swang87/bcp")
+
 #library(colorbrewer)
 
 

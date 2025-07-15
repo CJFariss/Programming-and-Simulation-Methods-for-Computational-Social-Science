@@ -149,7 +149,8 @@ is.character(docs_data$text)
 summary(docs_data[,1:6])
 
 ## make a DTM using the dfm function from the quanteda library
-DTM <- dfm(docs_data$text)
+#DTM <- dfm(docs_data$text)
+DTM <- dfm(tokens(docs_data$text))
 dim(DTM)
 
 DTM

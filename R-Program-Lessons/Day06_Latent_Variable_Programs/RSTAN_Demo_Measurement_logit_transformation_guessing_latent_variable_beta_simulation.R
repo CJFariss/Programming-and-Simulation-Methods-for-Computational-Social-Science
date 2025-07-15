@@ -15,7 +15,10 @@
 ## Introduction to tutorial:
 ##
 ##
-theta <- seq(-50,5,.0001)
+rm(list=ls())
+
+##
+theta <- seq(-5,5,.0001)
 n <- length(theta)
 n
 
@@ -49,11 +52,12 @@ for(j in 1:length(beta)){
 mat <- do.call("cbind", out_p)
 head(mat)
 
+## find the minimum probability that is either closest to 1 or closest to 0
 foo <- function(x){
   return(which.min(sqrt((.5 - x)^2)))
 }
 
-INDEX <- apply(mat,MARGIN=2, FUN=foo)
+INDEX <- apply(mat, MARGIN=2, FUN=foo)
 INDEX
 
 matrix(theta[INDEX], ncol=4, byrow = T)
