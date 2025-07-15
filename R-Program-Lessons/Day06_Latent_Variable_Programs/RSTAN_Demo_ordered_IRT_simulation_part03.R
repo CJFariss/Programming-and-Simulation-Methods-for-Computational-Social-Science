@@ -74,7 +74,7 @@ generated quantities {
         //y3_predict[i] = ordered_logistic_rng(beta[3] * theta[i], cut_points[3]);
         //y4_predict[i] = ordered_logistic_rng(beta[4] * theta[i], cut_points[4]);
       for(k in 1:4){
-        y_predict[i,j] = ordered_logistic_rng(beta[j] * theta[i], cut_points[j]);
+        y_predict[i,k] = ordered_logistic_rng(beta[k] * theta[i], cut_points[k]);
       }
     }
 }
