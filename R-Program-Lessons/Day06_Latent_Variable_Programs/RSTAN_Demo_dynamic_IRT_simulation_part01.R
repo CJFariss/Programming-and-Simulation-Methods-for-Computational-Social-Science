@@ -35,12 +35,15 @@ time_index
 x <- rnorm(1, mean=0, sd=1)
 x
 
+true_sigma <- 1
 for(i in 2:length(time_index)){
-  x[i] <- rnorm(1, mean=x[i-1], sd=1)
+  x[i] <- rnorm(1, mean=x[i-1], sd=true_sigma)
 }
 x
 
-#plot(x, type="l")
+par(mfrow=c(1,1))
+plot(x, type="l")
+points(x)
 #MASS::truehist(x)
 
 #cbind(x[2:length(time_index)], x[1:(length(time_index)-1)])
@@ -127,7 +130,8 @@ model <- "
 data_list <- list(n=length(time_index), k=4, y1=y1, y2=y2, y3=y3, y4=y4)
 data_list
 
-fit <- stan(model_code=model, data=data_list, iter=1000, chains=4, pars=c("theta_star", "sigma_star"), include=FALSE)
+fit <- stan(model_code=model, data=data_list, iter=2000, chains=4, thin=2, include=TRUE)
+#fit <- stan(model_code=model, data=data_list, iter=1000, chains=4, pars=c("theta_star", "sigma_star"), include=FALSE)
 fit
 
 output <- extract(fit)
@@ -145,6 +149,11 @@ plot(x=x, y=theta_hat, xlab="true x", ylab="estiamted theta of x")
 abline(reg=lm(theta_hat~x),col=2)
 cor(x, theta_hat)
 cor(additive_scale, theta_hat)
+
+plot(theta_hat, type="l")
+points(theta_hat)
+lines(x, col=2)
+points(x, col=2)
 
 apply(output$alpha, MARGIN=2, FUN=mean)
 c(alpha1, alpha2, alpha3, alpha4)
@@ -181,4 +190,4 @@ abline(v=inflection_points[4], col=2); abline(h=.5, lty=2)
 
 #apply(output$sigma, MARGIN=2, FUN=mean)
 mean(output$sigma)
-
+summary(output$sigma)

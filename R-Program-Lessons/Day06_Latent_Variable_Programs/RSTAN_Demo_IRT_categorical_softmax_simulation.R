@@ -47,8 +47,8 @@ data {
 }
 parameters {
     // declared the parameters in memory
-    vector[3] alpha1;
-    vector[3] alpha2;
+    vector[3] alpha1; // these should be equivalent to cutpoints in the ordered IRT setup
+    vector[3] alpha2; 
     vector[3] alpha3;
     vector[3] alpha4;
     real<lower=0> beta[j];

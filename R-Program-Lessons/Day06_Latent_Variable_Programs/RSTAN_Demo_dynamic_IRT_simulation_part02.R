@@ -178,6 +178,12 @@ abline(reg=lm(theta_hat~x),col=2)
 cor(x, theta_hat)
 cor(additive_scale, theta_hat)
 
+par(mfrow=c(1,1))
+plot(theta_hat, type="l")
+points(theta_hat)
+lines(x, col=2)
+points(x, col=2)
+
 apply(output$alpha, MARGIN=2, FUN=mean)
 c(alpha1, alpha2, alpha3, alpha4)
 
@@ -213,3 +219,4 @@ abline(v=inflection_points[4], col=2); abline(h=.5, lty=2)
 
 #apply(output$sigma, MARGIN=2, FUN=mean)
 mean(output$sigma)
+

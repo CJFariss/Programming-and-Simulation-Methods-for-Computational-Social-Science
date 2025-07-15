@@ -83,8 +83,8 @@ for(j in 1:length(beta)){
   
   # linear terms of the model
   # transform the linear xb terms using the logit function into a probability
-  xb1 <- xb2 <- p1 <- p2 <- p3 <- eta1 <- eta2 <- y <- matrix(NA, nrow=n, ncol=length(alpha))
-  for(i in 1:length(alpha)){
+  xb1 <- xb2 <- p1 <- p2 <- p3 <- eta1 <- eta2 <- y <- matrix(NA, nrow=n, ncol=length(alpha_1))
+  for(i in 1:length(alpha_1)){
     xb1[,i] <- alpha_1[i] - beta[j] * theta
     xb2[,i] <- alpha_2[i] - beta[j] * theta
     eta1[,i] <- 1 / (1 + exp(-xb1[,i]))
@@ -95,7 +95,7 @@ for(j in 1:length(beta)){
     for(z in 1:n) y[z,i] <- sample(0:2, size=1, prob=c(p1[z,i], p2[z,i], p3[z,i]))
   }
   
-  for(i in 1:length(alpha)){
+  for(i in 1:length(alpha_1)){
     ## graph theta values along the the x-axis
     ## x values are projected onto the probability of y using the inverse logit function of xb
     plot(theta, p1[,i], xlim=c(-4.0,4.0), ylim=c(0,1), xaxt="n", xlab="", type="l", lwd=2, col=grey(.85), ylab="")

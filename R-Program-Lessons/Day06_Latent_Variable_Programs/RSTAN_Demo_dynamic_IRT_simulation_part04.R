@@ -102,9 +102,12 @@ time_column <- rep(time_column, 4)
 
 cbind(y_column, item_column, unit_column, time_column)[1:100,]
 cbind(y_column, item_column, unit_column, time_column)[301:400,]
+cbind(y_column, item_column, unit_column, time_column)[601:700,]
+cbind(y_column, item_column, unit_column, time_column)[901:1000,]
 
 unit_time_column <- rep(1:300, times=4)
 length(unit_time_column)
+table(unit_time_column)
 
 model <- "
 

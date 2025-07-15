@@ -69,7 +69,7 @@ model {
     //theta ~ std_normal(); //priors on latent variable
     theta ~ normal(0,1); //priors on latent variable
     
-    guessing ~ uniform(0,.2)
+    //guessing ~ uniform(0,.2)
     
     alpha ~ normal(0,10); //priors for the intercepts/difficulty (these are variances not precision)
     beta ~ normal(0,10); // priors for the slope/discrimination. This is truncated so that the lowest possible value is 0

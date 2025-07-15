@@ -213,3 +213,12 @@ abline(v=inflection_points[4], col=2); abline(h=.5, lty=2)
 #apply(output$sigma, MARGIN=2, FUN=mean)
 mean(output$sigma)
 
+
+par(mfrow=c(1,1))
+plot(theta_hat[i==1], xlim=c(0,30), type="n", ylim=c(-3,3))
+for(i in 1:10){
+  lines(theta_hat[i==unit_column], col=i, lwd=1.5)
+}
+for(i in 1:10){
+  lines(x[,i], col=i, lty=2, cex=.75)
+}

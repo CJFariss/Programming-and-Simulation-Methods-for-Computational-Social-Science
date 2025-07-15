@@ -74,11 +74,15 @@ model_parameters <- as.matrix(fit, pars = c("b"))
 dim(model_parameters)
 
 ## check the dimensions (they should be the same)
-length(output$mu)
+length(output$b)
 
 ## make a nice plot
 par(mfrow=c(1,1))
-truehist(output$mu)
+truehist(output$b)
+
+mean(output$b)
+summary(output$b)
+
 
 #plot(fit[[1]]$sim$permutation[[3]])
 

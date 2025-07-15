@@ -98,6 +98,9 @@ for(j in 1:length(beta)){
     ## graph theta values along the the x-axis
     ## x values are projected onto the probability of y using the inverse logit function of xb
     plot(theta, p[,i], xlim=c(-4.0,4.0), ylim=c(0,1), xaxt="n", xlab="", type="l", lwd=2, col=grey(.5), ylab="")
+    
+    abline(h=.2, lty=2, col=grey(.5))
+    
     if(j==4)mtext(side=1, expression(theta), cex=1.25, line=3)
     if(i==1)mtext(side=2, expression("Pr(Y=1)"), cex=1.25, line=3)
     A <- alpha[i]
