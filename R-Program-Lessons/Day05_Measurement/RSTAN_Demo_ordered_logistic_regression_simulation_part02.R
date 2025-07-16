@@ -30,7 +30,7 @@ model <- "
         // declared the data in memory
         int<lower=0> n;
         int<lower=1, upper=3> y[n];
-        vector[n] x;
+        row_vector[n] x;
     }
     // declared the parameters in memory
     parameters {
@@ -39,15 +39,15 @@ model <- "
         real beta;
     }
     transformed parameters{
-      vector[n] eta1;
-      vector[n] eta2;
-      matrix[n,3] prob;
+      row_vector[n] eta1;
+      row_vector[n] eta2;
+      matrix[3,n] prob;
 
       eta1 = inv_logit(alpha[1] - beta * x);
       eta2 = inv_logit(alpha[2] - beta * x);
-      prob[,1] = eta1;
-      prob[,2] = eta2 - eta1;
-      prob[,3] = 1 - eta2;
+      prob[1,] = eta1 - 0;
+      prob[2,] = eta2 - eta1;
+      prob[3,] = 1 - eta2;
     }
     model {
         // priors (these are variances not precision)
@@ -57,7 +57,7 @@ model <- "
 
         // likelihood (link data to some combination of parameters and more data)
       for(i in 1:n){  
-        y[i] ~ categorical(prob[i,]);
+        y[i] ~ categorical(prob[,i]);
       }
     }
     generated quantities {
@@ -66,12 +66,13 @@ model <- "
     
     // the loop is necessary within the generated quantities block
     for(i in 1:n){
-        y_predict[i] = categorical_rng(prob[i,]);
+        y_predict[i] = categorical_rng(prob[,i]);
     }
  
 }
 
 "
+
 ## -------------------------------------------------- ##
 
 
@@ -142,7 +143,8 @@ lapply(output, sd)
 table(y)
 
 ## create a matrix using some of the named slots in the list
-model_parameters <- as.matrix(fit, pars = c("cut_points", "beta"))
+model_parameters <- as.matrix(fit, pars = c("alpha", "beta"))
+model_probabilities <- as.matrix(fit, pars = c("prob"))
 model_predictions <- as.matrix(fit, pars = "y_predict")
 
 ## check the dimensions (they should be the same)
