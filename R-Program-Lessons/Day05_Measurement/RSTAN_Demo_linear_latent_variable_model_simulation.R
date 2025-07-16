@@ -125,3 +125,5 @@ MASS::truehist(latentmean)
 boxplot(output$alpha, main="alpha parameters")
 boxplot(output$beta, main="beta parameters")
 boxplot(output$sigma, main="sigma parameters")
+
+
