@@ -25,14 +25,13 @@
 ##########################################################################
 
 #install.packages("remotes")
-#
-remotes::install_github("rstudio/tensorflow")
+#remotes::install_github("rstudio/tensorflow")
 
 
 ## load package
 #install.packages("keras")
 library(keras)
-library(tensorflow)
+#library(tensorflow)
 
 ## load the dataset from the keras package
 mnist <- dataset_mnist()
@@ -101,6 +100,9 @@ head(y_test)
 
 var <- c()
 
+## keras metrics for model evaluation: https://keras.io/api/metrics/
+
+
 ## model definition
 model <- keras_model_sequential()
 model %>%
@@ -113,7 +115,7 @@ model %>%
 model %>% compile(
   loss = "categorical_crossentropy",
   optimizer = optimizer_rmsprop(),
-  metrics = c("accuracy")
+  metrics = c("accuracy", "mse", "F1Score")
 )
 
 ## graph the model (fit the parameters of the model)
@@ -140,7 +142,7 @@ model %>%
 model %>% compile(
   loss = "categorical_crossentropy",
   optimizer = optimizer_rmsprop(),
-  metrics = c("accuracy")
+  metrics = c("accuracy", "mse", "F1Score")
 )
 
 ## graph the model (fit the parameters of the model)
@@ -169,7 +171,7 @@ model %>%
 model %>% compile(
   loss = "categorical_crossentropy",
   optimizer = optimizer_rmsprop(),
-  metrics = c("accuracy")
+  metrics = c("accuracy", "mse", "F1Score")
 )
 
 ## graph the model
@@ -194,7 +196,7 @@ model %>%
 model %>% compile(
   loss = "categorical_crossentropy",
   optimizer = optimizer_rmsprop(),
-  metrics = c("accuracy")
+  metrics = c("accuracy", "mse", "F1Score")
 )
 
 ## graph the model
