@@ -28,8 +28,8 @@
 library(MASS)
 
 ## set learning rate this varies on the unit interval (0 to 1]
-lr <- .2
-lr <- .05
+#lr <- .2
+#lr <- .05
 lr <- .9
 
 y <- c(1,2,3,4,5)

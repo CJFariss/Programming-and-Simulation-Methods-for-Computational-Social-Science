@@ -56,7 +56,7 @@ library(pROC)
 library(PRROC)
 
 ## simulated data
-n <- 1000
+n <- 10000
 x <- rnorm(n)
 
 ## set parameters
@@ -64,7 +64,7 @@ beta <- 1
 
 ## multiply alpha by beta (if its 0 it doesn't matter and the proportion of 1s and 0s is always 50/50).
 ## This is useful for illustrative purposes (see R_Demo_Measurement_latent_variable.R file for more information about the logit transformation of a continuous predictor variable)
-alpha <- -1.5*beta
+alpha <- 0*beta
 
 ## generate probabilities using the inverse logit function
 prob_y_true <- inv.logit(alpha + beta*x + rnorm(n))
@@ -84,12 +84,13 @@ summary(prob_y)
 
 cor(prob_y_true, prob_y)
 
+par(mfrow=c(1,1))
 plot(prob_y_true, prob_y)
 
 ## though we know the true probability, but we can only estimate the probability with observed data
 ## use the estimated probability to generate binary predictions at a discrimination threshold, often called pi or theta
 threshold <- 0.5
-y_hat <- ifelse(prob_y > threshold , 1, 0)
+y_hat <- ifelse(prob_y > threshold, 1, 0)
 
 table(y)
 
@@ -119,10 +120,16 @@ FP <- confusion_matrix[2,1]
 FP
 FN
 
+TP + TN + FP + FN
+
 ## accuracy
 ## how many 1s and 0s did the algorithm correctly classify or predict?
 accuracy <- (TP + TN) / (TP + TN + FP + FN)
 accuracy
+
+confusion_matrix
+sum(diag(confusion_matrix))/sum(confusion_matrix)
+
 
 ## false negative rate
 false_negative_rate <- FN / (TP + TN + FP + FN)

@@ -25,7 +25,7 @@ library(MASS)
 library(boot)
 library(gtools)
 
-lr <- .5
+lr <- .9
 n <- 100
 x <- rnorm(n)
 
@@ -83,8 +83,8 @@ beta_hat[length(beta_hat)]
 
 
 ## graph the values as a function of the loss statistic
-ALPHA_seq <- seq(from=-4,4,.05)
-BETA_seq <- seq(from=-4,4,.05)
+ALPHA_seq <- seq(from=-8,4,.05)
+BETA_seq <- seq(from=-8,4,.05)
 
 LOSS <- matrix(NA, nrow=length(ALPHA_seq), ncol=length(BETA_seq))
 

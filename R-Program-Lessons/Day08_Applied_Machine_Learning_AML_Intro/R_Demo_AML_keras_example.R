@@ -24,10 +24,15 @@
 ##
 ##########################################################################
 
+#install.packages("remotes")
+#
+remotes::install_github("rstudio/tensorflow")
+
 
 ## load package
-install.packages("keras")
+#install.packages("keras")
 library(keras)
+library(tensorflow)
 
 ## load the dataset from the keras package
 mnist <- dataset_mnist()
@@ -42,6 +47,10 @@ x_train <- mnist$train$x
 y_train <- mnist$train$y
 x_test <- mnist$test$x
 y_test <- mnist$test$y
+#x_train <- mnist$train$images
+#y_train <- mnist$train$labels
+#x_test <- mnist$test$images
+#y_test <- mnist$test$labels
 
 ## The x data is a 3D array (images,width,height) of grayscale values.
 ##

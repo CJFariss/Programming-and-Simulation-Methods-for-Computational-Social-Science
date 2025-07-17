@@ -84,3 +84,4 @@ out$meta
 data.frame(text = out$meta$text, topic1=fit$theta[,1], topic2=fit$theta[,2], topic3=fit$theta[,3])
 
 
+apply(fit$theta, 1, sum)

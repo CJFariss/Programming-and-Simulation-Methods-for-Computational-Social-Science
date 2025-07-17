@@ -16,7 +16,7 @@
 ##
 ## Overview of Gradient Decent for a linear model with three parameters for an interaction between variables (x, independent variable, features) in their relationship with an outcome variable (y, dependent variable, target variable).
 ##
-## Back propagation is an algorithim that allows us to generalize the gradient decent algorithim we have already considered.
+## Back propagation is an algorithm that allows us to generalize the gradient decent algorithm we have already considered.
 ##
 ## Back propagation applies the gradient decent algorithm sequential by first evaluating the error or distance between the target variable and the prediction of the target variable, and then using this information to evaluate each of the intermediate or hidden layers in the neural network for each linear combination of features included in that layer.
 ##
@@ -120,6 +120,8 @@ alpha_hat[2,1] <- runif(1,-1,1)
 alpha_hat[3,1] <- runif(1,-1,1)
 dim(alpha_hat)
 
+alpha_hat[,1:2]
+
 ## these are the betas for each equations, which are often called the weights
 w_hat <- array(NA, c(4, iterations+1))
 w_hat[1,1] <- runif(1,-1,1)
@@ -127,6 +129,8 @@ w_hat[2,1] <- runif(1,-1,1)
 w_hat[3,1] <- runif(1,-1,1)
 w_hat[4,1] <- runif(1,-1,1)
 dim(w_hat)
+
+w_hat[,1:2]
 
 
 ## matrices for storing linear transformations
@@ -141,6 +145,16 @@ y_hat <- y_error <- l2_error <- l1_error <- matrix(NA, nrow=n, ncol=iterations)
 delta_alpha <- matrix(NA, nrow=3, ncol=iterations)
 delta_w <- matrix(NA, nrow=4, ncol=iterations)
 
+j <- 1
+l1[,j] <- alpha_hat[1,j] + w_hat[1,j] * x
+l2[,j] <- alpha_hat[2,j] + w_hat[2,j] * x
+y_hat[,j] <- alpha_hat[3,1] + w_hat[3,1]*l1[,j] + w_hat[4,1]*l2[,j]
+
+plot(x, l1[,1])
+plot(x, l2[,1])
+plot(l1[,1], y)
+plot(l2[,1], y)
+plot(x, y)
 
 ## for loop start
 for (j in 1:iterations){
@@ -195,7 +209,7 @@ w_hat[,1000]
 
 loss
 
-## evaulation 
+## evaluation 
 plot(loss)
 
 loss[1000]
@@ -206,6 +220,7 @@ sqrt(mean((y-y_hat[,1000])^2))
 
 
 library(neuralnet)
+## 0 layer perceptron network
 test <- data.frame(y,x)
 nn <- neuralnet(y ~ x, data=test, hidden=c(0), linear.output=T, err.fct="sse")
 #pr.nn <- compute(nn, covariate=data[,2])
@@ -222,6 +237,7 @@ nn$result.matrix
 lm(y~x,data=data)
 
 
+## 1 layer, 2-node network
 nn <- neuralnet(y ~ x, data=test, hidden=c(2), linear.output=T, err.fct="sse")
 #pr.nn <- compute(nn, covariate=data[,2])
 nn_hat <- unlist(nn$net.result)
@@ -240,6 +256,7 @@ w_hat[,1000]
 
 
 
+## 2 layer, 3-node and 2-node network
 nn <- neuralnet(y ~ x, data=test, hidden=c(3,2), linear.output=T, err.fct="sse")
 #pr.nn <- compute(nn, covariate=data[,2])
 nn_hat <- unlist(nn$net.result)

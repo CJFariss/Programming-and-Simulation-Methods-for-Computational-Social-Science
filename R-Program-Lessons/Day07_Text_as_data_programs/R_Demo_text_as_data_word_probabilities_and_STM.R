@@ -189,11 +189,15 @@ plot(fit$theta[,2], docs_data$prop_evens)
 plot(fit$theta[,1], docs_data$prop_evens)
 plot(fit$theta[,2], docs_data$prop_odds)
 
+##
 fit <- stm(documents=DTM, K=10)
 
 dim(fit$theta)
 
+##
 summary(fit$theta)
+
+##
 
 
 

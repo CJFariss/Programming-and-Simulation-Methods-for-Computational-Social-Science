@@ -30,8 +30,6 @@ data
 names(data) <- c("text")
 data
 
-#trumptweets <- fromJSON("trump_json_files_20190707.txt")
-#data <- trumptweets
 
 ## check first 6 rows of data
 head(data)
@@ -62,9 +60,15 @@ textEdit <- function(text.vector){
 
 
 ## use textEdit function to process text
+
+newtext[1]
+newtext[1] <- paste(newtext[1], "http:www.12345;.,&^##@6789")
+newtext[1]
+
+
 newtext <- textEdit(as.character(data$text))
 head(newtext)
-
+newtext
 
 ## create list object
 ## each element is a tweet
@@ -80,14 +84,22 @@ table(unlist(tweet.term.list))
 ## view logical subsetting command to remove stopwords from the first tweet
 tweet.term.list[[1]] %in% as.character(stopwords$V1)
 
-c(1,2,3) %in% c(2,4,6,8)
+1:10
+10:1
 
-c(2,4,6,8) %in% c(1,2,3)
+## some examples using %in%: asks the question: are the values in the left-hand-side vector in the the right-hand-side vector?
+c(1,2,3) %in% c(2,4,6,8,10,12,14)
+
+c(2,4,6,8,10,12,14) %in% c(1,2,3)
 
 ## remove stopwords with not ! symbol for first element in list of words (! flips FALSE to TRUE and TRUE to FALSE)
 ! tweet.term.list[[1]] %in% as.character(stopwords$V1)
 
 index <- ! tweet.term.list[[1]] %in% as.character(stopwords$V1) 
+index
+index <- which(! tweet.term.list[[1]] %in% as.character(stopwords$V1) )
+index
+
 tweet.term.list[[1]][index]
 
 tweet.term.list[[1]][! tweet.term.list[[1]] %in% as.character(stopwords$V1)]
@@ -106,7 +118,7 @@ tweet.term.list <- lapply(1:length(tweet.term.list), function(i){
     local_value <- tweet.term.list[[i]][! tweet.term.list[[i]] %in% as.character(stopwords$V1) ]
     return(local_value)
 })
-
+tweet.term.list
 
 ## take the unique terms that remain in the full list of tweets after revmoing stop words
 table(unlist(tweet.term.list))
@@ -133,8 +145,10 @@ print(Sys.time() - time1)
 ## the units or records in this dataset are tweet-terms
 ## each record is the document-term combination
 
-
 i <- 1
+table(tweet.term.list[[i]])
+as.data.frame(table(tweet.term.list[[i]]))
+
 data.frame(Doc=i, as.data.frame(table(tweet.term.list[[i]])))
 
 

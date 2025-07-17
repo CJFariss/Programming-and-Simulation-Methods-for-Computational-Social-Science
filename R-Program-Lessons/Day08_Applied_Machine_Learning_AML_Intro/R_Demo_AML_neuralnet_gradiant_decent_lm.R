@@ -43,7 +43,7 @@ X_mat <- cbind(1,x)
 head(X_mat)
 
 # Start with a random guess
-alpha_hat <- 1
+alpha_hat <- 4
 beta_hat <- 4
 
 
@@ -72,6 +72,7 @@ for (j in 1:iterations){
     ##delta[1:2,j] <- (t(X_mat) %*% y_error[,j]) * (1/n)
     
     ##
+    #delta[1,j] <- sum(y_error[,j])/n ## this should look equivalent to the way we calculated the gradient for mu
     delta[1,j] <- sum(X_mat[,1] * y_error[,j])/n
     delta[2,j] <- sum(X_mat[,2] * y_error[,j])/n
 
