@@ -92,6 +92,8 @@ image(x=1:784, y=1:100, z=t(x_train[100:1,1:784]), yaxt="n", xaxt="n", xlab="", 
 ## calculate sum for a boxplot
 x_train_sum <- apply(x_train, 1, sum)
 
+MASS::truehist(x_train_sum)
+
 #y_train_value <- apply(y_train, 1, which.max) - 1
 
 ## simple prediction
