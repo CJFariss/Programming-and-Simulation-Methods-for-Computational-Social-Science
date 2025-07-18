@@ -128,10 +128,10 @@ abline(a=0, b=1, col=2, lwd=2)
 MASS::truehist(latentmean)
 
 ## correlate the true latent variable and the additive scale
-cor(theta,(y1+y2+y3), method="spearman")
+cor(theta,apply(y,1,sum), method="spearman")
 
 ## correlate the estimated latent variable and the additive scale
-cor(latentmean,(y1+y2+y3), method="spearman")
+cor(latentmean,apply(y,1,sum), method="spearman")
 
 ## correlate the estimated latent variable and the true latent variable
 cor(latentmean,theta, method="spearman")
