@@ -38,8 +38,12 @@ mnist <- dataset_mnist()
 
 ## examine the list object
 names(mnist)
+class(mnist)
+
 names(mnist$train)
 names(mnist$test)
+class(mnist$train)
+class(mnist$test)
 
 ## make dataframes from the list
 x_train <- mnist$train$x
@@ -72,7 +76,7 @@ x_train <- x_train / 255
 x_test <- x_test / 255
 
 ## use a keras function to change the dependent variable (target variable) to categorical
-y_train <- to_categorical(y_train, 10)
+y_train <- to_categorical(as.vector(y_train), 10)
 y_test <- to_categorical(y_test, 10)
 
 
@@ -103,6 +107,7 @@ var <- c()
 ## keras metrics for model evaluation: https://keras.io/api/metrics/
 
 
+## simple regression or perceptron netwrok
 ## model definition
 model <- keras_model_sequential()
 model %>%
@@ -184,6 +189,7 @@ history <- model %>% fit(
 ## evaluate the model
 model %>% evaluate(x_test, y_test,verbose = 0)
 
+
 ## 
 model <- keras_model_sequential()
 model %>%
@@ -206,6 +212,36 @@ history <- model %>% fit(
   validation_split = 0.2
 )
 
+
+## 
+model <- keras_model_sequential()
+model %>%
+  layer_dense(units = 64, input_shape = c(784)) %>%
+  layer_activation('relu') %>%
+  layer_dense(units = 64) %>%
+  layer_activation('relu') %>%
+  layer_dense(units = 64) %>%
+  layer_activation('relu') %>%
+  layer_dense(units = 64) %>%
+  layer_activation('relu') %>%
+  layer_dense(units = 64) %>%
+  layer_activation('relu') %>%
+  layer_dense(units = 10) %>%
+  layer_activation('softmax')
+
+## compile the model
+model %>% compile(
+  loss = "categorical_crossentropy",
+  optimizer = optimizer_rmsprop(),
+  metrics = c("accuracy", "mse", "F1Score")
+)
+
+## graph the model
+history <- model %>% fit(
+  x_train, y_train,
+  epochs = 30, batch_size = 128,
+  validation_split = 0.2
+)
 ## evaluate the model
 model %>% evaluate(x_test, y_test,verbose = 0)
 
