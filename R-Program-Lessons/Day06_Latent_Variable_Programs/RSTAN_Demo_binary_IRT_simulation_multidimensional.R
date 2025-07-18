@@ -38,26 +38,26 @@ data {
 parameters {
     // declared the parameters in memory
     vector[j] alpha;
-    //real<lower=0> beta1[j];
+    real<lower=0> beta1[j];
     //vector[n] theta1;
-    //real<lower=0> beta2[j];
+    real<lower=0> beta2[j];
     //vector[n] theta2;
     vector[2] theta[n];
-    real beta1_raw[j];
-    real beta2_raw[j];
+    //real beta1_raw[j];
+    //real beta2_raw[j];
 
 }
 transformed parameters {
     vector[n] theta1;
     vector[n] theta2;
-    real beta1[j];
-    real beta2[j];
+    //real beta1[j];
+    //real beta2[j];
     
     // single parameter identification constraint
-    beta[1] = abs(beta_raw[1]);
-    for(k in 2:j){
-      beta[k] = beta_raw[k];
-    }
+    //beta[1] = abs(beta_raw[1]);
+    //for(k in 2:j){
+    //  beta[k] = beta_raw[k];
+    //}
 
     vector[2] mu;
     cov_matrix[2] Sigma;
@@ -82,8 +82,10 @@ model {
     theta ~ multi_normal(mu, Sigma);
 
     alpha ~ normal(0,10); //priors for the intercepts/difficulty (these are variances not precision)
-    beta1 ~ normal(0,1); // priors for the slope/discrimination. This is truncated so that the lowest possible value is 0
-    beta2 ~ normal(0,1); // priors for the slope/discrimination. This is truncated so that the lowest possible value is 0
+    //beta1 ~ normal(0,1); // priors for the slope/discrimination. This is truncated so that the lowest possible value is 0
+    //beta2 ~ normal(0,1); // priors for the slope/discrimination. This is truncated so that the lowest possible value is 0
+    beta1 ~ gamma(0.01,0.01);
+    beta2 ~ gamma(0.01,0.01);
     
     // likelihood (link data to some combination of parameters and more data)
     // one equation for each of the observed items
@@ -165,7 +167,7 @@ apply(output$beta1,2,mean)
 apply(output$beta2,2,mean)
 
 ## this prints the posterior mean for the latent variable
-apply(output$theta1,2,mean)
+#apply(output$theta1,2,mean)
 
 
 ## calculate the mean the posterior for the latent variable
