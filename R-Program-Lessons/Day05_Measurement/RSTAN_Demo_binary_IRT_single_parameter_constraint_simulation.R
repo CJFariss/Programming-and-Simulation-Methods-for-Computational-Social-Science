@@ -58,7 +58,7 @@ model {
     theta ~ normal(0,1); //priors on latent variable
     
     alpha ~ normal(0,10); //priors for the intercepts/difficulty (these are variances not precision)
-    beta ~ normal(0,10); // priors for the slope/discrimination. This is truncated so that the lowest possible value is 0
+    beta_raw ~ normal(0,10); // priors for the slope/discrimination. This is truncated so that the lowest possible value is 0
     
     // likelihood (link data to some combination of parameters and more data)
     // one equation for each of the observed items
@@ -163,6 +163,8 @@ apply(output$beta,2,mean)
 apply(output$beta_raw,2,mean)
 
 MASS::truehist(output$beta_raw[,1])
+MASS::truehist(output$beta_raw[,2])
+MASS::truehist(output$beta_raw[,3])
 MASS::truehist(output$beta[,1])
 MASS::truehist(output$beta[,2])
 MASS::truehist(output$beta[,3])
