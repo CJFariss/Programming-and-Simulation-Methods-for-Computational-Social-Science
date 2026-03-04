@@ -189,5 +189,28 @@ abline(a=0, b=1, col=2, lwd=2)
 #MASS::truehist(latentmean)
 
 par(mfrow=c(1,1))
+plot(theta1, theta2)
 plot(latentmean1, latentmean2)
 
+plot(latentmean1, apply(cbind(y1,y2,y3,y4,y5,y6,y7,y8,y9,y10), 1, sum))
+plot(latentmean2, apply(cbind(y11,y12,y13,y14,y15,y16,y17,y18,y19,y20), 1, sum))
+
+
+cor(theta1, theta2)
+cor(apply(cbind(y1,y2,y3,y4,y5,y6,y7,y8,y9,y10), 1, sum),  apply(cbind(y11,y12,y13,y14,y15,y16,y17,y18,y19,y20), 1, sum))
+
+
+df <- data.frame(y1,y2,y3,y4,y5,y6,y7,y8,y9,y10,y11,y12,y13,y14,y15,y16,y17,y18,y19,y20)
+fit <- factanal(df, factors=2, scores="regression")
+fit
+cor(fit$scores)
+
+
+fit <- factanal(df, factors=3, scores="regression")
+fit
+cor(fit$scores)
+
+
+fit <- factanal(df, factors=4, scores="regression")
+fit
+cor(fit$scores)
